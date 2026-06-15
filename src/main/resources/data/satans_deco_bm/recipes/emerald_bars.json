@@ -1,0 +1,17 @@
+{
+"type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "satans_deco_bm:emerald_bars",
+    "count": 16
+  }
+}

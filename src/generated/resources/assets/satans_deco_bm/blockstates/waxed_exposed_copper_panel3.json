@@ -1,0 +1,60 @@
+{
+  "variants": {
+    "axis=x,rotation=0,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_0"
+    },
+    "axis=x,rotation=0,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_0"
+    },
+    "axis=x,rotation=1,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_1"
+    },
+    "axis=x,rotation=1,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_1"
+    },
+    "axis=x,rotation=2,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_2"
+    },
+    "axis=x,rotation=2,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_2"
+    },
+    "axis=x,rotation=3,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_3"
+    },
+    "axis=x,rotation=3,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_3"
+    },
+    "axis=z,rotation=0,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_0",
+      "y": 270
+    },
+    "axis=z,rotation=0,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_0",
+      "y": 270
+    },
+    "axis=z,rotation=1,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_1",
+      "y": 270
+    },
+    "axis=z,rotation=1,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_1",
+      "y": 270
+    },
+    "axis=z,rotation=2,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_2",
+      "y": 270
+    },
+    "axis=z,rotation=2,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_2",
+      "y": 270
+    },
+    "axis=z,rotation=3,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_3",
+      "y": 270
+    },
+    "axis=z,rotation=3,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel3_rotation_3",
+      "y": 270
+    }
+  }
+}

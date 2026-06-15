@@ -1,0 +1,37 @@
+{
+	"format_version": "1.9.0",
+	"ambientocclusion": false,
+	"elements": [
+		{
+			"from": [8, 0, 8],
+			"to": [8, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 8, 16], "texture": "#bars"},
+				"west": {"uv": [8, 0, 0, 16], "texture": "#bars"}
+			}
+		},
+		{
+			"from": [7, 0, 9],
+			"to": [9, 2, 16],
+			"faces": {
+				"south": {"uv": [0, 16, 2, 14], "texture": "#edge", "cullface": "south"}
+			}
+		},
+		{
+			"from": [7, 0.001, 9],
+			"to": [9, 0.001, 16],
+			"faces": {
+				"up": {"uv": [7, 16, 9, 9], "texture": "#edge"},
+				"down": {"uv": [7, 16, 9, 9], "texture": "#edge"}
+			}
+		},
+		{
+			"from": [7, 16.001, 14],
+			"to": [9, 16.001, 16],
+			"faces": {
+				"up": {"uv": [0, 2, 2, 0], "texture": "#edge"},
+				"down": {"uv": [0, 2, 2, 0], "texture": "#edge"}
+			}
+		}
+	]
+}

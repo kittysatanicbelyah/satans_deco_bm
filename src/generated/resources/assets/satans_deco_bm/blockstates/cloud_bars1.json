@@ -1,0 +1,54 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "satans_deco_bm:block/cloud_bars1_post_ends"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm:block/cloud_bars1_post"
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm:block/cloud_bars1_side"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm:block/cloud_bars1_side_alt"
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm:block/cloud_bars1_side_alt",
+        "y": 90
+      },
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm:block/cloud_bars1_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    }
+  ]
+}

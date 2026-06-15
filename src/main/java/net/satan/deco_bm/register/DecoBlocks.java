@@ -1,0 +1,2054 @@
+package net.satan.deco_bm.register;
+
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import net.satan.deco_bm.block.*;
+import net.satan.deco_bm.block.util.DecoWeatheringCopper;
+import net.satan.deco_bm.satans_deco_bm;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Supplier;
+
+public class DecoBlocks {
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, satans_deco_bm.MODID);
+//Blocks go here
+    //bars
+    public static final RegistryObject<Block> IRON_BARS1 = registerBlock("iron_bars1",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS2 = registerBlock("iron_bars2",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS3 = registerBlock("iron_bars3",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS4 = registerBlock("iron_bars4",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS5 = registerBlock("iron_bars5",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS6 = registerBlock("iron_bars6",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS7 = registerBlock("iron_bars7",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS8 = registerBlock("iron_bars8",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS9 = registerBlock("iron_bars9",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS10 = registerBlock("iron_bars10",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS11 = registerBlock("iron_bars11",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS12 = registerBlock("iron_bars12",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS13 = registerBlock("iron_bars13",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS14 = registerBlock("iron_bars14",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS15 = registerBlock("iron_bars15",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS16 = registerBlock("iron_bars16",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS17 = registerBlock("iron_bars17",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS18 = registerBlock("iron_bars18",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS19 = registerBlock("iron_bars19",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS20 = registerBlock("iron_bars20",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS21 = registerBlock("iron_bars21",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS22 = registerBlock("iron_bars22",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS23 = registerBlock("iron_bars23",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS24 = registerBlock("iron_bars24",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS26 = registerBlock("iron_bars26",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS27 = registerBlock("iron_bars27",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS28 = registerBlock("iron_bars28",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS30 = registerBlock("iron_bars30",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS33 = registerBlock("iron_bars33",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_BARS34 = registerBlock("iron_bars34",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+
+    public static final RegistryObject<Block> GOLD_BARS = registerBlock("gold_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS1 = registerBlock("gold_bars1",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS2 = registerBlock("gold_bars2",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS3 = registerBlock("gold_bars3",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS4 = registerBlock("gold_bars4",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS5 = registerBlock("gold_bars5",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS6 = registerBlock("gold_bars6",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS7 = registerBlock("gold_bars7",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS8 = registerBlock("gold_bars8",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS9 = registerBlock("gold_bars9",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS10 = registerBlock("gold_bars10",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS11 = registerBlock("gold_bars11",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS12 = registerBlock("gold_bars12",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS13 = registerBlock("gold_bars13",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS14 = registerBlock("gold_bars14",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS15 = registerBlock("gold_bars15",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS16 = registerBlock("gold_bars16",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS17 = registerBlock("gold_bars17",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS18 = registerBlock("gold_bars18",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS19 = registerBlock("gold_bars19",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS20 = registerBlock("gold_bars20",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS21 = registerBlock("gold_bars21",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS22 = registerBlock("gold_bars22",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS23 = registerBlock("gold_bars23",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS24 = registerBlock("gold_bars24",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS26 = registerBlock("gold_bars26",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS27 = registerBlock("gold_bars27",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS28 = registerBlock("gold_bars28",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS30 = registerBlock("gold_bars30",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS33 = registerBlock("gold_bars33",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_BARS34 = registerBlock("gold_bars34",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> EMERALD_BARS = registerBlock("emerald_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS1 = registerBlock("emerald_bars1",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS2 = registerBlock("emerald_bars2",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS3 = registerBlock("emerald_bars3",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS4 = registerBlock("emerald_bars4",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS5 = registerBlock("emerald_bars5",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS6 = registerBlock("emerald_bars6",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS7 = registerBlock("emerald_bars7",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS8 = registerBlock("emerald_bars8",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS9 = registerBlock("emerald_bars9",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS10 = registerBlock("emerald_bars10",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS11 = registerBlock("emerald_bars11",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS12 = registerBlock("emerald_bars12",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS13 = registerBlock("emerald_bars13",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS14 = registerBlock("emerald_bars14",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS15 = registerBlock("emerald_bars15",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS16 = registerBlock("emerald_bars16",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS17 = registerBlock("emerald_bars17",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS18 = registerBlock("emerald_bars18",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS19 = registerBlock("emerald_bars19",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS20 = registerBlock("emerald_bars20",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS21 = registerBlock("emerald_bars21",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS22 = registerBlock("emerald_bars22",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS23 = registerBlock("emerald_bars23",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS24 = registerBlock("emerald_bars24",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+   public static final RegistryObject<Block> EMERALD_BARS26 = registerBlock("emerald_bars26",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS27 = registerBlock("emerald_bars27",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS28 = registerBlock("emerald_bars28",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS30 = registerBlock("emerald_bars30",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS33 = registerBlock("emerald_bars33",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_BARS34 = registerBlock("emerald_bars34",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+
+    public static final RegistryObject<Block> DARKMETAL_BARS = registerBlock("darkmetal_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS1 = registerBlock("darkmetal_bars1",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS2 = registerBlock("darkmetal_bars2",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS3 = registerBlock("darkmetal_bars3",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS4 = registerBlock("darkmetal_bars4",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS5 = registerBlock("darkmetal_bars5",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS6 = registerBlock("darkmetal_bars6",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS7 = registerBlock("darkmetal_bars7",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS8 = registerBlock("darkmetal_bars8",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS9 = registerBlock("darkmetal_bars9",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS10 = registerBlock("darkmetal_bars10",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS11 = registerBlock("darkmetal_bars11",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS12 = registerBlock("darkmetal_bars12",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS13 = registerBlock("darkmetal_bars13",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS14 = registerBlock("darkmetal_bars14",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS15 = registerBlock("darkmetal_bars15",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS16 = registerBlock("darkmetal_bars16",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS17 = registerBlock("darkmetal_bars17",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS18 = registerBlock("darkmetal_bars18",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS19 = registerBlock("darkmetal_bars19",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS20 = registerBlock("darkmetal_bars20",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS21 = registerBlock("darkmetal_bars21",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS22 = registerBlock("darkmetal_bars22",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS23 = registerBlock("darkmetal_bars23",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS24 = registerBlock("darkmetal_bars24",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS26 = registerBlock("darkmetal_bars26",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS27 = registerBlock("darkmetal_bars27",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS28 = registerBlock("darkmetal_bars28",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+   public static final RegistryObject<Block> DARKMETAL_BARS30 = registerBlock("darkmetal_bars30",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+   public static final RegistryObject<Block> DARKMETAL_BARS33 = registerBlock("darkmetal_bars33",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_BARS34 = registerBlock("darkmetal_bars34",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+
+    public static final RegistryObject<Block> CLOUD_BARS = registerBlock("cloud_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS1 = registerBlock("cloud_bars1",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS2 = registerBlock("cloud_bars2",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS3 = registerBlock("cloud_bars3",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS4 = registerBlock("cloud_bars4",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS5 = registerBlock("cloud_bars5",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS6 = registerBlock("cloud_bars6",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS7 = registerBlock("cloud_bars7",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS8 = registerBlock("cloud_bars8",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS9 = registerBlock("cloud_bars9",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS10 = registerBlock("cloud_bars10",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS11 = registerBlock("cloud_bars11",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS12 = registerBlock("cloud_bars12",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS13 = registerBlock("cloud_bars13",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS14 = registerBlock("cloud_bars14",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS15 = registerBlock("cloud_bars15",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS16 = registerBlock("cloud_bars16",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS17 = registerBlock("cloud_bars17",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS18 = registerBlock("cloud_bars18",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS19 = registerBlock("cloud_bars19",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS20 = registerBlock("cloud_bars20",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS21 = registerBlock("cloud_bars21",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS22 = registerBlock("cloud_bars22",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS23 = registerBlock("cloud_bars23",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS24 = registerBlock("cloud_bars24",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS26 = registerBlock("cloud_bars26",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS27 = registerBlock("cloud_bars27",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS28 = registerBlock("cloud_bars28",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+     public static final RegistryObject<Block> CLOUD_BARS30 = registerBlock("cloud_bars30",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS33 = registerBlock("cloud_bars33",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_BARS34 = registerBlock("cloud_bars34",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+
+//    copper bars
+public static final RegistryObject<Block> COPPER_BARS = registerBlock("copper_bars",
+        () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                        .strength(3.0F, 6.0F)));
+public static final RegistryObject<Block> COPPER_BARS1 = registerBlock("copper_bars1",
+        () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                        .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS2 = registerBlock("copper_bars2",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS3 = registerBlock("copper_bars3",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS4 = registerBlock("copper_bars4",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS5 = registerBlock("copper_bars5",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS6 = registerBlock("copper_bars6",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS7 = registerBlock("copper_bars7",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS8 = registerBlock("copper_bars8",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS9 = registerBlock("copper_bars9",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS10 = registerBlock("copper_bars10",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS11 = registerBlock("copper_bars11",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS12 = registerBlock("copper_bars12",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS13 = registerBlock("copper_bars13",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS14 = registerBlock("copper_bars14",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS15 = registerBlock("copper_bars15",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS16 = registerBlock("copper_bars16",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS17 = registerBlock("copper_bars17",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS18 = registerBlock("copper_bars18",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS19 = registerBlock("copper_bars19",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS20 = registerBlock("copper_bars20",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS21 = registerBlock("copper_bars21",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS22 = registerBlock("copper_bars22",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS23 = registerBlock("copper_bars23",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS24 = registerBlock("copper_bars24",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> COPPER_BARS26 = registerBlock("copper_bars26",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS27 = registerBlock("copper_bars27",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS28 = registerBlock("copper_bars28",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+     public static final RegistryObject<Block> COPPER_BARS30 = registerBlock("copper_bars30",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS33 = registerBlock("copper_bars33",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_BARS34 = registerBlock("copper_bars34",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS = registerBlock("exposed_copper_bars",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS1 = registerBlock("exposed_copper_bars1",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS2 = registerBlock("exposed_copper_bars2",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS3 = registerBlock("exposed_copper_bars3",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS4 = registerBlock("exposed_copper_bars4",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS5 = registerBlock("exposed_copper_bars5",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS6 = registerBlock("exposed_copper_bars6",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS7 = registerBlock("exposed_copper_bars7",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS8 = registerBlock("exposed_copper_bars8",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS9 = registerBlock("exposed_copper_bars9",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS10 = registerBlock("exposed_copper_bars10",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS11 = registerBlock("exposed_copper_bars11",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS12 = registerBlock("exposed_copper_bars12",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS13 = registerBlock("exposed_copper_bars13",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS14 = registerBlock("exposed_copper_bars14",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS15 = registerBlock("exposed_copper_bars15",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS16 = registerBlock("exposed_copper_bars16",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS17 = registerBlock("exposed_copper_bars17",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS18 = registerBlock("exposed_copper_bars18",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS19 = registerBlock("exposed_copper_bars19",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS20 = registerBlock("exposed_copper_bars20",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS21 = registerBlock("exposed_copper_bars21",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS22 = registerBlock("exposed_copper_bars22",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS23 = registerBlock("exposed_copper_bars23",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS24 = registerBlock("exposed_copper_bars24",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS26 = registerBlock("exposed_copper_bars26",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS27 = registerBlock("exposed_copper_bars27",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS28 = registerBlock("exposed_copper_bars28",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS30 = registerBlock("exposed_copper_bars30",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS33 = registerBlock("exposed_copper_bars33",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARS34 = registerBlock("exposed_copper_bars34",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS = registerBlock("weathered_copper_bars",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS1 = registerBlock("weathered_copper_bars1",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS2 = registerBlock("weathered_copper_bars2",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS3 = registerBlock("weathered_copper_bars3",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS4 = registerBlock("weathered_copper_bars4",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS5 = registerBlock("weathered_copper_bars5",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS6 = registerBlock("weathered_copper_bars6",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS7 = registerBlock("weathered_copper_bars7",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS8 = registerBlock("weathered_copper_bars8",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS9 = registerBlock("weathered_copper_bars9",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS10 = registerBlock("weathered_copper_bars10",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS11 = registerBlock("weathered_copper_bars11",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS12 = registerBlock("weathered_copper_bars12",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS13 = registerBlock("weathered_copper_bars13",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS14 = registerBlock("weathered_copper_bars14",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS15 = registerBlock("weathered_copper_bars15",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS16 = registerBlock("weathered_copper_bars16",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS17 = registerBlock("weathered_copper_bars17",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS18 = registerBlock("weathered_copper_bars18",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS19 = registerBlock("weathered_copper_bars19",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS20 = registerBlock("weathered_copper_bars20",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS21 = registerBlock("weathered_copper_bars21",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS22 = registerBlock("weathered_copper_bars22",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS23 = registerBlock("weathered_copper_bars23",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS24 = registerBlock("weathered_copper_bars24",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WEATHERED_COPPER_BARS26 = registerBlock("weathered_copper_bars26",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS27 = registerBlock("weathered_copper_bars27",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS28 = registerBlock("weathered_copper_bars28",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS30 = registerBlock("weathered_copper_bars30",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS33 = registerBlock("weathered_copper_bars33",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARS34 = registerBlock("weathered_copper_bars34",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS = registerBlock("oxidized_copper_bars",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS1 = registerBlock("oxidized_copper_bars1",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS2 = registerBlock("oxidized_copper_bars2",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS3 = registerBlock("oxidized_copper_bars3",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS4 = registerBlock("oxidized_copper_bars4",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS5 = registerBlock("oxidized_copper_bars5",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS6 = registerBlock("oxidized_copper_bars6",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS7 = registerBlock("oxidized_copper_bars7",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS8 = registerBlock("oxidized_copper_bars8",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS9 = registerBlock("oxidized_copper_bars9",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS10 = registerBlock("oxidized_copper_bars10",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS11 = registerBlock("oxidized_copper_bars11",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS12 = registerBlock("oxidized_copper_bars12",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS13 = registerBlock("oxidized_copper_bars13",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS14 = registerBlock("oxidized_copper_bars14",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS15 = registerBlock("oxidized_copper_bars15",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS16 = registerBlock("oxidized_copper_bars16",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS17 = registerBlock("oxidized_copper_bars17",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS18 = registerBlock("oxidized_copper_bars18",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS19 = registerBlock("oxidized_copper_bars19",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS20 = registerBlock("oxidized_copper_bars20",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS21 = registerBlock("oxidized_copper_bars21",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS22 = registerBlock("oxidized_copper_bars22",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS23 = registerBlock("oxidized_copper_bars23",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS24 = registerBlock("oxidized_copper_bars24",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS26 = registerBlock("oxidized_copper_bars26",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS27 = registerBlock("oxidized_copper_bars27",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS28 = registerBlock("oxidized_copper_bars28",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS30 = registerBlock("oxidized_copper_bars30",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> OXIDIZED_COPPER_BARS33 = registerBlock("oxidized_copper_bars33",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARS34 = registerBlock("oxidized_copper_bars34",
+            () -> new DecoWeatheringCopperBarsBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_COPPER_BARS = registerBlock("waxed_copper_bars",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                    .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS1 = registerBlock("waxed_copper_bars1",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS2 = registerBlock("waxed_copper_bars2",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS3 = registerBlock("waxed_copper_bars3",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS4 = registerBlock("waxed_copper_bars4",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS5 = registerBlock("waxed_copper_bars5",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS6 = registerBlock("waxed_copper_bars6",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS7 = registerBlock("waxed_copper_bars7",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS8 = registerBlock("waxed_copper_bars8",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS9 = registerBlock("waxed_copper_bars9",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS10 = registerBlock("waxed_copper_bars10",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS11 = registerBlock("waxed_copper_bars11",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS12 = registerBlock("waxed_copper_bars12",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS13 = registerBlock("waxed_copper_bars13",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS14 = registerBlock("waxed_copper_bars14",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS15 = registerBlock("waxed_copper_bars15",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS16 = registerBlock("waxed_copper_bars16",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS17 = registerBlock("waxed_copper_bars17",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS18 = registerBlock("waxed_copper_bars18",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS19 = registerBlock("waxed_copper_bars19",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS20 = registerBlock("waxed_copper_bars20",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS21 = registerBlock("waxed_copper_bars21",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS22 = registerBlock("waxed_copper_bars22",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS23 = registerBlock("waxed_copper_bars23",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS24 = registerBlock("waxed_copper_bars24",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS26 = registerBlock("waxed_copper_bars26",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS27 = registerBlock("waxed_copper_bars27",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS28 = registerBlock("waxed_copper_bars28",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_COPPER_BARS30 = registerBlock("waxed_copper_bars30",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_COPPER_BARS33 = registerBlock("waxed_copper_bars33",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_BARS34 = registerBlock("waxed_copper_bars34",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS = registerBlock("waxed_exposed_copper_bars",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS1 = registerBlock("waxed_exposed_copper_bars1",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS2 = registerBlock("waxed_exposed_copper_bars2",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS3 = registerBlock("waxed_exposed_copper_bars3",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS4 = registerBlock("waxed_exposed_copper_bars4",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS5 = registerBlock("waxed_exposed_copper_bars5",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS6 = registerBlock("waxed_exposed_copper_bars6",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS7 = registerBlock("waxed_exposed_copper_bars7",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS8 = registerBlock("waxed_exposed_copper_bars8",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS9 = registerBlock("waxed_exposed_copper_bars9",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS10 = registerBlock("waxed_exposed_copper_bars10",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS11 = registerBlock("waxed_exposed_copper_bars11",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS12 = registerBlock("waxed_exposed_copper_bars12",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS13 = registerBlock("waxed_exposed_copper_bars13",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS14 = registerBlock("waxed_exposed_copper_bars14",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS15 = registerBlock("waxed_exposed_copper_bars15",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS16 = registerBlock("waxed_exposed_copper_bars16",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS17 = registerBlock("waxed_exposed_copper_bars17",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS18 = registerBlock("waxed_exposed_copper_bars18",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS19 = registerBlock("waxed_exposed_copper_bars19",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS20 = registerBlock("waxed_exposed_copper_bars20",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS21 = registerBlock("waxed_exposed_copper_bars21",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS22 = registerBlock("waxed_exposed_copper_bars22",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS23 = registerBlock("waxed_exposed_copper_bars23",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS24 = registerBlock("waxed_exposed_copper_bars24",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS26 = registerBlock("waxed_exposed_copper_bars26",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS27 = registerBlock("waxed_exposed_copper_bars27",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS28 = registerBlock("waxed_exposed_copper_bars28",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS30 = registerBlock("waxed_exposed_copper_bars30",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS33 = registerBlock("waxed_exposed_copper_bars33",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_BARS34 = registerBlock("waxed_exposed_copper_bars34",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS = registerBlock("waxed_weathered_copper_bars",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS1 = registerBlock("waxed_weathered_copper_bars1",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS2 = registerBlock("waxed_weathered_copper_bars2",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS3 = registerBlock("waxed_weathered_copper_bars3",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS4 = registerBlock("waxed_weathered_copper_bars4",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS5 = registerBlock("waxed_weathered_copper_bars5",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS6 = registerBlock("waxed_weathered_copper_bars6",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS7 = registerBlock("waxed_weathered_copper_bars7",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS8 = registerBlock("waxed_weathered_copper_bars8",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS9 = registerBlock("waxed_weathered_copper_bars9",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS10 = registerBlock("waxed_weathered_copper_bars10",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS11 = registerBlock("waxed_weathered_copper_bars11",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS12 = registerBlock("waxed_weathered_copper_bars12",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS13 = registerBlock("waxed_weathered_copper_bars13",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS14 = registerBlock("waxed_weathered_copper_bars14",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS15 = registerBlock("waxed_weathered_copper_bars15",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS16 = registerBlock("waxed_weathered_copper_bars16",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS17 = registerBlock("waxed_weathered_copper_bars17",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS18 = registerBlock("waxed_weathered_copper_bars18",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS19 = registerBlock("waxed_weathered_copper_bars19",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS20 = registerBlock("waxed_weathered_copper_bars20",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS21 = registerBlock("waxed_weathered_copper_bars21",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS22 = registerBlock("waxed_weathered_copper_bars22",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS23 = registerBlock("waxed_weathered_copper_bars23",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS24 = registerBlock("waxed_weathered_copper_bars24",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS26 = registerBlock("waxed_weathered_copper_bars26",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS27 = registerBlock("waxed_weathered_copper_bars27",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS28 = registerBlock("waxed_weathered_copper_bars28",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS30 = registerBlock("waxed_weathered_copper_bars30",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS33 = registerBlock("waxed_weathered_copper_bars33",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_BARS34 = registerBlock("waxed_weathered_copper_bars34",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS = registerBlock("waxed_oxidized_copper_bars",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS1 = registerBlock("waxed_oxidized_copper_bars1",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS2 = registerBlock("waxed_oxidized_copper_bars2",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS3 = registerBlock("waxed_oxidized_copper_bars3",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS4 = registerBlock("waxed_oxidized_copper_bars4",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS5 = registerBlock("waxed_oxidized_copper_bars5",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS6 = registerBlock("waxed_oxidized_copper_bars6",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS7 = registerBlock("waxed_oxidized_copper_bars7",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS8 = registerBlock("waxed_oxidized_copper_bars8",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS9 = registerBlock("waxed_oxidized_copper_bars9",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS10 = registerBlock("waxed_oxidized_copper_bars10",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS11 = registerBlock("waxed_oxidized_copper_bars11",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS12 = registerBlock("waxed_oxidized_copper_bars12",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS13 = registerBlock("waxed_oxidized_copper_bars13",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS14 = registerBlock("waxed_oxidized_copper_bars14",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS15 = registerBlock("waxed_oxidized_copper_bars15",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS16 = registerBlock("waxed_oxidized_copper_bars16",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS17 = registerBlock("waxed_oxidized_copper_bars17",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS18 = registerBlock("waxed_oxidized_copper_bars18",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS19 = registerBlock("waxed_oxidized_copper_bars19",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS20 = registerBlock("waxed_oxidized_copper_bars20",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS21 = registerBlock("waxed_oxidized_copper_bars21",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS22 = registerBlock("waxed_oxidized_copper_bars22",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS23 = registerBlock("waxed_oxidized_copper_bars23",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS24 = registerBlock("waxed_oxidized_copper_bars24",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS26 = registerBlock("waxed_oxidized_copper_bars26",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS27 = registerBlock("waxed_oxidized_copper_bars27",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS28 = registerBlock("waxed_oxidized_copper_bars28",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS30 = registerBlock("waxed_oxidized_copper_bars30",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS33 = registerBlock("waxed_oxidized_copper_bars33",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BARS34 = registerBlock("waxed_oxidized_copper_bars34",
+            () -> new DecoWaxedBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+
+    //panels
+    public static final RegistryObject<Block> IRON_PANEL1 = registerBlock("iron_panel1",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_PANEL2 = registerBlock("iron_panel2",
+            () -> new TemplatePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_PANEL3 = registerBlock("iron_panel3",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+
+    public static final RegistryObject<Block> GOLD_PANEL1 = registerBlock("gold_panel1",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_PANEL2 = registerBlock("gold_panel2",
+            () -> new TemplatePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_PANEL3 = registerBlock("gold_panel3",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> EMERALD_PANEL1 = registerBlock("emerald_panel1",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_PANEL2 = registerBlock("emerald_panel2",
+            () -> new TemplatePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_PANEL3 = registerBlock("emerald_panel3",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+
+    public static final RegistryObject<Block> DARKMETAL_PANEL1 = registerBlock("darkmetal_panel1",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_PANEL2 = registerBlock("darkmetal_panel2",
+            () -> new TemplatePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_PANEL3 = registerBlock("darkmetal_panel3",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+
+    public static final RegistryObject<Block> CLOUD_PANEL1 = registerBlock("cloud_panel1",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_PANEL2 = registerBlock("cloud_panel2",
+            () -> new TemplatePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+    public static final RegistryObject<Block> CLOUD_PANEL3 = registerBlock("cloud_panel3",
+            () -> new PanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 3.0F)));
+
+    //copper panels
+    public static final RegistryObject<Block> COPPER_PANEL1 = registerBlock("copper_panel1",
+            () -> new DecoWeatheringCopperPanelBigHoleBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_PANEL2 = registerBlock("copper_panel2",
+            () -> new DecoWeatheringCopperPanelBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> COPPER_PANEL3 = registerBlock("copper_panel3",
+            () -> new DecoWeatheringCopperPanelBigHoleBlock(DecoWeatheringCopper.WeatherState.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> EXPOSED_COPPER_PANEL1 = registerBlock("exposed_copper_panel1",
+            () -> new DecoWeatheringCopperPanelBigHoleBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_PANEL2 = registerBlock("exposed_copper_panel2",
+            () -> new DecoWeatheringCopperPanelBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> EXPOSED_COPPER_PANEL3 = registerBlock("exposed_copper_panel3",
+            () -> new DecoWeatheringCopperPanelBigHoleBlock(DecoWeatheringCopper.WeatherState.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WEATHERED_COPPER_PANEL1 = registerBlock("weathered_copper_panel1",
+            () -> new DecoWeatheringCopperPanelBigHoleBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_PANEL2 = registerBlock("weathered_copper_panel2",
+            () -> new DecoWeatheringCopperPanelBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WEATHERED_COPPER_PANEL3 = registerBlock("weathered_copper_panel3",
+            () -> new DecoWeatheringCopperPanelBigHoleBlock(DecoWeatheringCopper.WeatherState.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> OXIDIZED_COPPER_PANEL1 = registerBlock("oxidized_copper_panel1",
+            () -> new DecoWeatheringCopperPanelBigHoleBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_PANEL2 = registerBlock("oxidized_copper_panel2",
+            () -> new DecoWeatheringCopperPanelBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_PANEL3 = registerBlock("oxidized_copper_panel3",
+            () -> new DecoWeatheringCopperPanelBigHoleBlock(DecoWeatheringCopper.WeatherState.OXIDIZED,
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_COPPER_PANEL1 = registerBlock("waxed_copper_panel1",
+            () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_PANEL2 = registerBlock("waxed_copper_panel2",
+            () -> new DecoWaxedPanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_PANEL3 = registerBlock("waxed_copper_panel3",
+            () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_PANEL1 = registerBlock("waxed_exposed_copper_panel1",
+            () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_PANEL2 = registerBlock("waxed_exposed_copper_panel2",
+            () -> new DecoWaxedPanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_PANEL3 = registerBlock("waxed_exposed_copper_panel3",
+            () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_PANEL1 = registerBlock("waxed_weathered_copper_panel1",
+            () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_PANEL2 = registerBlock("waxed_weathered_copper_panel2",
+            () -> new DecoWaxedPanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_PANEL3 = registerBlock("waxed_weathered_copper_panel3",
+            () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_PANEL1 = registerBlock("waxed_oxidized_copper_panel1",
+            () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_PANEL2 = registerBlock("waxed_oxidized_copper_panel2",
+            () -> new DecoWaxedPanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_PANEL3 = registerBlock("waxed_oxidized_copper_panel3",
+            () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
+                            .strength(3.0F, 6.0F)));
+
+    //vitrages
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE = registerBlock("iron_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE1 = registerBlock("iron_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE2 = registerBlock("iron_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE3 = registerBlock("iron_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE4 = registerBlock("iron_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE5 = registerBlock("iron_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE6 = registerBlock("iron_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE7 = registerBlock("iron_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE8 = registerBlock("iron_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE9 = registerBlock("iron_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE10 = registerBlock("iron_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE11 = registerBlock("iron_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE12 = registerBlock("iron_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE13 = registerBlock("iron_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE14 = registerBlock("iron_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE15 = registerBlock("iron_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE16 = registerBlock("iron_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE17 = registerBlock("iron_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE18 = registerBlock("iron_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE19 = registerBlock("iron_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE20 = registerBlock("iron_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE21 = registerBlock("iron_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE22 = registerBlock("iron_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE23 = registerBlock("iron_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE24 = registerBlock("iron_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE26 = registerBlock("iron_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE27 = registerBlock("iron_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE28 = registerBlock("iron_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+   public static final RegistryObject<Block> IRON_VITRAGE_PANE30 = registerBlock("iron_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE33 = registerBlock("iron_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANE34 = registerBlock("iron_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE = registerBlock("gold_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE1 = registerBlock("gold_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE2 = registerBlock("gold_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE3 = registerBlock("gold_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE4 = registerBlock("gold_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE5 = registerBlock("gold_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE6 = registerBlock("gold_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE7 = registerBlock("gold_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE8 = registerBlock("gold_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE9 = registerBlock("gold_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE10 = registerBlock("gold_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE11 = registerBlock("gold_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE12 = registerBlock("gold_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE13 = registerBlock("gold_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE14 = registerBlock("gold_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE15 = registerBlock("gold_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE16 = registerBlock("gold_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE17 = registerBlock("gold_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE18 = registerBlock("gold_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE19 = registerBlock("gold_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE20 = registerBlock("gold_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE21 = registerBlock("gold_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE22 = registerBlock("gold_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE23 = registerBlock("gold_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE24 = registerBlock("gold_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> GOLD_VITRAGE_PANE26 = registerBlock("gold_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE27 = registerBlock("gold_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE28 = registerBlock("gold_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE30 = registerBlock("gold_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> GOLD_VITRAGE_PANE33 = registerBlock("gold_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANE34 = registerBlock("gold_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE = registerBlock("emerald_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE1 = registerBlock("emerald_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE2 = registerBlock("emerald_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE3 = registerBlock("emerald_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE4 = registerBlock("emerald_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE5 = registerBlock("emerald_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE6 = registerBlock("emerald_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE7 = registerBlock("emerald_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE8 = registerBlock("emerald_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE9 = registerBlock("emerald_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE10 = registerBlock("emerald_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE11 = registerBlock("emerald_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE12 = registerBlock("emerald_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE13 = registerBlock("emerald_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE14 = registerBlock("emerald_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE15 = registerBlock("emerald_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE16 = registerBlock("emerald_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE17 = registerBlock("emerald_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE18 = registerBlock("emerald_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE19 = registerBlock("emerald_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE20 = registerBlock("emerald_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE21 = registerBlock("emerald_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE22 = registerBlock("emerald_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE23 = registerBlock("emerald_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE24 = registerBlock("emerald_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE26 = registerBlock("emerald_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE27 = registerBlock("emerald_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE28 = registerBlock("emerald_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE30 = registerBlock("emerald_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+   public static final RegistryObject<Block> EMERALD_VITRAGE_PANE33 = registerBlock("emerald_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANE34 = registerBlock("emerald_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)));
+
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE = registerBlock("darkmetal_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE1 = registerBlock("darkmetal_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE2 = registerBlock("darkmetal_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE3 = registerBlock("darkmetal_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE4 = registerBlock("darkmetal_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE5 = registerBlock("darkmetal_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE6 = registerBlock("darkmetal_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE7 = registerBlock("darkmetal_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE8 = registerBlock("darkmetal_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE9 = registerBlock("darkmetal_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE10 = registerBlock("darkmetal_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE11 = registerBlock("darkmetal_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE12 = registerBlock("darkmetal_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE13 = registerBlock("darkmetal_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE14 = registerBlock("darkmetal_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE15 = registerBlock("darkmetal_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE16 = registerBlock("darkmetal_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE17 = registerBlock("darkmetal_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE18 = registerBlock("darkmetal_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE19 = registerBlock("darkmetal_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE20 = registerBlock("darkmetal_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE21 = registerBlock("darkmetal_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE22 = registerBlock("darkmetal_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE23 = registerBlock("darkmetal_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE24 = registerBlock("darkmetal_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE26 = registerBlock("darkmetal_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE27 = registerBlock("darkmetal_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE28 = registerBlock("darkmetal_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+   public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE30 = registerBlock("darkmetal_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE33 = registerBlock("darkmetal_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANE34 = registerBlock("darkmetal_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(2.0F, 6.0F)));
+
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE = registerBlock("cloud_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE1 = registerBlock("cloud_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE2 = registerBlock("cloud_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE3 = registerBlock("cloud_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE4 = registerBlock("cloud_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE5 = registerBlock("cloud_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE6 = registerBlock("cloud_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE7 = registerBlock("cloud_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE8 = registerBlock("cloud_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE9 = registerBlock("cloud_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE10 = registerBlock("cloud_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE11 = registerBlock("cloud_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE12 = registerBlock("cloud_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE13 = registerBlock("cloud_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE14 = registerBlock("cloud_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE15 = registerBlock("cloud_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE16 = registerBlock("cloud_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE17 = registerBlock("cloud_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE18 = registerBlock("cloud_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE19 = registerBlock("cloud_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE20 = registerBlock("cloud_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE21 = registerBlock("cloud_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE22 = registerBlock("cloud_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE23 = registerBlock("cloud_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE24 = registerBlock("cloud_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE26 = registerBlock("cloud_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE27 = registerBlock("cloud_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE28 = registerBlock("cloud_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE30 = registerBlock("cloud_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> CLOUD_VITRAGE_PANE33 = registerBlock("cloud_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANE34 = registerBlock("cloud_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE = registerBlock("waxed_copper_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE1 = registerBlock("waxed_copper_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE2 = registerBlock("waxed_copper_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE3 = registerBlock("waxed_copper_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE4 = registerBlock("waxed_copper_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE5 = registerBlock("waxed_copper_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE6 = registerBlock("waxed_copper_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE7 = registerBlock("waxed_copper_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE8 = registerBlock("waxed_copper_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE9 = registerBlock("waxed_copper_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE10 = registerBlock("waxed_copper_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE11 = registerBlock("waxed_copper_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE12 = registerBlock("waxed_copper_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE13 = registerBlock("waxed_copper_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE14 = registerBlock("waxed_copper_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE15 = registerBlock("waxed_copper_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE16 = registerBlock("waxed_copper_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE17 = registerBlock("waxed_copper_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE18 = registerBlock("waxed_copper_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE19 = registerBlock("waxed_copper_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE20 = registerBlock("waxed_copper_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE21 = registerBlock("waxed_copper_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE22 = registerBlock("waxed_copper_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE23 = registerBlock("waxed_copper_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE24 = registerBlock("waxed_copper_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE26 = registerBlock("waxed_copper_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE27 = registerBlock("waxed_copper_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE28 = registerBlock("waxed_copper_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE30 = registerBlock("waxed_copper_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE33 = registerBlock("waxed_copper_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANE34 = registerBlock("waxed_copper_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE = registerBlock("waxed_exposed_copper_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE1 = registerBlock("waxed_exposed_copper_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE2 = registerBlock("waxed_exposed_copper_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE3 = registerBlock("waxed_exposed_copper_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE4 = registerBlock("waxed_exposed_copper_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE5 = registerBlock("waxed_exposed_copper_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE6 = registerBlock("waxed_exposed_copper_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE7 = registerBlock("waxed_exposed_copper_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE8 = registerBlock("waxed_exposed_copper_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE9 = registerBlock("waxed_exposed_copper_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE10 = registerBlock("waxed_exposed_copper_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE11 = registerBlock("waxed_exposed_copper_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE12 = registerBlock("waxed_exposed_copper_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE13 = registerBlock("waxed_exposed_copper_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE14 = registerBlock("waxed_exposed_copper_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE15 = registerBlock("waxed_exposed_copper_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE16 = registerBlock("waxed_exposed_copper_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE17 = registerBlock("waxed_exposed_copper_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE18 = registerBlock("waxed_exposed_copper_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE19 = registerBlock("waxed_exposed_copper_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE20 = registerBlock("waxed_exposed_copper_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE21 = registerBlock("waxed_exposed_copper_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE22 = registerBlock("waxed_exposed_copper_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE23 = registerBlock("waxed_exposed_copper_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE24 = registerBlock("waxed_exposed_copper_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE26 = registerBlock("waxed_exposed_copper_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE27 = registerBlock("waxed_exposed_copper_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE28 = registerBlock("waxed_exposed_copper_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE30 = registerBlock("waxed_exposed_copper_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE33 = registerBlock("waxed_exposed_copper_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANE34 = registerBlock("waxed_exposed_copper_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE = registerBlock("waxed_weathered_copper_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE1 = registerBlock("waxed_weathered_copper_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE2 = registerBlock("waxed_weathered_copper_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE3 = registerBlock("waxed_weathered_copper_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE4 = registerBlock("waxed_weathered_copper_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE5 = registerBlock("waxed_weathered_copper_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE6 = registerBlock("waxed_weathered_copper_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE7 = registerBlock("waxed_weathered_copper_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE8 = registerBlock("waxed_weathered_copper_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE9 = registerBlock("waxed_weathered_copper_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE10 = registerBlock("waxed_weathered_copper_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE11 = registerBlock("waxed_weathered_copper_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE12 = registerBlock("waxed_weathered_copper_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE13 = registerBlock("waxed_weathered_copper_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE14 = registerBlock("waxed_weathered_copper_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE15 = registerBlock("waxed_weathered_copper_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE16 = registerBlock("waxed_weathered_copper_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE17 = registerBlock("waxed_weathered_copper_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE18 = registerBlock("waxed_weathered_copper_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE19 = registerBlock("waxed_weathered_copper_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE20 = registerBlock("waxed_weathered_copper_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE21 = registerBlock("waxed_weathered_copper_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE22 = registerBlock("waxed_weathered_copper_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE23 = registerBlock("waxed_weathered_copper_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE24 = registerBlock("waxed_weathered_copper_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+     public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE26 = registerBlock("waxed_weathered_copper_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE27 = registerBlock("waxed_weathered_copper_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE28 = registerBlock("waxed_weathered_copper_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE30 = registerBlock("waxed_weathered_copper_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE33 = registerBlock("waxed_weathered_copper_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANE34 = registerBlock("waxed_weathered_copper_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE = registerBlock("waxed_oxidized_copper_vitrage_pane",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE1 = registerBlock("waxed_oxidized_copper_vitrage_pane1",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE2 = registerBlock("waxed_oxidized_copper_vitrage_pane2",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE3 = registerBlock("waxed_oxidized_copper_vitrage_pane3",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE4 = registerBlock("waxed_oxidized_copper_vitrage_pane4",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE5 = registerBlock("waxed_oxidized_copper_vitrage_pane5",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE6 = registerBlock("waxed_oxidized_copper_vitrage_pane6",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE7 = registerBlock("waxed_oxidized_copper_vitrage_pane7",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE8 = registerBlock("waxed_oxidized_copper_vitrage_pane8",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE9 = registerBlock("waxed_oxidized_copper_vitrage_pane9",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE10 = registerBlock("waxed_oxidized_copper_vitrage_pane10",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE11 = registerBlock("waxed_oxidized_copper_vitrage_pane11",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE12 = registerBlock("waxed_oxidized_copper_vitrage_pane12",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE13 = registerBlock("waxed_oxidized_copper_vitrage_pane13",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE14 = registerBlock("waxed_oxidized_copper_vitrage_pane14",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE15 = registerBlock("waxed_oxidized_copper_vitrage_pane15",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE16 = registerBlock("waxed_oxidized_copper_vitrage_pane16",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE17 = registerBlock("waxed_oxidized_copper_vitrage_pane17",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE18 = registerBlock("waxed_oxidized_copper_vitrage_pane18",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE19 = registerBlock("waxed_oxidized_copper_vitrage_pane19",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE20 = registerBlock("waxed_oxidized_copper_vitrage_pane20",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE21 = registerBlock("waxed_oxidized_copper_vitrage_pane21",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE22 = registerBlock("waxed_oxidized_copper_vitrage_pane22",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE23 = registerBlock("waxed_oxidized_copper_vitrage_pane23",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE24 = registerBlock("waxed_oxidized_copper_vitrage_pane24",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE26 = registerBlock("waxed_oxidized_copper_vitrage_pane26",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE27 = registerBlock("waxed_oxidized_copper_vitrage_pane27",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE28 = registerBlock("waxed_oxidized_copper_vitrage_pane28",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE30 = registerBlock("waxed_oxidized_copper_vitrage_pane30",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+   public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE33 = registerBlock("waxed_oxidized_copper_vitrage_pane33",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANE34 = registerBlock("waxed_oxidized_copper_vitrage_pane34",
+            () -> new VitragePaneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANEL1 = registerBlock("waxed_oxidized_copper_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANEL2 = registerBlock("waxed_oxidized_copper_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_VITRAGE_PANEL3 = registerBlock("waxed_oxidized_copper_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANEL1 = registerBlock("waxed_weathered_copper_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANEL2 = registerBlock("waxed_weathered_copper_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_VITRAGE_PANEL3 = registerBlock("waxed_weathered_copper_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANEL1 = registerBlock("waxed_exposed_copper_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANEL2 = registerBlock("waxed_exposed_copper_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_VITRAGE_PANEL3 = registerBlock("waxed_exposed_copper_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANEL1 = registerBlock("waxed_copper_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANEL2 = registerBlock("waxed_copper_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> WAXED_COPPER_VITRAGE_PANEL3 = registerBlock("waxed_copper_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANEL1 = registerBlock("cloud_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANEL2 = registerBlock("cloud_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> CLOUD_VITRAGE_PANEL3 = registerBlock("cloud_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANEL1 = registerBlock("darkmetal_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANEL2 = registerBlock("darkmetal_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(2.0F, 6.0F)));
+    public static final RegistryObject<Block> DARKMETAL_VITRAGE_PANEL3 = registerBlock("darkmetal_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(2.0F, 6.0F)));
+
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANEL1 = registerBlock("emerald_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANEL2 = registerBlock("emerald_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)));
+    public static final RegistryObject<Block> EMERALD_VITRAGE_PANEL3 = registerBlock("emerald_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)));
+
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANEL1 = registerBlock("gold_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANEL2 = registerBlock("gold_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+    public static final RegistryObject<Block> GOLD_VITRAGE_PANEL3 = registerBlock("gold_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER).strength(3.0F, 6.0F)));
+
+    public static final RegistryObject<Block> IRON_VITRAGE_PANEL1 = registerBlock("iron_vitrage_panel1",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANEL2 = registerBlock("iron_vitrage_panel2",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)));
+    public static final RegistryObject<Block> IRON_VITRAGE_PANEL3 = registerBlock("iron_vitrage_panel3",
+            () -> new VitragePanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)));
+
+    //curtains
+    public static final RegistryObject<Block> CURTAIN_WHITE = registerBlock("curtain_white",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_ORANGE = registerBlock("curtain_orange",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_MAGENTA = registerBlock("curtain_magenta",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_LIGHT_BLUE = registerBlock("curtain_light_blue",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_YELLOW = registerBlock("curtain_yellow",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_LIME = registerBlock("curtain_lime",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_PINK = registerBlock("curtain_pink",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_GRAY = registerBlock("curtain_gray",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_LIGHT_GRAY = registerBlock("curtain_light_gray",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_CYAN = registerBlock("curtain_cyan",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_PURPLE = registerBlock("curtain_purple",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_BLUE = registerBlock("curtain_blue",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_BROWN = registerBlock("curtain_brown",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_GREEN = registerBlock("curtain_green",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_RED = registerBlock("curtain_red",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+    public static final RegistryObject<Block> CURTAIN_BLACK = registerBlock("curtain_black",
+            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
+                    .noCollission().pushReaction(PushReaction.DESTROY), false));
+
+    //Blocks end here
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+    private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
+        return DecoItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static final Map<String, RegistryObject<Block>> BLOCK_MAP = new HashMap<>();
+    static {
+        BLOCKS.getEntries().forEach(entry ->
+                BLOCK_MAP.put(entry.getId().getPath(), entry)
+        );
+    }
+
+    public static RegistryObject<Block> getByName(String name) {
+        return BLOCK_MAP.get(name);
+
+    }
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
+}

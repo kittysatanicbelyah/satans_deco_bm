@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#satans_deco_bm:vitrages/iron",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:vitrages/gold",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:vitrages/emerald",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:vitrages/darkmetal",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:vitrages/cloud",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:vitrages/waxed_copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:vitrages/waxed_exposed_copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:vitrages/waxed_weathered_copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:vitrages/waxed_oxidized_copper",
+      "required": false
+    }
+  ]
+}
