@@ -33,6 +33,7 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changes
 #### Unclassified
+- [since 0.1.0] **Breaking:** Partition into 5 mods: Satan's deco: Bars Mayhem; Satan's deco: Curtainsanity; Satan's deco: Bars Mayhem Vitrage pack 1-3
 - [since 0.1.0] Optimize datagen
 #### Game Mechanics
 - [since 0.1.0] **Breaking:** Overhaul vitrages functionality
