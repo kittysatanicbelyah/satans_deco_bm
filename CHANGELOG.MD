@@ -33,7 +33,6 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changes
 #### Unclassified
-- [since 0.1.0] **Breaking:** Partition into 5 mods: Satan's deco: Bars Mayhem; Satan's deco: Curtainsanity; Satan's deco: Bars Mayhem Vitrage pack 1-3
 - [since 0.1.0] Optimize datagen
 #### Game Mechanics
 - [since 0.1.0] **Breaking:** Overhaul vitrages functionality
@@ -46,7 +45,18 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - [since 0.1.0] Remove Barses textures under numbers 25, 29, 31, 32
 
 
- ## [0.1.0] - 2026-06-05
+## [0.2.0] - 2026-06-15
+### Changed
+- **Breaking:** Move Vitrages into new project: Satan's deco: Bars Mayhem Vitrage Pack 1 ([dcfdc04](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/dcfdc04ce279e3785da0b9e7375df3372084762b))
+- **Breaking:** Move Curtains into new project: Satan's deco: Curtainsanity ([fc0f7e1](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/fc0f7e1635f18994f9d9e582f50247388843285e))
+- Change mod description to address breaking changes ([dcfdc04](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/dcfdc04ce279e3785da0b9e7375df3372084762b))
+
+### Removed
+- Remove Curtains class, tag, models, textures, datagen ([fc0f7e1](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/fc0f7e1635f18994f9d9e582f50247388843285e))
+- Remove Vitrages tags, datagen ([dcfdc04](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/dcfdc04ce279e3785da0b9e7375df3372084762b))
+
+
+ ## [0.1.0] - 2026-06-14
  ### Added
 #### Unclassified
 - Implement data generation of .json files in .../net/satan/deco_bm/datagen (Workflow improvement)
