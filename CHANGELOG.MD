@@ -38,6 +38,9 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 #### Game Mechanics
 - [since 0.1.0] **Breaking:** Overhaul vitrages functionality
 
+### Fixed
+- [since 0.1.0] Fix redstone power not working properly for multiple blocks
+
  ### Removed
 - [since 0.1.0] Remove Vitrages models other than panel_pane, panel_bars, side and side_alt
 - [since 0.1.0] Remove Barses textures under numbers 25, 29, 31, 32
