@@ -1346,58 +1346,6 @@ public static final RegistryObject<Block> COPPER_BARS1 = registerBlock("copper_b
             () -> new DecoWaxedPanelBigHoleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.COPPER)
                             .strength(3.0F, 6.0F)));
 
-
-
-    //curtains
-    public static final RegistryObject<Block> CURTAIN_WHITE = registerBlock("curtain_white",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_ORANGE = registerBlock("curtain_orange",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_MAGENTA = registerBlock("curtain_magenta",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_LIGHT_BLUE = registerBlock("curtain_light_blue",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_YELLOW = registerBlock("curtain_yellow",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_LIME = registerBlock("curtain_lime",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_PINK = registerBlock("curtain_pink",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_GRAY = registerBlock("curtain_gray",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_LIGHT_GRAY = registerBlock("curtain_light_gray",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_CYAN = registerBlock("curtain_cyan",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_PURPLE = registerBlock("curtain_purple",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_BLUE = registerBlock("curtain_blue",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_BROWN = registerBlock("curtain_brown",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_GREEN = registerBlock("curtain_green",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_RED = registerBlock("curtain_red",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-    public static final RegistryObject<Block> CURTAIN_BLACK = registerBlock("curtain_black",
-            () -> new TemplateCurtainBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).strength(0.8F).sound(SoundType.WOOL)
-                    .noCollission().pushReaction(PushReaction.DESTROY), false));
-
     //Blocks end here
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

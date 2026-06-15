@@ -50,8 +50,6 @@ public class DecoTags {
         public static final TagKey<Item> WAXED_WEATHERED_COPPER_PANELS = tag("panels/waxed_weathered_copper");
         public static final TagKey<Item> WAXED_OXIDIZED_COPPER_PANELS = tag("panels/waxed_oxidized_copper");
 
-        public static final TagKey<Item> CURTAINS = tag("curtains");
-
         private static TagKey<Item> tag(String name) {return ItemTags.create(new ResourceLocation(satans_deco_bm.MODID, name));}
     }
 }

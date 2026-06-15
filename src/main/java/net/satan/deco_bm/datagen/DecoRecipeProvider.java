@@ -606,39 +606,12 @@ public class DecoRecipeProvider extends RecipeProvider implements IConditionBuil
         waxedMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL2.get(), DecoBlocks.OXIDIZED_COPPER_PANEL2.get(), DecoBlocks.WAXED_COPPER_PANEL1.get());
         waxedMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL3.get(), DecoBlocks.OXIDIZED_COPPER_PANEL3.get(), DecoBlocks.WAXED_COPPER_PANEL1.get());
 
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_BLACK.get(), Blocks.BLACK_WOOL, Items.BLACK_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_GRAY.get(), Blocks.GRAY_WOOL, Items.GRAY_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_LIGHT_GRAY.get(), Blocks.LIGHT_GRAY_WOOL, Items.LIGHT_GRAY_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_WHITE.get(), Blocks.WHITE_WOOL, Items.WHITE_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_RED.get(), Blocks.RED_WOOL, Items.RED_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_BROWN.get(), Blocks.BROWN_WOOL, Items.BROWN_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_ORANGE.get(), Blocks.ORANGE_WOOL, Items.ORANGE_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_YELLOW.get(), Blocks.YELLOW_WOOL, Items.YELLOW_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_LIME.get(), Blocks.LIME_WOOL, Items.LIME_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_GREEN.get(), Blocks.GREEN_WOOL, Items.GREEN_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_CYAN.get(), Blocks.CYAN_WOOL, Items.CYAN_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_LIGHT_BLUE.get(), Blocks.LIGHT_BLUE_WOOL, Items.LIGHT_BLUE_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_BLUE.get(), Blocks.BLUE_WOOL, Items.BLUE_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_PURPLE.get(), Blocks.PURPLE_WOOL, Items.PURPLE_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_MAGENTA.get(), Blocks.MAGENTA_WOOL, Items.MAGENTA_DYE);
-        curtainsMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.CURTAIN_PINK.get(), Blocks.PINK_WOOL, Items.PINK_DYE);
     }
     protected static void vitrageMaking (Consumer<FinishedRecipe> recipe, RecipeCategory category, ItemLike result,
                                          ItemLike ingredient, ItemLike unlock) {
         ShapedRecipeBuilder.shaped(category, result, 2).pattern("ABA")
                 .define('A', ingredient).define('B', Items.GLASS_PANE)
                 .unlockedBy(getHasName(unlock), has(unlock)).save(recipe, satans_deco_bm.MODID +":"+ getItemName(result) + "_craft_from_non_vitrage");
-    }
-
-    protected static void curtainsMaking (Consumer<FinishedRecipe> recipe, RecipeCategory category, ItemLike result,
-                                          ItemLike ingredient, ItemLike dye) {
-        ShapedRecipeBuilder.shaped(category, result, 6).pattern("A").pattern("B")
-                .define('A', DecoTags.CItems.WOODEN_RODS).define('B', ingredient).unlockedBy(getHasName(Blocks.WHITE_WOOL), has(Blocks.WHITE_WOOL))
-                        .save(recipe);
-
-        ShapelessRecipeBuilder.shapeless(category, result, 1).requires(DecoTags.DecoItems.CURTAINS).requires(dye)
-                .unlockedBy(getHasName(ingredient), has(ingredient))
-                .save(recipe, satans_deco_bm.MODID +":"+ "dyed_to_" + getItemName(result));
     }
 
     protected static void barsMaking (Consumer<FinishedRecipe> recipe, RecipeCategory category, ItemLike result,

@@ -490,25 +490,6 @@ public class DecoItemModelProvider extends ItemModelProvider {
         simpleBlockItemNoLWaxed(DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL1);
         simpleBlockItemNoLWaxed(DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL2);
         simpleBlockItemNoLWaxed(DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL3);
-
-        //curtains
-        curtainBlockItem(DecoBlocks.CURTAIN_BLACK);
-        curtainBlockItem(DecoBlocks.CURTAIN_BLUE);
-        curtainBlockItem(DecoBlocks.CURTAIN_BROWN);
-        curtainBlockItem(DecoBlocks.CURTAIN_CYAN);
-        curtainBlockItem(DecoBlocks.CURTAIN_GRAY);
-        curtainBlockItem(DecoBlocks.CURTAIN_GREEN);
-        curtainBlockItem(DecoBlocks.CURTAIN_LIGHT_BLUE);
-        curtainBlockItem(DecoBlocks.CURTAIN_LIGHT_GRAY);
-        curtainBlockItem(DecoBlocks.CURTAIN_LIME);
-        curtainBlockItem(DecoBlocks.CURTAIN_MAGENTA);
-        curtainBlockItem(DecoBlocks.CURTAIN_ORANGE);
-        curtainBlockItem(DecoBlocks.CURTAIN_PINK);
-        curtainBlockItem(DecoBlocks.CURTAIN_PURPLE);
-        curtainBlockItem(DecoBlocks.CURTAIN_RED);
-        curtainBlockItem(DecoBlocks.CURTAIN_WHITE);
-        curtainBlockItem(DecoBlocks.CURTAIN_YELLOW);
-
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -521,12 +502,6 @@ public class DecoItemModelProvider extends ItemModelProvider {
         return withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated"))
                 .texture("layer0", new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()));
-    }
-
-    private ItemModelBuilder curtainBlockItem(RegistryObject<Block> block) {
-        return withExistingParent(block.getId().getPath(),
-                new ResourceLocation("item/generated"))
-                .texture("layer0", new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath() + "_single_lower"));
     }
 
     private ItemModelBuilder simpleBlockItemWaxed(RegistryObject<Block> block) {

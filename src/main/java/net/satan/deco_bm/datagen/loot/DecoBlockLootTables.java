@@ -489,24 +489,6 @@ public class DecoBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL2.get());
         this.dropSelf(DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL3.get());
 
-        //curtains
-        this.dropSelf(DecoBlocks.CURTAIN_BLACK.get());
-        this.dropSelf(DecoBlocks.CURTAIN_BLUE.get());
-        this.dropSelf(DecoBlocks.CURTAIN_BROWN.get());
-        this.dropSelf(DecoBlocks.CURTAIN_CYAN.get());
-        this.dropSelf(DecoBlocks.CURTAIN_GRAY.get());
-        this.dropSelf(DecoBlocks.CURTAIN_GREEN.get());
-        this.dropSelf(DecoBlocks.CURTAIN_LIGHT_BLUE.get());
-        this.dropSelf(DecoBlocks.CURTAIN_LIGHT_GRAY.get());
-        this.dropSelf(DecoBlocks.CURTAIN_LIME.get());
-        this.dropSelf(DecoBlocks.CURTAIN_MAGENTA.get());
-        this.dropSelf(DecoBlocks.CURTAIN_ORANGE.get());
-        this.dropSelf(DecoBlocks.CURTAIN_PINK.get());
-        this.dropSelf(DecoBlocks.CURTAIN_PURPLE.get());
-        this.dropSelf(DecoBlocks.CURTAIN_RED.get());
-        this.dropSelf(DecoBlocks.CURTAIN_WHITE.get());
-        this.dropSelf(DecoBlocks.CURTAIN_YELLOW.get());
-
         //loot tables end here
     }
 

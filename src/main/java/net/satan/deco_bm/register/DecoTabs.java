@@ -494,22 +494,6 @@ public static final RegistryObject<CreativeModeTab> BARS_TAB = CREATIVE_MODE_TAB
                         output.accept(DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL2.get());
                         output.accept(DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL3.get());
 
-                        output.accept(DecoBlocks.CURTAIN_YELLOW.get());
-                        output.accept(DecoBlocks.CURTAIN_WHITE.get());
-                        output.accept(DecoBlocks.CURTAIN_RED.get());
-                        output.accept(DecoBlocks.CURTAIN_PURPLE.get());
-                        output.accept(DecoBlocks.CURTAIN_LIME.get());
-                        output.accept(DecoBlocks.CURTAIN_PINK.get());
-                        output.accept(DecoBlocks.CURTAIN_ORANGE.get());
-                        output.accept(DecoBlocks.CURTAIN_MAGENTA.get());
-                        output.accept(DecoBlocks.CURTAIN_LIGHT_GRAY.get());
-                        output.accept(DecoBlocks.CURTAIN_LIGHT_BLUE.get());
-                        output.accept(DecoBlocks.CURTAIN_GREEN.get());
-                        output.accept(DecoBlocks.CURTAIN_GRAY.get());
-                        output.accept(DecoBlocks.CURTAIN_CYAN.get());
-                        output.accept(DecoBlocks.CURTAIN_BROWN.get());
-                        output.accept(DecoBlocks.CURTAIN_BLUE.get());
-                        output.accept(DecoBlocks.CURTAIN_BLACK.get());
                     })
                     .build());
 
