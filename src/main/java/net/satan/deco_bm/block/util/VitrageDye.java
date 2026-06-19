@@ -47,7 +47,6 @@ public enum VitrageDye implements StringRepresentable {
     }
 
     public int getId() {return this.id;}
-
     public static VitrageDye getById(int id) {return BY_ID.apply(id);}
 
     public static VitrageDye getDye(BlockState state) {
@@ -70,6 +69,68 @@ public enum VitrageDye implements StringRepresentable {
     }
 
     public static final EnumProperty<VitrageDye> VITRAGE_DYE = EnumProperty.create("vitrage_dye", VitrageDye.class);
+
+    public static final BiMap<VitrageDye, Item> DYE_TO_VANILLA_PANES;
+    static { DYE_TO_VANILLA_PANES = ImmutableBiMap.<VitrageDye, Item>builder()
+                .put(VitrageDye.NONE, Items.GLASS_PANE)
+                .put(VitrageDye.WHITE, Items.WHITE_STAINED_GLASS_PANE)
+                .put(VitrageDye.ORANGE, Items.ORANGE_STAINED_GLASS_PANE)
+                .put(VitrageDye.MAGENTA, Items.MAGENTA_STAINED_GLASS_PANE)
+                .put(VitrageDye.LIGHT_BLUE, Items.LIGHT_BLUE_STAINED_GLASS_PANE)
+                .put(VitrageDye.YELLOW, Items.YELLOW_STAINED_GLASS_PANE)
+                .put(VitrageDye.LIME, Items.LIME_STAINED_GLASS_PANE)
+                .put(VitrageDye.PINK, Items.PINK_STAINED_GLASS_PANE)
+                .put(VitrageDye.GRAY, Items.GRAY_STAINED_GLASS_PANE)
+                .put(VitrageDye.LIGHT_GRAY, Items.LIGHT_GRAY_STAINED_GLASS_PANE)
+                .put(VitrageDye.CYAN, Items.CYAN_STAINED_GLASS_PANE)
+                .put(VitrageDye.PURPLE, Items.PURPLE_STAINED_GLASS_PANE)
+                .put(VitrageDye.BLUE, Items.BLUE_STAINED_GLASS_PANE)
+                .put(VitrageDye.BROWN, Items.BROWN_STAINED_GLASS_PANE)
+                .put(VitrageDye.GREEN, Items.GREEN_STAINED_GLASS_PANE)
+                .put(VitrageDye.RED, Items.RED_STAINED_GLASS_PANE)
+                .put(VitrageDye.BLACK, Items.BLACK_STAINED_GLASS_PANE)
+                .build();
+    }
+    public static final BiMap<Item, VitrageDye> VANILLA_PANES_TO_DYE;
+    static {VANILLA_PANES_TO_DYE = DYE_TO_VANILLA_PANES.inverse();}
+
+  public static Optional<Item> getStainedPane(VitrageDye dye) {
+        return Optional.ofNullable(DYE_TO_VANILLA_PANES.get(dye));
+    }
+   public static Optional<VitrageDye> getDyeByPane(Item block) {
+        return Optional.ofNullable(VANILLA_PANES_TO_DYE.get(block));
+    }
+
+    public static final BiMap<VitrageDye, Item> DYE_TO_VANILLA_GLASS;
+    static { DYE_TO_VANILLA_GLASS = ImmutableBiMap.<VitrageDye, Item>builder()
+            .put(VitrageDye.NONE, Items.GLASS)
+            .put(VitrageDye.WHITE, Items.WHITE_STAINED_GLASS)
+            .put(VitrageDye.ORANGE, Items.ORANGE_STAINED_GLASS)
+            .put(VitrageDye.MAGENTA, Items.MAGENTA_STAINED_GLASS)
+            .put(VitrageDye.LIGHT_BLUE, Items.LIGHT_BLUE_STAINED_GLASS)
+            .put(VitrageDye.YELLOW, Items.YELLOW_STAINED_GLASS)
+            .put(VitrageDye.LIME, Items.LIME_STAINED_GLASS)
+            .put(VitrageDye.PINK, Items.PINK_STAINED_GLASS)
+            .put(VitrageDye.GRAY, Items.GRAY_STAINED_GLASS)
+            .put(VitrageDye.LIGHT_GRAY, Items.LIGHT_GRAY_STAINED_GLASS)
+            .put(VitrageDye.CYAN, Items.CYAN_STAINED_GLASS)
+            .put(VitrageDye.PURPLE, Items.PURPLE_STAINED_GLASS)
+            .put(VitrageDye.BLUE, Items.BLUE_STAINED_GLASS)
+            .put(VitrageDye.BROWN, Items.BROWN_STAINED_GLASS)
+            .put(VitrageDye.GREEN, Items.GREEN_STAINED_GLASS)
+            .put(VitrageDye.RED, Items.RED_STAINED_GLASS)
+            .put(VitrageDye.BLACK, Items.BLACK_STAINED_GLASS)
+            .build();
+    }
+    public static final BiMap<Item, VitrageDye> VANILLA_GLASS_TO_DYE;
+    static {VANILLA_GLASS_TO_DYE = DYE_TO_VANILLA_GLASS.inverse();}
+
+    public static Optional<Item> getStainedGlass(VitrageDye dye) {
+        return Optional.ofNullable(DYE_TO_VANILLA_GLASS.get(dye));
+    }
+    public static Optional<VitrageDye> getDyeByGlass(Item block) {
+        return Optional.ofNullable(VANILLA_GLASS_TO_DYE.get(block));
+    }
 
     public static final BiMap<VitrageDye, Item> DYE_TO_VANILLA_DYE;
     static { DYE_TO_VANILLA_DYE = ImmutableBiMap.<VitrageDye, Item>builder()
