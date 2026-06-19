@@ -2,19 +2,19 @@
   "replace": false,
   "values": [
     {
-      "id": "#satans_deco_bm:bars/iron",
+      "id": "#c:bars/iron",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/copper",
+      "id": "#c:bars/copper",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/gold",
+      "id": "#c:bars/gold",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/emerald",
+      "id": "#c:bars/emerald",
       "required": false
     },
     {
@@ -26,31 +26,31 @@
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/exposed_copper",
+      "id": "#c:bars/exposed_copper",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/weathered_copper",
+      "id": "#c:bars/weathered_copper",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/oxidized_copper",
+      "id": "#c:bars/oxidized_copper",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/waxed_copper",
+      "id": "#c:bars/waxed_copper",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/waxed_exposedcopper",
+      "id": "#c:bars/waxed_exposedcopper",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/waxed_weathered_copper",
+      "id": "#c:bars/waxed_weathered_copper",
       "required": false
     },
     {
-      "id": "#satans_deco_bm:bars/waxed_oxidized_copper",
+      "id": "#c:bars/waxed_oxidized_copper",
       "required": false
     }
   ]

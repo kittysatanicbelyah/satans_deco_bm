@@ -8,10 +8,6 @@
     {
       "id": "#satans_deco_bm:panels",
       "required": false
-    },
-    {
-      "id": "#satans_deco_bm:vitrages",
-      "required": false
     }
   ]
 }
