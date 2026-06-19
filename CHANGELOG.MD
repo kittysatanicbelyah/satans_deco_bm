@@ -32,6 +32,7 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - [since 0.1.0] Add Portuguese (pt_pt) translation
 - [since 0.3.0] Publish mod on Modrinth
 - [since 0.3.0] Port mod to 1.21.1
+- [since 0.3.1] Port mod to 26.x
 
 ### Changes
 #### Unclassified
@@ -41,6 +42,10 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Removed
 - [since 0.1.0] Remove Vitrages models other than panel_pane, panel_bars, side and side_alt
 - [since 0.1.0] Remove Barses textures under numbers 25, 29, 31, 32
+
+## [0.3.1] - 2026-06-20
+### Changed
+- Undo changes of `vitrageDye`
 
 
 ## [0.3.0] - 2026-06-19
