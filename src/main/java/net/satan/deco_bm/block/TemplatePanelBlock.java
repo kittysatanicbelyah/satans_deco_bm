@@ -4,10 +4,12 @@ import com.google.common.collect.ImmutableMap;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.protocol.game.DebugPackets;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockAndTintGetter;
@@ -33,10 +35,12 @@ public class TemplatePanelBlock extends Block implements SimpleWaterloggedBlock 
     public static final IntegerProperty ROTATION = IntegerProperty.create("rotation", 0, 3);
     private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
+    public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
+
     public TemplatePanelBlock (Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.X).setValue(ROTATION,
-                0).setValue(WATERLOGGED, false));
+                0).setValue(WATERLOGGED, false).setValue(POWERED, false));
     }
     public ImmutableMap<BlockState, VoxelShape> makeShapes() {
         return this.getShapeForEachState(state -> {
@@ -94,7 +98,7 @@ public class TemplatePanelBlock extends Block implements SimpleWaterloggedBlock 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
-        builder.add(AXIS, ROTATION, WATERLOGGED);
+        builder.add(AXIS, ROTATION, WATERLOGGED, POWERED);
     }
 
     @Override
@@ -144,15 +148,21 @@ public class TemplatePanelBlock extends Block implements SimpleWaterloggedBlock 
         }
         return InteractionResult.PASS;
     }
-    private boolean wasPowered = false;
+
     @Override
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
         super.neighborChanged(state, level, pos, neighborBlock, fromPos, moving);
-        boolean isPowered = level.getBestNeighborSignal(pos) > 0;
-        if (!level.isClientSide() && isPowered && !wasPowered) {
-                level.setBlock(pos, state.setValue(ROTATION, defineNextRotation(state.getValue(ROTATION))), 2);
-                  }
-        wasPowered = isPowered;
+        if (!level.isClientSide) {
+            boolean isPowered = level.hasNeighborSignal(pos);
+            boolean wasPowered = state.getValue(POWERED);
+            if (isPowered && !wasPowered) {
+                level.setBlock(pos, state.setValue(ROTATION, defineNextRotation(state.getValue(ROTATION))).setValue(POWERED, true), 2);
+                level.playSound((Entity) null, pos, SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.BLOCKS, 0.75F, 0.75F);
+            }
+            else if (!isPowered && wasPowered) {
+                level.setBlock(pos, state.setValue(POWERED, false), 3);
+            }
+        }
     }
 
     // supply methods

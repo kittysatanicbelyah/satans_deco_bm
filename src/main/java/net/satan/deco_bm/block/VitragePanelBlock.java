@@ -17,6 +17,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
@@ -31,14 +33,17 @@ public class VitragePanelBlock extends TemplatePanelBlock {
     public static final EnumProperty<Direction.Axis> AXIS = TemplatePanelBlock.AXIS;
     private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
+    public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
+
     public VitragePanelBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.X).setValue(ROTATION,
-                        0).setValue(WATERLOGGED, Boolean.valueOf(false)).setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")));
+                        0).setValue(WATERLOGGED, false)
+                .setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")).setValue(POWERED, false));
     }
 @Override
 protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-    builder.add(AXIS, ROTATION, WATERLOGGED, VITRAGE_DYE);
+    builder.add(AXIS, ROTATION, WATERLOGGED, VITRAGE_DYE, POWERED);
 }
 @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
@@ -78,24 +83,28 @@ protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockSt
         return InteractionResult.PASS;
     }
 
-    private boolean wasPowered = false;
     @Override
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
         super.neighborChanged(state, level, pos, neighborBlock, fromPos, moving);
-        boolean isPowered = level.getBestNeighborSignal(pos) > 0;
-        if (!level.isClientSide() && isPowered && !wasPowered) {
-            if (VitrageDye.getDye(state) != VitrageDye.NONE && level.getBestNeighborSignal(pos) <=7){
-                VitrageDye dye = VitrageDye.getDye(state);
-                level.setBlock(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")), 2);
-                level.addFreshEntity(VitragePaneBlock.vitrageDyeDropEntity(level, pos, dye));
+        if (!level.isClientSide) {
+            boolean isPowered = level.hasNeighborSignal(pos);
+            boolean wasPowered = state.getValue(POWERED);
+            if (!wasPowered && isPowered) {
+                if (VitrageDye.getDye(state) != VitrageDye.NONE && level.getBestNeighborSignal(pos) <= 7) {
+                    VitrageDye dye = VitrageDye.getDye(state);
+                    level.setBlock(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")), 2);
+                    level.addFreshEntity(VitragePaneBlock.vitrageDyeDropEntity(level, pos, dye));
 
-                level.playSound(null, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 1.0F);
+                    level.playSound(null, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 1.0F);
+                }
+                else if (level.getBestNeighborSignal(pos) >= 7) {
+                    level.setBlock(pos, state.setValue(ROTATION, defineNextRotation(state.getValue(ROTATION))), 2);
+                }
             }
-            else if (level.getBestNeighborSignal(pos) > 7) {
-                level.setBlock(pos, state.setValue(ROTATION, defineNextRotation(state.getValue(ROTATION))), 2);
+            else if (!isPowered && wasPowered) {
+                level.setBlock(pos, state.setValue(POWERED, false), 3);
             }
         }
-        wasPowered = isPowered;
     }
 
     @Override

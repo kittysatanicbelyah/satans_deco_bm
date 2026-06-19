@@ -6,6 +6,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -82,19 +83,17 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
         return InteractionResult.PASS;
     }
 
-    private boolean wasPowered = false;
     @Override
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
         super.neighborChanged(state, level, pos, neighborBlock, fromPos, moving);
-        boolean isPowered = level.getBestNeighborSignal(pos) > 0;
-        if (!level.isClientSide() && isPowered && !wasPowered && VitrageDye.getDye(state) != VitrageDye.NONE) {
+        boolean isPowered = level.hasNeighborSignal(pos);
+        if (!level.isClientSide() && isPowered && VitrageDye.getDye(state) != VitrageDye.NONE) {
                 VitrageDye dye = VitrageDye.getDye(state);
                 level.setBlockAndUpdate(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")));
                 level.addFreshEntity(vitrageDyeDropEntity(level, pos, dye));
 
-                level.playSound(null, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound((Entity) null, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 1.0F);
         }
-        wasPowered = isPowered;
     }
 
     @Override
