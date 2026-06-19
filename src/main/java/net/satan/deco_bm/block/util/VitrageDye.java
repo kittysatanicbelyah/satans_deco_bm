@@ -132,6 +132,31 @@ public enum VitrageDye implements StringRepresentable {
         return Optional.ofNullable(VANILLA_GLASS_TO_DYE.get(block));
     }
 
+    public static final BiMap<VitrageDye, String> DYE_TO_VANILLA_GLASS_STRING;
+    static { DYE_TO_VANILLA_GLASS_STRING = ImmutableBiMap.<VitrageDye, String>builder()
+            .put(VitrageDye.NONE, "block/glass")
+            .put(VitrageDye.WHITE, "block/white_stained_glass")
+            .put(VitrageDye.ORANGE, "block/orange_stained_glass")
+            .put(VitrageDye.MAGENTA, "block/magenta_stained_glass")
+            .put(VitrageDye.LIGHT_BLUE, "block/light_blue_stained_glass")
+            .put(VitrageDye.YELLOW, "block/yellow_stained_glass")
+            .put(VitrageDye.LIME,  "block/lime_stained_glass")
+            .put(VitrageDye.PINK, "block/pink_stained_glass")
+            .put(VitrageDye.GRAY, "block/gray_stained_glass")
+            .put(VitrageDye.LIGHT_GRAY, "block/light_gray_stained_glass")
+            .put(VitrageDye.CYAN,  "block/cyan_stained_glass")
+            .put(VitrageDye.PURPLE, "block/purple_stained_glass")
+            .put(VitrageDye.BLUE, "block/blue_stained_glass")
+            .put(VitrageDye.BROWN, "block/brown_stained_glass")
+            .put(VitrageDye.GREEN, "block/green_stained_glass")
+            .put(VitrageDye.RED, "block/red_stained_glass")
+            .put(VitrageDye.BLACK, "block/black_stained_glass")
+            .build();
+    }
+
+    public static Optional<String> getTextureGlass(VitrageDye dye) {
+        return Optional.ofNullable(DYE_TO_VANILLA_GLASS_STRING.get(dye));
+    }
     public static final BiMap<VitrageDye, Item> DYE_TO_VANILLA_DYE;
     static { DYE_TO_VANILLA_DYE = ImmutableBiMap.<VitrageDye, Item>builder()
             .put(VitrageDye.WHITE, Items.WHITE_DYE)
