@@ -22,6 +22,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
+
 import net.satan.deco_bm.block.util.DecoWeatheringCopper;
 
 public class DecoWeatheringCopperBarsBlock extends IronBarsBlock implements DecoWeatheringCopper {

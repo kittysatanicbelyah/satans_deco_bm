@@ -492,12 +492,6 @@ public class DecoItemModelProvider extends ItemModelProvider {
         simpleBlockItemNoLWaxed(DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL3);
     }
 
-    private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated"))
-                .texture("layer0", new ResourceLocation(satans_deco_bm.MODID, "item/" + item.getId().getPath()));
-    }
-
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> block) {
         return withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated"))

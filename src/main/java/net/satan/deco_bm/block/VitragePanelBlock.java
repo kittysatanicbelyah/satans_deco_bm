@@ -24,6 +24,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
 import net.satan.deco_bm.block.util.VitrageDye;
 
 public class VitragePanelBlock extends TemplatePanelBlock {

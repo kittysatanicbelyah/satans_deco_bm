@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.satan.deco_bm.register.DecoBlocks;
 import net.satan.deco_bm.register.DecoItems;
+import net.satan.deco_bm.register.DecoSounds;
 import net.satan.deco_bm.register.DecoTabs;
 import org.slf4j.Logger;
 
@@ -32,6 +33,7 @@ public class satans_deco_bm {
         DecoTabs.register(modEventBus);
         DecoBlocks.register(modEventBus);
         DecoItems.register(modEventBus);
+        DecoSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

@@ -17,8 +17,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
+
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
+
 import net.satan.deco_bm.block.util.DecoWeatheringCopper;
 
 public class DecoWeatheringCopperPanelBlock extends TemplatePanelBlock implements DecoWeatheringCopper {

@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableMap;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.network.protocol.game.DebugPackets;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -26,6 +25,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.satan.deco_bm.register.DecoSounds;
 
 import java.util.Objects;
 
@@ -142,7 +142,7 @@ public class TemplatePanelBlock extends Block implements SimpleWaterloggedBlock 
         @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
         if ((!entity.isShiftKeyDown() && entity.getMainHandItem().isEmpty()))  {
-            level.playSound(entity, pos, SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.BLOCKS, 0.75F, 0.75F);
+            level.playSound(entity, pos, DecoSounds.PANEL_ROTATES.get(), SoundSource.BLOCKS, 0.75F, 0.75F);
            level.setBlock(pos, state.setValue(ROTATION, defineNextRotation(state.getValue(ROTATION))), 4);
            return InteractionResult.SUCCESS;
         }
@@ -157,7 +157,7 @@ public class TemplatePanelBlock extends Block implements SimpleWaterloggedBlock 
             boolean wasPowered = state.getValue(POWERED);
             if (isPowered && !wasPowered) {
                 level.setBlock(pos, state.setValue(ROTATION, defineNextRotation(state.getValue(ROTATION))).setValue(POWERED, true), 2);
-                level.playSound((Entity) null, pos, SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.BLOCKS, 0.75F, 0.75F);
+                level.playSound((Entity) null, pos, DecoSounds.PANEL_ROTATES.get(), SoundSource.BLOCKS, 0.75F, 0.75F);
             }
             else if (!isPowered && wasPowered) {
                 level.setBlock(pos, state.setValue(POWERED, false), 3);

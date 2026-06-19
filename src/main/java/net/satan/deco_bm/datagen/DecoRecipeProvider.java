@@ -607,13 +607,6 @@ public class DecoRecipeProvider extends RecipeProvider implements IConditionBuil
         waxedMaking(recipe, RecipeCategory.DECORATIONS, DecoBlocks.WAXED_OXIDIZED_COPPER_PANEL3.get(), DecoBlocks.OXIDIZED_COPPER_PANEL3.get(), DecoBlocks.WAXED_COPPER_PANEL1.get());
 
     }
-    protected static void vitrageMaking (Consumer<FinishedRecipe> recipe, RecipeCategory category, ItemLike result,
-                                         ItemLike ingredient, ItemLike unlock) {
-        ShapedRecipeBuilder.shaped(category, result, 2).pattern("ABA")
-                .define('A', ingredient).define('B', Items.GLASS_PANE)
-                .unlockedBy(getHasName(unlock), has(unlock)).save(recipe, satans_deco_bm.MODID +":"+ getItemName(result) + "_craft_from_non_vitrage");
-    }
-
     protected static void barsMaking (Consumer<FinishedRecipe> recipe, RecipeCategory category, ItemLike result,
                                      ItemLike ingredient, int amount, ItemLike unlock, TagKey<Item> ingredient1) {
         ShapelessRecipeBuilder.shapeless(category, result, amount).requires(ingredient)
@@ -627,13 +620,6 @@ public class DecoRecipeProvider extends RecipeProvider implements IConditionBuil
         ShapelessRecipeBuilder.shapeless(category, result, 1).requires(ingredient).requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(unlock), has(unlock))
                 .save(recipe, satans_deco_bm.MODID+":" + getItemName(result) + "_waxing");
-    }
-
-    protected static void stonecutter(Consumer<FinishedRecipe> recipe, RecipeCategory category, ItemLike result,
-                                      ItemLike ingredient, int amount, ItemLike unlock) {
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ingredient), category, result, amount)
-                .unlockedBy(getHasName(unlock), has(unlock))
-                .save(recipe,  satans_deco_bm.MODID+":" + getItemName(result) + "_stonecutting");
     }
 
     protected static void stonecutterTag(Consumer<FinishedRecipe> recipe, RecipeCategory category, ItemLike result,

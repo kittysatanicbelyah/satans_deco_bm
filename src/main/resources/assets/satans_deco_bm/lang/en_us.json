@@ -3,6 +3,10 @@
   "creativetab.panels_tab": "Satan's deco Panels",
   "creativetab.vitrages_tab": "Satan's deco Vitrages",
 
+  "sounds.satans_deco_bm.vitrage_export": "Dye Taken From Vitrage",
+  "sounds.satans_deco_bm.vitrage_import": "Vitrage Dyed",
+  "sounds.satans_deco_bm.panel_rotates": "Panel Rotates",
+
   "block.satans_deco_bm.curtain_white": "White Curtain",
   "block.satans_deco_bm.curtain_light_gray": "Light Gray Curtain",
   "block.satans_deco_bm.curtain_gray": "Gray Curtain",

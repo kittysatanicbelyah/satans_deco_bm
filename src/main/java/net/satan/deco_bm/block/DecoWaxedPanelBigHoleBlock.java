@@ -5,6 +5,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
+
 import net.satan.deco_bm.block.util.DecoWeatheringCopper;
 
 public class DecoWaxedPanelBigHoleBlock extends PanelBigHoleBlock {

@@ -1,0 +1,29 @@
+{
+  "panel_rotates": {
+  "subtitle": "sounds.satans_deco_bm.panel_rotates",
+  "sounds": [
+    {
+      "type": "event",
+      "name": "minecraft:block.iron_trapdoor.close"
+    }
+   ]
+  },
+  "vitrage_import": {
+    "subtitle": "sounds.satans_deco_bm.vitrage_import",
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:block.glass.place"
+      }
+    ]
+  },
+  "vitrage_export": {
+    "subtitle": "sounds.satans_deco_bm.vitrage_export",
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:block.glass.break"
+      }
+    ]
+  }
+}

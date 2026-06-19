@@ -7,10 +7,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockModelBuilder;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import net.satan.deco_bm.block.util.VitrageDye;
 import net.satan.deco_bm.datagen.util.DecoSupGen;
 import net.satan.deco_bm.register.DecoBlocks;
 import net.satan.deco_bm.satans_deco_bm;
