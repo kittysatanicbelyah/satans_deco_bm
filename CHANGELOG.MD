@@ -30,22 +30,34 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - [since 0.1.0] Add Spanish (es_es) translation
 - [since 0.1.0] Add Ukrainian (uk_ua) translation
 - [since 0.1.0] Add Portuguese (pt_pt) translation
+- [since 0.3.0] Publish mod on Modrinth
+- [since 0.3.0] Port mod to 1.21.1
 
 ### Changes
 #### Unclassified
-- [since 0.1.0] Optimize datagen
-#### Game Mechanics
-- [since 0.1.0] **Breaking:** Overhaul vitrages functionality
+- [since 0.3.0] Change class naming from DecoName to BMName (Change of mod concept)
+- [since 0.1.0] Optimize datagen 
 
-### Fixed
-- [since 0.1.0] Fix redstone power not working properly for multiple blocks
-
- ### Removed
+### Removed
 - [since 0.1.0] Remove Vitrages models other than panel_pane, panel_bars, side and side_alt
 - [since 0.1.0] Remove Barses textures under numbers 25, 29, 31, 32
 
 
+## [0.3.0] - 2026-06-19
+### Added
+- Add sound events for Panels and Vitrages
+
+### Fixed
+- Fix redstone power not working properly for mod blocks
+- Fix mineable and c/bars tags
+
+### Removed
+- Remove unused code and imports
+
 ## [0.2.0] - 2026-06-15
+### Added
+- Publish mod on Curseforge
+
 ### Changed
 - **Breaking:** Move Vitrages into new project: Satan's deco: Bars Mayhem Vitrage Pack 1 ([dcfdc04](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/dcfdc04ce279e3785da0b9e7375df3372084762b))
 - **Breaking:** Move Curtains into new project: Satan's deco: Curtainsanity ([fc0f7e1](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/fc0f7e1635f18994f9d9e582f50247388843285e))
