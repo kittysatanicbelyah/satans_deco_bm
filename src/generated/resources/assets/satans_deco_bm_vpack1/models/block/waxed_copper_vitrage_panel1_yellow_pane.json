@@ -1,0 +1,7 @@
+{
+  "parent": "satans_deco_bm:block/vitrage/vitrage_panel_pane",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "pane": "minecraft:block/yellow_stained_glass"
+  }
+}

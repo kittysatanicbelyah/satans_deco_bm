@@ -1,0 +1,10 @@
+{
+  "parent": "satans_deco_bm:block/vitrage/vitrage_side",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "bars": "satans_deco_bm:block/exposed_copper_bars4",
+    "edge": "satans_deco_bm:block/exposed_copper_bars",
+    "pane": "minecraft:block/gray_stained_glass",
+    "particle": "satans_deco_bm:block/exposed_copper_bars4"
+  }
+}

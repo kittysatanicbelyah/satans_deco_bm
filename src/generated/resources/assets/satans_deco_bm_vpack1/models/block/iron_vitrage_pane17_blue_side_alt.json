@@ -1,0 +1,10 @@
+{
+  "parent": "satans_deco_bm:block/vitrage/vitrage_side_alt",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "bars": "satans_deco_bm:block/iron_bars17",
+    "edge": "minecraft:block/iron_bars",
+    "pane": "minecraft:block/blue_stained_glass",
+    "particle": "satans_deco_bm:block/iron_bars17"
+  }
+}

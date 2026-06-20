@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "satans_deco_bm_vpack1:waxed_exposed_copper_vitrage_pane11"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "satans_deco_bm_vpack1:blocks/waxed_exposed_copper_vitrage_pane11"
+}
