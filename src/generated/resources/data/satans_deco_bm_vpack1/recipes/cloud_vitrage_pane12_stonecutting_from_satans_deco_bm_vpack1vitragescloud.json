@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "satans_deco_bm_vpack1:vitrages/cloud"
+  },
+  "result": "satans_deco_bm_vpack1:cloud_vitrage_pane12"
+}

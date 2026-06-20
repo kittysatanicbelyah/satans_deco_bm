@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "satans_deco_bm_vpack1:vitrages/gold"
+  },
+  "result": "satans_deco_bm_vpack1:gold_vitrage_pane16"
+}

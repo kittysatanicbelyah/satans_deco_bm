@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "satans_deco_bm_vpack1:vitrages/waxed_weathered_copper"
+  },
+  "result": "satans_deco_bm_vpack1:waxed_weathered_copper_vitrage_pane5"
+}

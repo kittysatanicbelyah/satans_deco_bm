@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "satans_deco_bm:waxed_copper_bars8"
+    },
+    "B": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "satans_deco_bm_vpack1:waxed_copper_vitrage_pane8"
+  },
+  "show_notification": true
+}

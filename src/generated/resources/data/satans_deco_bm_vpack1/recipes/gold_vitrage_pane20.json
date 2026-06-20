@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "satans_deco_bm_vpack1:gold_vitrage_pane19"
+    }
+  ],
+  "result": {
+    "item": "satans_deco_bm_vpack1:gold_vitrage_pane20"
+  }
+}

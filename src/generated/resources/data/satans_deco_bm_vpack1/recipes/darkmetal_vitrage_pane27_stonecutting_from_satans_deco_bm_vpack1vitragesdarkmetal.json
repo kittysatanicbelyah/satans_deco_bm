@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "satans_deco_bm_vpack1:vitrages/darkmetal"
+  },
+  "result": "satans_deco_bm_vpack1:darkmetal_vitrage_pane27"
+}
