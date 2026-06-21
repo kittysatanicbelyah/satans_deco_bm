@@ -1,3 +1,5 @@
+![Bars Mayhem Banner](https://github.com/kittysatanicbelyah/satans_deco_bm/blob/master/bmbanner1.png)
+
 # Satan's deco: Bars Mayhem
 
 ## About Satan's deco
