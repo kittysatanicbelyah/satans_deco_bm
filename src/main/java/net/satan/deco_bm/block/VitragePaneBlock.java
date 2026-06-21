@@ -22,6 +22,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import net.satan.deco_bm.block.util.VitrageDye;
+import net.satan.deco_bm.register.DecoSounds;
 
 public class VitragePaneBlock extends IronBarsBlock {
 
@@ -61,7 +62,7 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
                 level.addFreshEntity(vitrageDyeDropEntity(level, pos, dye));
             }
 
-            level.playSound(entity, pos, SoundEvents.GLASS_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+            level.playSound(entity, pos, DecoSounds.VITRAGE_IMPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
 
             String dyeName = VitrageDye.getById(dyeId).getSerializedName().toUpperCase();
             level.setBlock(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, dyeName)), 4);
@@ -74,7 +75,7 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
 
             level.addFreshEntity(vitrageDyeDropEntity(level, pos, dye));
 
-            level.playSound(entity, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 1.0F);
+            level.playSound(entity, pos, DecoSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.PASS;
@@ -89,7 +90,7 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
                 level.setBlockAndUpdate(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")));
                 level.addFreshEntity(vitrageDyeDropEntity(level, pos, dye));
 
-                level.playSound((Entity) null, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound((Entity) null, pos, DecoSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
         }
     }
 
