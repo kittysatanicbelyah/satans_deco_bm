@@ -26,5 +26,5 @@ Modrinth is currently unsupported, but there are plans for it.
 ## Other mods of **Satan's deco** project
 Check out!
 
-- [Satan's deco: Bars Mayhem Vitrage Pack 1]
-- Satan's deco: Curtainsanity - Github (https://github.com/kittysatanicbelyah/satans_deco_ci)
+- Satan's deco: Bars Mayhem Vitrage Pack 1 - [Github](https://github.com/kittysatanicbelyah/satans_deco_bm/tree/vpack1-1.20.1); [Curseforge](https://www.curseforge.com/minecraft/mc-mods/satans-deco-bars-mayhem-vitrage-pack-1).
+- Satan's deco: Curtainsanity - [Github](https://github.com/kittysatanicbelyah/satans_deco_ci); [Curseforge](https://www.curseforge.com/minecraft/mc-mods/satans-deco-curtainsanity).
