@@ -36,12 +36,21 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changes
 #### Unclassified
-- [since 0.3.0] Change class naming from DecoName to BMName (Change of mod concept)
+- [since 0.3.0] Change class naming from DecoName to BMName
 - [since 0.1.0] Optimize datagen 
 
 ### Removed
-- [since 0.1.0] Remove Vitrages models other than panel_pane, panel_bars, side and side_alt
 - [since 0.1.0] Remove Barses textures under numbers 25, 29, 31, 32
+
+## [0.3.2] - 2026-07-03
+### Added
+#### Game Mechanics
+- Add custom collision boxes for variations under numbers 3, 4, 7, 8, 21
+#### Textures & Models
+- Add connected glass models for vitrages
+
+## Removed
+- Remove Vitrages models other than panel_pane, panel_bars, side and side_alt
 
 ## [0.3.1] - 2026-06-20
 ### Changed
@@ -58,6 +67,7 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Removed
 - Remove unused code and imports
+
 
 ## [0.2.0] - 2026-06-15
 ### Added
