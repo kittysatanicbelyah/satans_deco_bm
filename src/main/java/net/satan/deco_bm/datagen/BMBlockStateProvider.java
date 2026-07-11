@@ -500,15 +500,10 @@ public class BMBlockStateProvider extends BlockStateProvider {
     panelBlockState(BMBlocks.WAXED_OXIDIZED_COPPER_PANEL1);
     panelBlockState(BMBlocks.WAXED_OXIDIZED_COPPER_PANEL2);
     panelBlockState(BMBlocks.WAXED_OXIDIZED_COPPER_PANEL3);
-
 }
 
     //inputs manipulation
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-    simpleBlockWithItem (blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
-    }
-
-//default bars. Dont think much about textures. They're set in DecoBlockModProvider currently
+//default bars. Don't think much about textures. They're set in DecoBlockModProvider currently
     private void barsBlockState(RegistryObject<Block> block) {
         RegistryObject<Block> wax = block;
         if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
@@ -577,14 +572,10 @@ public class BMBlockStateProvider extends BlockStateProvider {
 
     //bars with different side and side_alt UV and false ends
     private void barsNonstraightFalseEndsBlockState(RegistryObject<Block> block) {
-        RegistryObject<Block> wax = block;
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-        barsBlockNonstraightFalseEndsInternal(wax.get(), wax.getId().toString(),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(mId, blockId));
+        barsBlockNonstraightFalseEndsInternal(block.get(), block.getId().toString(),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"));
 
     }
     private void barsBlockNonstraightFalseEndsInternal(Block block, String baseName,
@@ -599,14 +590,10 @@ public class BMBlockStateProvider extends BlockStateProvider {
 
     //bars with no lower cap of side and side_alt
     private void barsVBlockState(RegistryObject<Block> block) {
-        RegistryObject<Block> wax = block;
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-        barsBlockVInternal(wax.get(), wax.getId().toString(),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(mId, blockId));
+        barsBlockVInternal(block.get(), block.getId().toString(),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"));
 
     }
     private void barsBlockVInternal(Block block, String baseName,
@@ -623,14 +610,10 @@ public class BMBlockStateProvider extends BlockStateProvider {
 
     //bars with no lower parts of side and side_alt + false post_ends
     private void barsUBlockState(RegistryObject<Block> block) {
-        RegistryObject<Block> wax = block;
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-        barsBlockUInternal(wax.get(), wax.getId().toString(),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(mId, blockId));
+        barsBlockUInternal(block.get(), block.getId().toString(),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"));
 
     }
     private void barsBlockUInternal(Block block, String baseName,
@@ -646,14 +629,10 @@ public class BMBlockStateProvider extends BlockStateProvider {
     }
     //bars with no cap and cap_alt + no lower parts of side and side_alt + false post_ends
     private void barsUNoCapBlockState(RegistryObject<Block> block) {
-        RegistryObject<Block> wax = block;
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-        barsBlockUNoCapInternal(wax.get(), wax.getId().toString(),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(mId, blockId));
+        barsBlockUNoCapInternal(block.get(), block.getId().toString(),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"));
     }
     private void barsBlockUNoCapInternal(Block block, String baseName,
                                     ResourceLocation particle, ResourceLocation bars,
@@ -667,14 +646,10 @@ public class BMBlockStateProvider extends BlockStateProvider {
 
     //bars with no lower cap of side and side_alt and upside down
     private void barsReverseVBlockState(RegistryObject<Block> block) {
-        RegistryObject<Block> wax = block;
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-        barsBlockReverseVInternal(wax.get(), wax.getId().toString(),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(mId, blockId));
+        barsBlockReverseVInternal(block.get(), block.getId().toString(),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"));
 
     }
     private void barsBlockReverseVInternal(Block block, String baseName,
@@ -691,14 +666,10 @@ public class BMBlockStateProvider extends BlockStateProvider {
 
     //bars with no lower parts of side and side_alt
     private void barsReverseUBlockState(RegistryObject<Block> block) {
-        RegistryObject<Block> wax = block;
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-        barsBlockReverseUInternal(wax.get(), wax.getId().toString(),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(mId, blockId));
+        barsBlockReverseUInternal(block.get(), block.getId().toString(),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"));
 
     }
     private void barsBlockReverseUInternal(Block block, String baseName,
@@ -715,14 +686,10 @@ public class BMBlockStateProvider extends BlockStateProvider {
 
     //bars with no cap and cap_alt + no lower parts of side and side_alt
     private void barsReverseUNoCapBlockState(RegistryObject<Block> block) {
-        RegistryObject<Block> wax = block;
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-        barsBlockReverseUNoCapInternal(wax.get(), wax.getId().toString(),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath()),
-                new ResourceLocation(mId, blockId));
+        barsBlockReverseUNoCapInternal(block.get(), block.getId().toString(),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"),
+                new ResourceLocation("block/iron_bars"));
 
     }
     private void barsBlockReverseUNoCapInternal(Block block, String baseName,
@@ -744,7 +711,6 @@ public class BMBlockStateProvider extends BlockStateProvider {
                 .end();
         PipeBlock.PROPERTY_BY_DIRECTION.entrySet().forEach(e -> {
             Direction dir = e.getKey();
-            BooleanProperty dir1 = e.getValue();
 
             if (dir.getAxis().isHorizontal()) {
                 boolean alt = dir == Direction.SOUTH;
@@ -769,7 +735,6 @@ public class BMBlockStateProvider extends BlockStateProvider {
                 .end();
         PipeBlock.PROPERTY_BY_DIRECTION.entrySet().forEach(e -> {
             Direction dir = e.getKey();
-            BooleanProperty dir1 = e.getValue();
             if (dir.getAxis().isHorizontal()) {
                 boolean alt = dir == Direction.SOUTH;
                 builder.part().modelFile(alt || dir == Direction.WEST ? sideAlt : side)
@@ -790,7 +755,6 @@ public class BMBlockStateProvider extends BlockStateProvider {
                 .end();
         PipeBlock.PROPERTY_BY_DIRECTION.entrySet().forEach(e -> {
             Direction dir = e.getKey();
-            BooleanProperty dir1 = e.getValue();
             if (dir.getAxis().isHorizontal()) {
                 boolean alt = dir == Direction.SOUTH;
                 builder.part().modelFile(alt || dir == Direction.WEST ? sideAlt : side)
@@ -812,7 +776,6 @@ public class BMBlockStateProvider extends BlockStateProvider {
                 .end();
         PipeBlock.PROPERTY_BY_DIRECTION.entrySet().forEach(e -> {
             Direction dir = e.getKey();
-            BooleanProperty dir1 = e.getValue();
             if (dir.getAxis().isHorizontal()) {
                 boolean alt = dir == Direction.SOUTH;
                 builder.part().modelFile(alt || dir == Direction.WEST ? sideAlt : side)

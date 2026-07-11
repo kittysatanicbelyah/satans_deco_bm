@@ -196,19 +196,15 @@ public class ArchBMWeatheringCopperBarsBlock extends BMWeatheringCopperBarsBlock
             if (p_52366_.getValue(NORTH)) {
                 i |= indexFor(Direction.NORTH);
             }
-
             if (p_52366_.getValue(EAST)) {
                 i |= indexFor(Direction.EAST);
             }
-
             if (p_52366_.getValue(SOUTH)) {
                 i |= indexFor(Direction.SOUTH);
             }
-
             if (p_52366_.getValue(WEST)) {
                 i |= indexFor(Direction.WEST);
             }
-
             return i;
         });
     }

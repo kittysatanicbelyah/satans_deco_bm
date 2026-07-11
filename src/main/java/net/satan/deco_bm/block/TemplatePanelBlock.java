@@ -24,6 +24,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
 import net.satan.deco_bm.register.BMSounds;
 
 import java.util.Objects;
@@ -86,7 +87,7 @@ public class TemplatePanelBlock extends Block implements SimpleWaterloggedBlock 
 
     @Override
     public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
-        return adjacentBlockState.getBlock() == this ? true : super.skipRendering(state, adjacentBlockState, side);
+        return adjacentBlockState.getBlock() == this || super.skipRendering(state, adjacentBlockState, side);
     }
 
     @Override

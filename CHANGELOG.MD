@@ -35,12 +35,12 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - [since 0.3.1] Port mod to 26.x
 
 ### Changes
-#### Unclassified
 - [since 0.3.0] Change class naming from DecoName to BMName
 - [since 0.1.0] Optimize datagen 
 
 ### Removed
 - [since 0.1.0] Remove Barses textures under numbers 25, 29, 31, 32
+
 
 ## [0.3.2] - 2026-07-03
 ### Added
@@ -51,6 +51,7 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Removed
 - Remove Vitrages models other than panel_pane, panel_bars, side and side_alt
+
 
 ## [0.3.1] - 2026-06-20
 ### Changed

@@ -1,6 +1,5 @@
 package net.satan.deco_bm.block;
 
-import com.google.common.collect.ImmutableMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;
@@ -23,7 +22,6 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.shapes.VoxelShape;
 
 import net.satan.deco_bm.block.util.VitrageDye;
 import net.satan.deco_bm.register.BMSounds;
@@ -33,7 +31,6 @@ public class VitragePanelBlock extends TemplatePanelBlock {
     public static final EnumProperty<VitrageDye> VITRAGE_DYE = VitrageDye.VITRAGE_DYE;
     public static final IntegerProperty ROTATION = TemplatePanelBlock.ROTATION;
     public static final EnumProperty<Direction.Axis> AXIS = TemplatePanelBlock.AXIS;
-    private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
@@ -50,7 +47,7 @@ protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockSt
 @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
         VitrageDye dye = VitrageDye.getDye(state);
-        int dyeId = 0;
+        int dyeId;
         if (entity.getMainHandItem().getItem() instanceof DyeItem) {
             ItemStack itemStack = entity.getMainHandItem();
             dyeId = (DyeColor.getColor(itemStack).getId() + 1);

@@ -1,58 +1,114 @@
 {
   "variants": {
-    "axis=x,rotation=0,waterlogged=false": {
+    "axis=x,powered=false,rotation=0,waterlogged=false": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_0"
     },
-    "axis=x,rotation=0,waterlogged=true": {
+    "axis=x,powered=false,rotation=0,waterlogged=true": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_0"
     },
-    "axis=x,rotation=1,waterlogged=false": {
+    "axis=x,powered=false,rotation=1,waterlogged=false": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_1"
     },
-    "axis=x,rotation=1,waterlogged=true": {
+    "axis=x,powered=false,rotation=1,waterlogged=true": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_1"
     },
-    "axis=x,rotation=2,waterlogged=false": {
+    "axis=x,powered=false,rotation=2,waterlogged=false": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_2"
     },
-    "axis=x,rotation=2,waterlogged=true": {
+    "axis=x,powered=false,rotation=2,waterlogged=true": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_2"
     },
-    "axis=x,rotation=3,waterlogged=false": {
+    "axis=x,powered=false,rotation=3,waterlogged=false": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_3"
     },
-    "axis=x,rotation=3,waterlogged=true": {
+    "axis=x,powered=false,rotation=3,waterlogged=true": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_3"
     },
-    "axis=z,rotation=0,waterlogged=false": {
+    "axis=x,powered=true,rotation=0,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_0"
+    },
+    "axis=x,powered=true,rotation=0,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_0"
+    },
+    "axis=x,powered=true,rotation=1,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_1"
+    },
+    "axis=x,powered=true,rotation=1,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_1"
+    },
+    "axis=x,powered=true,rotation=2,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_2"
+    },
+    "axis=x,powered=true,rotation=2,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_2"
+    },
+    "axis=x,powered=true,rotation=3,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_3"
+    },
+    "axis=x,powered=true,rotation=3,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_3"
+    },
+    "axis=z,powered=false,rotation=0,waterlogged=false": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_0",
       "y": 270
     },
-    "axis=z,rotation=0,waterlogged=true": {
+    "axis=z,powered=false,rotation=0,waterlogged=true": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_0",
       "y": 270
     },
-    "axis=z,rotation=1,waterlogged=false": {
+    "axis=z,powered=false,rotation=1,waterlogged=false": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_1",
       "y": 270
     },
-    "axis=z,rotation=1,waterlogged=true": {
+    "axis=z,powered=false,rotation=1,waterlogged=true": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_1",
       "y": 270
     },
-    "axis=z,rotation=2,waterlogged=false": {
+    "axis=z,powered=false,rotation=2,waterlogged=false": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_2",
       "y": 270
     },
-    "axis=z,rotation=2,waterlogged=true": {
+    "axis=z,powered=false,rotation=2,waterlogged=true": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_2",
       "y": 270
     },
-    "axis=z,rotation=3,waterlogged=false": {
+    "axis=z,powered=false,rotation=3,waterlogged=false": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_3",
       "y": 270
     },
-    "axis=z,rotation=3,waterlogged=true": {
+    "axis=z,powered=false,rotation=3,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_3",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=0,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_0",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=0,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_0",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=1,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_1",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=1,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_1",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=2,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_2",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=2,waterlogged=true": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_2",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=3,waterlogged=false": {
+      "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_3",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=3,waterlogged=true": {
       "model": "satans_deco_bm:block/waxed_exposed_copper_panel2_rotation_3",
       "y": 270
     }

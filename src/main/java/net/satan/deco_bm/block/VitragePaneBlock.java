@@ -30,11 +30,11 @@ public class VitragePaneBlock extends IronBarsBlock {
     public VitragePaneBlock(BlockBehaviour.Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
-                .setValue(NORTH, Boolean.valueOf(false))
-                .setValue(EAST, Boolean.valueOf(false))
-                .setValue(SOUTH, Boolean.valueOf(false))
-                .setValue(WEST, Boolean.valueOf(false))
-                .setValue(WATERLOGGED, Boolean.valueOf(false))
+                .setValue(NORTH, false)
+                .setValue(EAST, false)
+                .setValue(SOUTH, false)
+                .setValue(WEST, false)
+                .setValue(WATERLOGGED, false)
                 .setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")));
     }
 
@@ -51,7 +51,7 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
 @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
         VitrageDye dye = VitrageDye.getDye(state);
-        int dyeId = 0;
+        int dyeId;
         if (entity.getMainHandItem().getItem() instanceof DyeItem) {
             ItemStack itemStack = entity.getMainHandItem();
             dyeId = (DyeColor.getColor(itemStack).getId() + 1);

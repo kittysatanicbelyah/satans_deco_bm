@@ -10,8 +10,8 @@ import net.satan.deco_bm.register.BMBlocks;
 
 import java.util.Set;
 
-public class DecoBlockLootTables extends BlockLootSubProvider {
-    public DecoBlockLootTables() {
+public class BMBlockLootTables extends BlockLootSubProvider {
+    public BMBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 

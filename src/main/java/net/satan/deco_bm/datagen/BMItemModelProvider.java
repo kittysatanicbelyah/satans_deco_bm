@@ -7,10 +7,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.satan.deco_bm.datagen.util.BMSupGen;
+
 import net.satan.deco_bm.register.BMBlocks;
 import net.satan.deco_bm.satans_deco_bm;
 
@@ -519,36 +517,5 @@ public class BMItemModelProvider extends ItemModelProvider {
                 new ResourceLocation("item/generated"))
                 .texture("layer0", new ResourceLocation(satans_deco_bm.MODID, "block/" + panel1
                         .replace("l","").replace("waxed_", "")));
-    }
-
-    private ItemModelBuilder vitrageTwoLayeredBlockItem(RegistryObject<Block> block) {
-        RegistryObject<Block> textureBlock = block;
-        String mId = satans_deco_bm.MODID;
-        String texturePath = block.getId().getPath().replace("_vitrage_pane","_bars");
-        if(texturePath.equals("iron_bars")) {textureBlock = RegistryObject.create(
-                    new ResourceLocation("minecraft", "iron_bars"), ForgeRegistries.BLOCKS);
-        mId = "minecraft";
-        }
-        else textureBlock = BMBlocks.getByName(texturePath);
-        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = BMSupGen.getDecoNonWaxed(textureBlock);
-        return withExistingParent(block.getId().getPath(),
-                new ResourceLocation("item/generated"))
-                .texture("layer0", new ResourceLocation("minecraft", "block/glass"))
-                .texture("layer1", new ResourceLocation(mId, "block/" + textureBlock.getId().getPath()));
-    }
-
-    private ItemModelBuilder vitrageTwoLayeredPanelBlockItem(RegistryObject<Block> block) {
-        String mId = satans_deco_bm.MODID;
-        String texturePath = block.getId().getPath().replace("_vitrage_panel","_panel");
-        RegistryObject<Block> textureBlock = BMBlocks.getByName(texturePath);
-        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = BMSupGen.getDecoNonWaxed(textureBlock);
-
-        int num1 = (Integer.parseInt(textureBlock.getId().getPath().replaceAll("[^\\d]", "")) * 4) - 3;
-        String panel1 = textureBlock.getId().getPath().replaceAll("[\\dl]", "") + num1;
-
-        return withExistingParent(block.getId().getPath(),
-                new ResourceLocation("item/generated"))
-                .texture("layer0", new ResourceLocation("minecraft", "block/glass"))
-                .texture("layer1", new ResourceLocation(mId, "block/" + panel1));
     }
 }

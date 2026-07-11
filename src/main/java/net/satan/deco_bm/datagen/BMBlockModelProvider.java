@@ -642,23 +642,6 @@ public class BMBlockModelProvider extends BlockModelProvider {
         return null;
     }
 
-    private BlockModelBuilder barsVNoCapModels(RegistryObject<Block> block) {
-        String name = block.getId().toString();
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-
-        ResourceLocation bars = new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath());
-        ResourceLocation edge = new ResourceLocation(mId, blockId);
-        for (BlockModelBuilder blockModelBuilder : Arrays.asList(barsPost(name, bars, edge),
-                barsPostEnds(name, bars, edge),
-                barsSideV(name, bars, bars, bars),
-                barsSideAltV(name, bars, bars, bars))) {
-            return blockModelBuilder;
-        }
-        return null;
-    }
-
     private BlockModelBuilder barsUModels(RegistryObject<Block> block) {
         String name = block.getId().toString();
         if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
@@ -673,23 +656,6 @@ public class BMBlockModelProvider extends BlockModelProvider {
                 barsSideAltU(name, bars, bars, edge),
                 barsCap(name, bars, edge, edge),
                 barsCapAlt(name, bars, edge, edge))) {
-            return blockModelBuilder;
-        }
-        return null;
-    }
-
-    private BlockModelBuilder barsReverseVNoCapModels(RegistryObject<Block> block) {
-        String name = block.getId().toString();
-        if (block.getId().getPath().contains("waxed_")) block = BMSupGen.getDecoNonWaxed(block);
-        String blockId = BMSupGen.BlockIdFilter(block);
-        String mId = BMSupGen.ModIdFilter(block);
-
-        ResourceLocation bars = new ResourceLocation(satans_deco_bm.MODID, "block/" + block.getId().getPath());
-        ResourceLocation edge = new ResourceLocation(mId, blockId);
-        for (BlockModelBuilder blockModelBuilder : Arrays.asList(barsPost(name, bars, edge),
-                barsPostEnds(name, bars, edge),
-                barsSideReverseV(name, bars, bars, bars),
-                barsSideAltReverseV(name, bars, bars, bars))) {
             return blockModelBuilder;
         }
         return null;
