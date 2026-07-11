@@ -14,6 +14,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
@@ -21,12 +23,12 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
 
-import net.satan.deco_bm.block.util.DecoWeatheringCopper;
+import net.satan.deco_bm.block.util.BMWeatheringCopper;
 
-public class DecoWeatheringCopperPanelBigHoleBlock extends PanelBigHoleBlock implements DecoWeatheringCopper {
-    private final WeatherState weatherState;
+public class BMWeatheringCopperBarsBlock extends IronBarsBlock implements BMWeatheringCopper {
+    private final BMWeatheringCopper.WeatherState weatherState;
 
-    public DecoWeatheringCopperPanelBigHoleBlock(WeatherState p_154951_, Properties p_154953_) {
+    public BMWeatheringCopperBarsBlock(BMWeatheringCopper.WeatherState p_154951_, BlockBehaviour.Properties p_154953_) {
         super(p_154953_);
         this.weatherState = p_154951_;
     }
@@ -35,16 +37,19 @@ public class DecoWeatheringCopperPanelBigHoleBlock extends PanelBigHoleBlock imp
         this.onRandomTick(p_222675_, p_222676_, p_222677_, p_222678_);
     }
 
+    public boolean isRandomlyTicking(BlockState p_154961_) {
+        return BMWeatheringCopper.getNext(p_154961_.getBlock()).isPresent();
+    }
+
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
         ItemStack itemStack = entity.getMainHandItem();
         if (itemStack.is(Items.HONEYCOMB)) {
-            DecoWeatheringCopper.getWaxed(state).map((blockState) -> {
-                if (entity instanceof ServerPlayer) {
-                    CriteriaTriggers.ITEM_USED_ON_BLOCK.trigger((ServerPlayer)entity, pos, itemStack);}
-               if (!entity.isCreative()) {
-                   itemStack.shrink(1);
-               }
+            BMWeatheringCopper.getWaxed(state).map((blockState) -> {
+                if (entity instanceof ServerPlayer) {CriteriaTriggers.ITEM_USED_ON_BLOCK.trigger((ServerPlayer)entity, pos, itemStack);}
+                if (!entity.isCreative()) {
+                    itemStack.shrink(1);
+                }
                 level.setBlock(pos, blockState, 11);
                 level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(entity, blockState));
                 level.playSound(entity, pos, SoundEvents.HONEYCOMB_WAX_ON, SoundSource.BLOCKS, 1.0F, 1.0F);
@@ -52,23 +57,19 @@ public class DecoWeatheringCopperPanelBigHoleBlock extends PanelBigHoleBlock imp
                 return InteractionResult.sidedSuccess(level.isClientSide);
             });
         }
-        return super.use(state, level, pos, entity, hand, hit);
+        return InteractionResult.PASS;
     }
 
     @Override
     public BlockState getToolModifiedState(BlockState blockstate, UseOnContext context, ToolAction itemAbility, boolean simulate) {
         if (ToolActions.AXE_SCRAPE == itemAbility && context.getItemInHand().canPerformAction(itemAbility)) {
-            return DecoWeatheringCopper.getPrevious(blockstate.getBlock()).map((state) ->
+            return BMWeatheringCopper.getPrevious(blockstate.getBlock()).map((state) ->
                     state.withPropertiesOf(blockstate)).orElse(null);
         }
         return super.getToolModifiedState(blockstate, context, itemAbility, simulate);
     }
 
-    public boolean isRandomlyTicking(BlockState p_154961_) {
-        return DecoWeatheringCopper.getNext(p_154961_.getBlock()).isPresent();
-    }
-
-    public WeatherState getAge() {
+    public BMWeatheringCopper.WeatherState getAge() {
         return this.weatherState;
     }
 }

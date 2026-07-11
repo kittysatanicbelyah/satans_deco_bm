@@ -8,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.satan.deco_bm.satans_deco_bm;
 
-public class DecoSounds {
+public class BMSounds {
 public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS,
         satans_deco_bm.MODID);
 

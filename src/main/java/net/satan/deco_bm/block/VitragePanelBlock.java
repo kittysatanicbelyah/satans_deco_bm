@@ -3,7 +3,6 @@ package net.satan.deco_bm.block;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -27,7 +26,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import net.satan.deco_bm.block.util.VitrageDye;
-import net.satan.deco_bm.register.DecoSounds;
+import net.satan.deco_bm.register.BMSounds;
 
 public class VitragePanelBlock extends TemplatePanelBlock {
 
@@ -61,7 +60,7 @@ protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockSt
                 level.addFreshEntity(VitragePaneBlock.vitrageDyeDropEntity(level, pos, dye));
             }
 
-            level.playSound(entity, pos, DecoSounds.VITRAGE_IMPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+            level.playSound(entity, pos, BMSounds.VITRAGE_IMPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
 
             String dyeName = VitrageDye.getById(dyeId).getSerializedName().toUpperCase();
             level.setBlock(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, dyeName)), 4);
@@ -73,11 +72,11 @@ protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockSt
             level.setBlock(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")), 4);
             level.addFreshEntity(VitragePaneBlock.vitrageDyeDropEntity(level, pos, dye));
 
-            level.playSound(entity, pos, DecoSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+            level.playSound(entity, pos, BMSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
             return InteractionResult.SUCCESS;
         }
             else if (!entity.isShiftKeyDown() && entity.getMainHandItem().isEmpty()) {
-            level.playSound(entity, pos, DecoSounds.PANEL_ROTATES.get(), SoundSource.BLOCKS, 0.75F, 0.75F);
+            level.playSound(entity, pos, BMSounds.PANEL_ROTATES.get(), SoundSource.BLOCKS, 0.75F, 0.75F);
 
             level.setBlock(pos, state.setValue(ROTATION, defineNextRotation(state.getValue(ROTATION))), 4);
             return InteractionResult.SUCCESS;
@@ -98,12 +97,12 @@ protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockSt
                     level.setBlock(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")), 2);
                     level.addFreshEntity(VitragePaneBlock.vitrageDyeDropEntity(level, pos, dye));
 
-                    level.playSound((Entity) null, pos, DecoSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+                    level.playSound((Entity) null, pos, BMSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
                 }
                 else if (level.getBestNeighborSignal(pos) >= 7) {
                     level.setBlock(pos, state.setValue(ROTATION, defineNextRotation(state.getValue(ROTATION))), 2);
 
-                    level.playSound((Entity) null, pos, DecoSounds.PANEL_ROTATES.get(), SoundSource.BLOCKS, 0.75F, 0.75F);
+                    level.playSound((Entity) null, pos, BMSounds.PANEL_ROTATES.get(), SoundSource.BLOCKS, 0.75F, 0.75F);
                 }
             }
             else if (!isPowered && wasPowered) {

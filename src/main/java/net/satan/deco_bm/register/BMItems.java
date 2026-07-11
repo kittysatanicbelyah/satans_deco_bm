@@ -8,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.satan.deco_bm.satans_deco_bm;
 
-public class DecoItems {
+public class BMItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, satans_deco_bm.MODID);
 //Items go here

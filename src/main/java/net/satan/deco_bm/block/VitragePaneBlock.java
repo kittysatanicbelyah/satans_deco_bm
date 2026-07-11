@@ -1,7 +1,6 @@
 package net.satan.deco_bm.block;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -22,7 +21,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import net.satan.deco_bm.block.util.VitrageDye;
-import net.satan.deco_bm.register.DecoSounds;
+import net.satan.deco_bm.register.BMSounds;
 
 public class VitragePaneBlock extends IronBarsBlock {
 
@@ -62,7 +61,7 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
                 level.addFreshEntity(vitrageDyeDropEntity(level, pos, dye));
             }
 
-            level.playSound(entity, pos, DecoSounds.VITRAGE_IMPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+            level.playSound(entity, pos, BMSounds.VITRAGE_IMPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
 
             String dyeName = VitrageDye.getById(dyeId).getSerializedName().toUpperCase();
             level.setBlock(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, dyeName)), 4);
@@ -75,7 +74,7 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
 
             level.addFreshEntity(vitrageDyeDropEntity(level, pos, dye));
 
-            level.playSound(entity, pos, DecoSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+            level.playSound(entity, pos, BMSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.PASS;
@@ -90,7 +89,7 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
                 level.setBlockAndUpdate(pos, state.setValue(VITRAGE_DYE, Enum.valueOf(VitrageDye.class, "NONE")));
                 level.addFreshEntity(vitrageDyeDropEntity(level, pos, dye));
 
-                level.playSound((Entity) null, pos, DecoSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound((Entity) null, pos, BMSounds.VITRAGE_EXPORT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
         }
     }
 
@@ -100,12 +99,7 @@ public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPo
         VitrageDye dye = VitrageDye.getDye(blockstate);
 
         if (dye != VitrageDye.NONE) {
-            Item item = VitrageDye.getVanillaDye(dye).get();
-            ItemStack itemDrop = new ItemStack(item, 1);
-            ItemEntity dropEntity = new ItemEntity(
-                    level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, itemDrop);
-            dropEntity.setDefaultPickUpDelay();
-            level.addFreshEntity(dropEntity);
+            level.addFreshEntity(vitrageDyeDropEntity(level, pos, dye));
         }
         return retval;
     }

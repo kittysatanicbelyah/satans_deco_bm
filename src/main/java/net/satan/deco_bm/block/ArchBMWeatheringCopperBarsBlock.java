@@ -10,21 +10,22 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.satan.deco_bm.block.util.BMWeatheringCopper;
 
-public class ArchDecoWaxedBarsBlock extends DecoWaxedBarsBlock{
+public class ArchBMWeatheringCopperBarsBlock extends BMWeatheringCopperBarsBlock {
     public final int archVar;
     private final Object2IntMap<BlockState> stateToIndex = new Object2IntOpenHashMap<>();
     protected final VoxelShape[] archCollisionShapeByIndex;
 
 
-public ArchDecoWaxedBarsBlock (Properties properties, int archVariation) {
-    super(properties);
-    this.archVar = archVariation;
-    this.archCollisionShapeByIndex = archVar==0 ? this.makeArch() : archVar==1 ? this.makeArchAlt()
-    : archVar==2 ? this.makeReversedArch() : archVar==3 ? this.makeReversedArchAlt()
-    : archVar==4 ? this.makeStraightHorizontalBars()
-    : makeShapes(1,1, 16,16,16);
-}
+    public ArchBMWeatheringCopperBarsBlock(BMWeatheringCopper.WeatherState weatherState, Properties properties, int archVariation) {
+        super(weatherState, properties);
+        this.archVar = archVariation;
+        this.archCollisionShapeByIndex = archVar==0 ? this.makeArch() : archVar==1 ? this.makeArchAlt()
+        : archVar==2 ? this.makeReversedArch() : archVar==3 ? this.makeReversedArchAlt()
+        : archVar==4 ? this.makeStraightHorizontalBars()
+        : makeShapes(1,1, 16,16,16);
+    }
 
     @Override
     public VoxelShape getCollisionShape(BlockState state, BlockGetter p_52358_, BlockPos p_52359_, CollisionContext p_52360_) {
@@ -211,4 +212,5 @@ public ArchDecoWaxedBarsBlock (Properties properties, int archVariation) {
             return i;
         });
     }
+
 }

@@ -13,7 +13,7 @@ import net.satan.deco_bm.satans_deco_bm;
 import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = satans_deco_bm.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DecoDataGenerators {
+public class BMDataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
@@ -21,11 +21,11 @@ public class DecoDataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new DecoRecipeProvider(packOutput));
-        generator.addProvider(event.includeServer(), DecoLootTableProvider.create(packOutput));
+        generator.addProvider(event.includeServer(), new BMRecipeProvider(packOutput));
+        generator.addProvider(event.includeServer(), BMLootTableProvider.create(packOutput));
 
-        generator.addProvider(event.includeClient(), new DecoBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new DecoBlockModelProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new DecoItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new BMBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new BMBlockModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new BMItemModelProvider(packOutput, existingFileHelper));
     }
 }

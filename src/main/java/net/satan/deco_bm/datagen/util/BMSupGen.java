@@ -2,10 +2,10 @@ package net.satan.deco_bm.datagen.util;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
-import net.satan.deco_bm.register.DecoBlocks;
+import net.satan.deco_bm.register.BMBlocks;
 import net.satan.deco_bm.satans_deco_bm;
 
-public interface DecoSupGen {
+public interface BMSupGen {
 // A collection of methods made specifically to make datagen less messy
     // It does heavy lifting bullshit
 
@@ -41,7 +41,7 @@ public interface DecoSupGen {
 
     static RegistryObject<Block> getDecoNonWaxed (RegistryObject<Block> block) {
         String newPath = block.getId().getPath().replace("waxed_", "");
-       RegistryObject<Block> nonwax = DecoBlocks.getByName(newPath);
+       RegistryObject<Block> nonwax = BMBlocks.getByName(newPath);
        return nonwax;
     }
 

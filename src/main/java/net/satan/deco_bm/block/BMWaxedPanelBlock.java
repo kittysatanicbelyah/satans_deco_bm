@@ -6,17 +6,17 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
 
-import net.satan.deco_bm.block.util.DecoWeatheringCopper;
+import net.satan.deco_bm.block.util.BMWeatheringCopper;
 
-public class DecoWaxedPanelBlock extends TemplatePanelBlock {
-    public DecoWaxedPanelBlock(Properties p_154953_) {
+public class BMWaxedPanelBlock extends TemplatePanelBlock {
+    public BMWaxedPanelBlock(Properties p_154953_) {
         super(p_154953_);
     }
 
     @Override
     public BlockState getToolModifiedState(BlockState blockstate, UseOnContext context, ToolAction itemAbility, boolean simulate) {
         if (ToolActions.AXE_WAX_OFF == itemAbility && context.getItemInHand().canPerformAction(itemAbility)) {
-            return DecoWeatheringCopper.getNonWaxed(blockstate.getBlock()).map((state) ->
+            return BMWeatheringCopper.getNonWaxed(blockstate.getBlock()).map((state) ->
                     state.withPropertiesOf(blockstate)).orElse(null);
         }
         return super.getToolModifiedState(blockstate, context, itemAbility, simulate);

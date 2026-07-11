@@ -5,10 +5,9 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-import net.minecraftforge.common.Tags;
 import net.satan.deco_bm.satans_deco_bm;
 
-public class DecoTags {
+public class BMTags {
     public static class CItems {
         public static final TagKey<Item> BARS = tag("bars");
         public static final TagKey<Item> IRON_BARS = tag("bars/iron");

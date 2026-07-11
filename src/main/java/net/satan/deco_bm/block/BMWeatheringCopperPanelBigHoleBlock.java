@@ -21,12 +21,12 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
 
-import net.satan.deco_bm.block.util.DecoWeatheringCopper;
+import net.satan.deco_bm.block.util.BMWeatheringCopper;
 
-public class DecoWeatheringCopperPanelBlock extends TemplatePanelBlock implements DecoWeatheringCopper {
+public class BMWeatheringCopperPanelBigHoleBlock extends PanelBigHoleBlock implements BMWeatheringCopper {
     private final WeatherState weatherState;
 
-    public DecoWeatheringCopperPanelBlock(WeatherState p_154951_, Properties p_154953_) {
+    public BMWeatheringCopperPanelBigHoleBlock(WeatherState p_154951_, Properties p_154953_) {
         super(p_154953_);
         this.weatherState = p_154951_;
     }
@@ -35,20 +35,16 @@ public class DecoWeatheringCopperPanelBlock extends TemplatePanelBlock implement
         this.onRandomTick(p_222675_, p_222676_, p_222677_, p_222678_);
     }
 
-    public boolean isRandomlyTicking(BlockState p_154961_) {
-        return DecoWeatheringCopper.getNext(p_154961_.getBlock()).isPresent();
-    }
-
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
         ItemStack itemStack = entity.getMainHandItem();
         if (itemStack.is(Items.HONEYCOMB)) {
-            DecoWeatheringCopper.getWaxed(state).map((blockState) -> {
+            BMWeatheringCopper.getWaxed(state).map((blockState) -> {
                 if (entity instanceof ServerPlayer) {
                     CriteriaTriggers.ITEM_USED_ON_BLOCK.trigger((ServerPlayer)entity, pos, itemStack);}
-                if (!entity.isCreative()) {
-                    itemStack.shrink(1);
-                }
+               if (!entity.isCreative()) {
+                   itemStack.shrink(1);
+               }
                 level.setBlock(pos, blockState, 11);
                 level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(entity, blockState));
                 level.playSound(entity, pos, SoundEvents.HONEYCOMB_WAX_ON, SoundSource.BLOCKS, 1.0F, 1.0F);
@@ -62,10 +58,14 @@ public class DecoWeatheringCopperPanelBlock extends TemplatePanelBlock implement
     @Override
     public BlockState getToolModifiedState(BlockState blockstate, UseOnContext context, ToolAction itemAbility, boolean simulate) {
         if (ToolActions.AXE_SCRAPE == itemAbility && context.getItemInHand().canPerformAction(itemAbility)) {
-            return DecoWeatheringCopper.getPrevious(blockstate.getBlock()).map((state) ->
+            return BMWeatheringCopper.getPrevious(blockstate.getBlock()).map((state) ->
                     state.withPropertiesOf(blockstate)).orElse(null);
         }
         return super.getToolModifiedState(blockstate, context, itemAbility, simulate);
+    }
+
+    public boolean isRandomlyTicking(BlockState p_154961_) {
+        return BMWeatheringCopper.getNext(p_154961_.getBlock()).isPresent();
     }
 
     public WeatherState getAge() {

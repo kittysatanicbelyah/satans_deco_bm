@@ -6,16 +6,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.satan.deco_bm.register.DecoBlocks;
-import net.satan.deco_bm.register.DecoItems;
-import net.satan.deco_bm.register.DecoSounds;
-import net.satan.deco_bm.register.DecoTabs;
+import net.satan.deco_bm.register.*;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -30,10 +25,10 @@ public class satans_deco_bm {
     public satans_deco_bm() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        DecoTabs.register(modEventBus);
-        DecoBlocks.register(modEventBus);
-        DecoItems.register(modEventBus);
-        DecoSounds.register(modEventBus);
+        BMTabs.register(modEventBus);
+        BMBlocks.register(modEventBus);
+        BMItems.register(modEventBus);
+        BMSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
