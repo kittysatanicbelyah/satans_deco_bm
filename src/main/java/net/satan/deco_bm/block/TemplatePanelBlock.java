@@ -76,23 +76,10 @@ public class TemplatePanelBlock extends Block implements SimpleWaterloggedBlock 
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return shapes.get(state);
     }
+
     @Override
     public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return Shapes.empty();
-    }
-    @Override
-    public boolean shouldDisplayFluidOverlay(BlockState state, BlockAndTintGetter world, BlockPos pos, FluidState fluidstate) {
-        return true;
-    }
-
-    @Override
-    public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
-        return adjacentBlockState.getBlock() == this || super.skipRendering(state, adjacentBlockState, side);
-    }
-
-    @Override
-    public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-        return 0;
     }
 
     @Override
@@ -107,6 +94,21 @@ public class TemplatePanelBlock extends Block implements SimpleWaterloggedBlock 
         return Objects.requireNonNull(super.getStateForPlacement(context)).setValue(AXIS, context.getHorizontalDirection().getClockWise().getAxis())
                 .setValue(WATERLOGGED, flag);
 
+    }
+
+    @Override
+    public boolean shouldDisplayFluidOverlay(BlockState state, BlockAndTintGetter world, BlockPos pos, FluidState fluidstate) {
+        return true;
+    }
+
+    @Override
+    public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
+        return adjacentBlockState.getBlock() == this || super.skipRendering(state, adjacentBlockState, side);
+    }
+
+    @Override
+    public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+        return 0;
     }
 
     public BlockState rotate(BlockState state, Rotation rot) {
