@@ -23,23 +23,26 @@ Project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Planned]
 ### Added
-- [since 0.1.0] Add German (de_de) translation
 - [since 0.1.0] Add Kazakh (kk_kz) translation
 - [since 0.1.0] Add Polish (pl_pl) translation
-- [since 0.1.0] Add Russian (ru_ru) translation
-- [since 0.1.0] Add Spanish (es_es) translation
-- [since 0.1.0] Add Ukrainian (uk_ua) translation
 - [since 0.1.0] Add Portuguese (pt_pt) translation
-- [since 0.3.0] Publish mod on Modrinth
-- [since 0.3.0] Port mod to 1.21.1
-- [since 0.3.1] Port mod to 26.x
+- [since 1.0.0] Add French (fr_fr) translation
+
+
+## [1.0.0] - 2026-07-17
+### Added
+- Add German (de_de) translation ([6ca7620](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/6ca762009c2a6f2fe7feb635278bbdfbc3ab37c8))
+- Add Russian (ru_ru) translation ([6ca7620](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/6ca762009c2a6f2fe7feb635278bbdfbc3ab37c8))
+- Add Spanish (es_es) translation ([6ca7620](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/6ca762009c2a6f2fe7feb635278bbdfbc3ab37c8))
+- Add Ukrainian (uk_ua) translation ([6ca7620](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/6ca762009c2a6f2fe7feb635278bbdfbc3ab37c8))
+- Add more banners ([71fe8a5](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/71fe8a5453083a3f54c5701c5c500e6c26b19449)))
 
 ### Changes
-- [since 0.3.0] Change class naming from DecoName to BMName
-- [since 0.1.0] Optimize datagen 
-
-### Removed
-- [since 0.1.0] Remove Barses textures under numbers 25, 29, 31, 32
+- Change class naming from DecoName to BMName ([0d8ca8e](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/0d8ca8ed7a84cfd65d27b01894464b71b437bec4), [1c5e716](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/1c5e716257c4db65cad02e5bb8cea116c96c89b9#diff-679c1f87c8de87017cc426b06f53be2ec03202451e56537fe2392d219f5783f1))
+- Optimize datagen ([1c5e716](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/1c5e716257c4db65cad02e5bb8cea116c96c89b9#diff-679c1f87c8de87017cc426b06f53be2ec03202451e56537fe2392d219f5783f1)
+- Remake logo ([71fe8a5](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/71fe8a5453083a3f54c5701c5c500e6c26b19449)))
+- Remake banner and move all banners to another repo ([71fe8a5](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/71fe8a5453083a3f54c5701c5c500e6c26b19449)))
+- Revamp README.md ([71fe8a5](https://github.com/kittysatanicbelyah/satans_deco_bm/commit/71fe8a5453083a3f54c5701c5c500e6c26b19449)))
 
 
 ## [0.3.2] - 2026-07-03

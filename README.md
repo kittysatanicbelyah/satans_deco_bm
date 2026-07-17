@@ -28,6 +28,7 @@ For simplicity all mods of this project are called in same fashion:
 ![Recent updates](https://raw.githubusercontent.com/kittysatanicbelyah/random_bu-shi_go/refs/heads/main/deco/decorecent.png)
 
 - 1.0.0: Spanish, Russian, Ukrainian and German translations.
+- 0.3.2: Custom collision shapes for some of the bars (arch and upside down arch precisely)
 
 ![Check out!](https://raw.githubusercontent.com/kittysatanicbelyah/random_bu-shi_go/refs/heads/main/deco/decocheck.png)
 
