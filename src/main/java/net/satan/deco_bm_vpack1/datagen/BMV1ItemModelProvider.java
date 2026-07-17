@@ -11,13 +11,12 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import net.satan.deco_bm.datagen.util.DecoSupGen;
-import net.satan.deco_bm.register.DecoBlocks;
+import net.satan.deco_bm.datagen.util.BMSupGen;
+import net.satan.deco_bm.register.BMBlocks;
 import net.satan.deco_bm_vpack1.register.BMV1Blocks;
 
 import net.satan.deco_bm.satans_deco_bm;
 import net.satan.deco_bm_vpack1.Satans_deco_bm_vpack1;
-import net.satan.deco_bm_vpack1.datagen.util.BMV1SupGen;
 
 public class BMV1ItemModelProvider extends ItemModelProvider {
     public BMV1ItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -362,8 +361,8 @@ public class BMV1ItemModelProvider extends ItemModelProvider {
                     new ResourceLocation("minecraft", "iron_bars"), ForgeRegistries.BLOCKS);
         mId = "minecraft";
         }
-        else textureBlock = DecoBlocks.getByName(texturePath);
-        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = DecoSupGen.getDecoNonWaxed(textureBlock);
+        else textureBlock = BMBlocks.getByName(texturePath);
+        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = BMSupGen.getDecoNonWaxed(textureBlock);
         return withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated"))
                 .texture("layer0", new ResourceLocation("minecraft", "block/glass"))
@@ -373,8 +372,8 @@ public class BMV1ItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder vitrageTwoLayeredPanelBlockItem(RegistryObject<Block> block) {
         String mId = satans_deco_bm.MODID;
         String texturePath = block.getId().getPath().replace("_vitrage_panel","_panel");
-        RegistryObject<Block> textureBlock = DecoBlocks.getByName(texturePath);
-        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = DecoSupGen.getDecoNonWaxed(textureBlock);
+        RegistryObject<Block> textureBlock = BMBlocks.getByName(texturePath);
+        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = BMSupGen.getDecoNonWaxed(textureBlock);
 
         int num1 = (Integer.parseInt(textureBlock.getId().getPath().replaceAll("[^\\d]", "")) * 4) - 3;
         String panel1 = textureBlock.getId().getPath().replaceAll("[\\dl]", "") + num1;

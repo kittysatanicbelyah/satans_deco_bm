@@ -6,7 +6,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.PipeBlock;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -17,10 +16,10 @@ import net.minecraftforge.registries.RegistryObject;
 
 import net.satan.deco_bm.block.TemplatePanelBlock;
 import net.satan.deco_bm.block.util.VitrageDye;
-
-import net.satan.deco_bm.datagen.util.DecoSupGen;
-import net.satan.deco_bm.register.DecoBlocks;
+import net.satan.deco_bm.datagen.util.BMSupGen;
+import net.satan.deco_bm.register.BMBlocks;
 import net.satan.deco_bm.satans_deco_bm;
+
 import net.satan.deco_bm_vpack1.Satans_deco_bm_vpack1;
 import net.satan.deco_bm_vpack1.datagen.util.BMV1SupGen;
 import net.satan.deco_bm_vpack1.register.BMV1Blocks;
@@ -383,17 +382,16 @@ public class BMV1BlockStateProvider extends BlockStateProvider {
             if(texturePath.equals("iron_bars")) {
                 textureBlock = RegistryObject.create(new ResourceLocation("minecraft", "iron_bars"), ForgeRegistries.BLOCKS);;
                 mId1 = "minecraft";}
-            else textureBlock = DecoBlocks.getByName(texturePath);
+            else textureBlock = BMBlocks.getByName(texturePath);
 
-            if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = DecoSupGen.getDecoNonWaxed(textureBlock);
+            if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = BMSupGen.getDecoNonWaxed(textureBlock);
             blockId = BMV1SupGen.BlockIdFilter(textureBlock);
             mId = BMV1SupGen.ModIdFilter(textureBlock);
         }
         if (option == 1) {texturePath = block.getId().getPath().replace("_vitrage_panel","_panel");
-            textureBlock = DecoBlocks.getByName(texturePath);
-            if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = DecoSupGen.getDecoNonWaxed(textureBlock);
+            textureBlock = BMBlocks.getByName(texturePath);
+            if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = BMSupGen.getDecoNonWaxed(textureBlock);
         }
-
 
         if(option == 0) {
             vitragePaneBlockInternal(block.get(), block.getId().toString(),
@@ -543,13 +541,5 @@ public class BMV1BlockStateProvider extends BlockStateProvider {
                 .condition(VitrageDye.VITRAGE_DYE, VitrageDye.getById(x)).end();
         }
     }
-
-    //supply methods
-BooleanProperty getOppositeProperty (Direction dir){return PipeBlock.PROPERTY_BY_DIRECTION.get(dir.getOpposite());}
-
-BooleanProperty getLeftProperty (Direction dir){return PipeBlock.PROPERTY_BY_DIRECTION.get(dir.getCounterClockWise());}
-
-BooleanProperty getRightProperty (Direction dir){return PipeBlock.PROPERTY_BY_DIRECTION.get(dir.getClockWise());}
-
 
 }

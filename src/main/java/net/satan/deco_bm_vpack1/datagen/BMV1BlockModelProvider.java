@@ -12,9 +12,10 @@ import net.minecraftforge.registries.RegistryObject;
 
 import net.satan.deco_bm.block.util.VitrageDye;
 
-import net.satan.deco_bm.datagen.util.DecoSupGen;
-import net.satan.deco_bm.register.DecoBlocks;
+import net.satan.deco_bm.datagen.util.BMSupGen;
+import net.satan.deco_bm.register.BMBlocks;
 import net.satan.deco_bm.satans_deco_bm;
+
 import net.satan.deco_bm_vpack1.datagen.util.BMV1SupGen;
 import net.satan.deco_bm_vpack1.register.BMV1Blocks;
 import net.satan.deco_bm_vpack1.Satans_deco_bm_vpack1;
@@ -367,10 +368,10 @@ public class BMV1BlockModelProvider extends BlockModelProvider {
         if(texturePath.equals("iron_bars")) {
             textureBlock = RegistryObject.create(new ResourceLocation("minecraft", "iron_bars"), ForgeRegistries.BLOCKS);;
             mId1 = "minecraft";}
-        else textureBlock = DecoBlocks.getByName(texturePath);
+        else textureBlock = BMBlocks.getByName(texturePath);
 
         String name = block.getId().toString();
-        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = DecoSupGen.getDecoNonWaxed(textureBlock);
+        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = BMSupGen.getDecoNonWaxed(textureBlock);
         String blockId = BMV1SupGen.BlockIdFilter(textureBlock);
         String mId = BMV1SupGen.ModIdFilter(textureBlock);
 
@@ -423,9 +424,9 @@ public class BMV1BlockModelProvider extends BlockModelProvider {
 
     private BlockModelBuilder vitragePanelModels(RegistryObject<Block> block) {
         String texturePath = block.getId().getPath().replace("_vitrage_panel", "_panel");
-        RegistryObject<Block> textureBlock = DecoBlocks.getByName(texturePath);
+        RegistryObject<Block> textureBlock = BMBlocks.getByName(texturePath);
         String name = block.getId().toString();
-        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = DecoSupGen.getDecoNonWaxed(textureBlock);
+        if (textureBlock.getId().getPath().contains("waxed_")) textureBlock = BMSupGen.getDecoNonWaxed(textureBlock);
 
         ResourceLocation texture1 = new ResourceLocation(satans_deco_bm.MODID, "block/" + BMV1SupGen.getPanelTexture(textureBlock,0));
         ResourceLocation texture2 = new ResourceLocation(satans_deco_bm.MODID, "block/" + BMV1SupGen.getPanelTexture(textureBlock,1));
@@ -477,26 +478,6 @@ public class BMV1BlockModelProvider extends BlockModelProvider {
                 .texture("bars", bars).renderType("cutout_mipped");
     }
 
-    public BlockModelBuilder barsPostEnds(String name, ResourceLocation particle, ResourceLocation edge) {
-        return withExistingParent(name + "_post_ends", new ResourceLocation("block/iron_bars_post_ends"))
-                .texture("particle", particle)
-                .texture("edge", edge).renderType("cutout_mipped");
-    }
-
-    public BlockModelBuilder barsCap(String name, ResourceLocation particle, ResourceLocation bars, ResourceLocation edge) {
-        return withExistingParent(name + "_cap", new ResourceLocation("block/iron_bars_cap"))
-                .texture("particle", particle)
-                .texture("bars", bars)
-                .texture("edge", edge).renderType("cutout_mipped");
-    }
-
-    public BlockModelBuilder barsCapAlt(String name, ResourceLocation particle, ResourceLocation bars, ResourceLocation edge) {
-        return withExistingParent(name + "_cap_alt", new ResourceLocation("block/iron_bars_cap_alt"))
-                .texture("particle", particle)
-                .texture("bars", bars)
-                .texture("edge", edge).renderType("cutout_mipped");
-    }
-
     public BlockModelBuilder vitragePaneSide(String name, ResourceLocation particle, ResourceLocation bars, ResourceLocation pane, ResourceLocation edge) {
         return withExistingParent(name + "_side", new ResourceLocation(satans_deco_bm.MODID, "block/vitrage/vitrage_side"))
                 .texture("particle", particle)
@@ -517,14 +498,6 @@ public class BMV1BlockModelProvider extends BlockModelProvider {
     public BlockModelBuilder decoPanePost(String name, ResourceLocation pane, ResourceLocation edge) {
         return withExistingParent(name + "_post",  new ResourceLocation(satans_deco_bm.MODID, "block/vitrage/vitrage_post"))
                 .texture("edge", edge);
-    }
-
-    public BlockModelBuilder decoPaneNoSide(String name, ResourceLocation pane) {
-        return singleTexture(name + "_noside", new ResourceLocation( "block/template_glass_pane_noside"), "pane", pane);
-    }
-
-    public BlockModelBuilder decoPaneNoSideAlt(String name, ResourceLocation pane) {
-        return singleTexture(name + "_noside_alt", new ResourceLocation("block/template_glass_pane_noside_alt"), "pane", pane);
     }
 
     public BlockModelBuilder vitragePanelPane(String name, ResourceLocation pane) {

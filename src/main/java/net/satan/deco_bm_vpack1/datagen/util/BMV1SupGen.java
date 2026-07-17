@@ -1,14 +1,12 @@
 package net.satan.deco_bm_vpack1.datagen.util;
 
 import net.minecraft.world.level.block.Block;
+
 import net.minecraftforge.registries.RegistryObject;
+
 import net.satan.deco_bm.satans_deco_bm;
-import net.satan.deco_bm_vpack1.Satans_deco_bm_vpack1;
-import net.satan.deco_bm_vpack1.register.BMV1Blocks;
 
 public interface BMV1SupGen {
-// A collection of methods made specifically to make datagen less messy
-    // It does heavy lifting bullshit
 
     static String BlockIdFilter(RegistryObject<Block> block) {
         int end = block.getId().getPath().replace("bars","").replaceAll("[\\d_]","").length();
@@ -38,12 +36,6 @@ public interface BMV1SupGen {
             mId = "minecraft";
         }
         return mId;
-    }
-
-    static RegistryObject<Block> getDecoNonWaxed (RegistryObject<Block> block) {
-        String newPath = block.getId().getPath().replace("waxed_", "");
-       RegistryObject<Block> nonwax = BMV1Blocks.getByName(newPath);
-       return nonwax;
     }
 
     static String getPanelTexture (RegistryObject<Block> block, int option) {
