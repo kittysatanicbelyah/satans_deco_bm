@@ -351,7 +351,6 @@ public class BMV1ItemModelProvider extends ItemModelProvider {
         vitrageTwoLayeredPanelBlockItem(BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL3);
 
     }
-    
 
     private ItemModelBuilder vitrageTwoLayeredBlockItem(RegistryObject<Block> block) {
         RegistryObject<Block> textureBlock = block;

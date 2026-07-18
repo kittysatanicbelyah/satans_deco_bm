@@ -16,8 +16,7 @@
         "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_side"
       },
       "when": {
-        "north": "true",
-        "vitrage_dye": "none"
+        "north": "true"
       }
     },
     {
@@ -25,8 +24,7 @@
         "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_side_alt"
       },
       "when": {
-        "south": "true",
-        "vitrage_dye": "none"
+        "south": "true"
       }
     },
     {
@@ -35,7 +33,6 @@
         "y": 90
       },
       "when": {
-        "vitrage_dye": "none",
         "west": "true"
       }
     },
@@ -45,13 +42,50 @@
         "y": 90
       },
       "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm_vpack1:block/none_side"
+      },
+      "when": {
+        "north": "true",
+        "vitrage_dye": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm_vpack1:block/none_side_alt"
+      },
+      "when": {
+        "south": "true",
+        "vitrage_dye": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm_vpack1:block/none_side_alt",
+        "y": 90
+      },
+      "when": {
+        "vitrage_dye": "none",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "satans_deco_bm_vpack1:block/none_side",
+        "y": 90
+      },
+      "when": {
         "east": "true",
         "vitrage_dye": "none"
       }
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_white_side"
+        "model": "satans_deco_bm_vpack1:block/white_side"
       },
       "when": {
         "north": "true",
@@ -60,7 +94,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_white_side_alt"
+        "model": "satans_deco_bm_vpack1:block/white_side_alt"
       },
       "when": {
         "south": "true",
@@ -69,7 +103,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_white_side_alt",
+        "model": "satans_deco_bm_vpack1:block/white_side_alt",
         "y": 90
       },
       "when": {
@@ -79,7 +113,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_white_side",
+        "model": "satans_deco_bm_vpack1:block/white_side",
         "y": 90
       },
       "when": {
@@ -89,7 +123,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_orange_side"
+        "model": "satans_deco_bm_vpack1:block/orange_side"
       },
       "when": {
         "north": "true",
@@ -98,7 +132,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_orange_side_alt"
+        "model": "satans_deco_bm_vpack1:block/orange_side_alt"
       },
       "when": {
         "south": "true",
@@ -107,7 +141,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_orange_side_alt",
+        "model": "satans_deco_bm_vpack1:block/orange_side_alt",
         "y": 90
       },
       "when": {
@@ -117,7 +151,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_orange_side",
+        "model": "satans_deco_bm_vpack1:block/orange_side",
         "y": 90
       },
       "when": {
@@ -127,7 +161,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_magenta_side"
+        "model": "satans_deco_bm_vpack1:block/magenta_side"
       },
       "when": {
         "north": "true",
@@ -136,7 +170,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_magenta_side_alt"
+        "model": "satans_deco_bm_vpack1:block/magenta_side_alt"
       },
       "when": {
         "south": "true",
@@ -145,7 +179,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_magenta_side_alt",
+        "model": "satans_deco_bm_vpack1:block/magenta_side_alt",
         "y": 90
       },
       "when": {
@@ -155,7 +189,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_magenta_side",
+        "model": "satans_deco_bm_vpack1:block/magenta_side",
         "y": 90
       },
       "when": {
@@ -165,7 +199,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_light_blue_side"
+        "model": "satans_deco_bm_vpack1:block/light_blue_side"
       },
       "when": {
         "north": "true",
@@ -174,7 +208,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_light_blue_side_alt"
+        "model": "satans_deco_bm_vpack1:block/light_blue_side_alt"
       },
       "when": {
         "south": "true",
@@ -183,7 +217,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_light_blue_side_alt",
+        "model": "satans_deco_bm_vpack1:block/light_blue_side_alt",
         "y": 90
       },
       "when": {
@@ -193,7 +227,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_light_blue_side",
+        "model": "satans_deco_bm_vpack1:block/light_blue_side",
         "y": 90
       },
       "when": {
@@ -203,7 +237,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_yellow_side"
+        "model": "satans_deco_bm_vpack1:block/yellow_side"
       },
       "when": {
         "north": "true",
@@ -212,7 +246,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_yellow_side_alt"
+        "model": "satans_deco_bm_vpack1:block/yellow_side_alt"
       },
       "when": {
         "south": "true",
@@ -221,7 +255,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_yellow_side_alt",
+        "model": "satans_deco_bm_vpack1:block/yellow_side_alt",
         "y": 90
       },
       "when": {
@@ -231,7 +265,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_yellow_side",
+        "model": "satans_deco_bm_vpack1:block/yellow_side",
         "y": 90
       },
       "when": {
@@ -241,7 +275,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_lime_side"
+        "model": "satans_deco_bm_vpack1:block/lime_side"
       },
       "when": {
         "north": "true",
@@ -250,7 +284,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_lime_side_alt"
+        "model": "satans_deco_bm_vpack1:block/lime_side_alt"
       },
       "when": {
         "south": "true",
@@ -259,7 +293,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_lime_side_alt",
+        "model": "satans_deco_bm_vpack1:block/lime_side_alt",
         "y": 90
       },
       "when": {
@@ -269,7 +303,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_lime_side",
+        "model": "satans_deco_bm_vpack1:block/lime_side",
         "y": 90
       },
       "when": {
@@ -279,7 +313,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_pink_side"
+        "model": "satans_deco_bm_vpack1:block/pink_side"
       },
       "when": {
         "north": "true",
@@ -288,7 +322,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_pink_side_alt"
+        "model": "satans_deco_bm_vpack1:block/pink_side_alt"
       },
       "when": {
         "south": "true",
@@ -297,7 +331,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_pink_side_alt",
+        "model": "satans_deco_bm_vpack1:block/pink_side_alt",
         "y": 90
       },
       "when": {
@@ -307,7 +341,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_pink_side",
+        "model": "satans_deco_bm_vpack1:block/pink_side",
         "y": 90
       },
       "when": {
@@ -317,7 +351,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_gray_side"
+        "model": "satans_deco_bm_vpack1:block/gray_side"
       },
       "when": {
         "north": "true",
@@ -326,7 +360,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_gray_side_alt"
+        "model": "satans_deco_bm_vpack1:block/gray_side_alt"
       },
       "when": {
         "south": "true",
@@ -335,7 +369,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_gray_side_alt",
+        "model": "satans_deco_bm_vpack1:block/gray_side_alt",
         "y": 90
       },
       "when": {
@@ -345,7 +379,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_gray_side",
+        "model": "satans_deco_bm_vpack1:block/gray_side",
         "y": 90
       },
       "when": {
@@ -355,7 +389,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_light_gray_side"
+        "model": "satans_deco_bm_vpack1:block/light_gray_side"
       },
       "when": {
         "north": "true",
@@ -364,7 +398,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_light_gray_side_alt"
+        "model": "satans_deco_bm_vpack1:block/light_gray_side_alt"
       },
       "when": {
         "south": "true",
@@ -373,7 +407,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_light_gray_side_alt",
+        "model": "satans_deco_bm_vpack1:block/light_gray_side_alt",
         "y": 90
       },
       "when": {
@@ -383,7 +417,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_light_gray_side",
+        "model": "satans_deco_bm_vpack1:block/light_gray_side",
         "y": 90
       },
       "when": {
@@ -393,7 +427,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_cyan_side"
+        "model": "satans_deco_bm_vpack1:block/cyan_side"
       },
       "when": {
         "north": "true",
@@ -402,7 +436,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_cyan_side_alt"
+        "model": "satans_deco_bm_vpack1:block/cyan_side_alt"
       },
       "when": {
         "south": "true",
@@ -411,7 +445,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_cyan_side_alt",
+        "model": "satans_deco_bm_vpack1:block/cyan_side_alt",
         "y": 90
       },
       "when": {
@@ -421,7 +455,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_cyan_side",
+        "model": "satans_deco_bm_vpack1:block/cyan_side",
         "y": 90
       },
       "when": {
@@ -431,7 +465,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_purple_side"
+        "model": "satans_deco_bm_vpack1:block/purple_side"
       },
       "when": {
         "north": "true",
@@ -440,7 +474,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_purple_side_alt"
+        "model": "satans_deco_bm_vpack1:block/purple_side_alt"
       },
       "when": {
         "south": "true",
@@ -449,7 +483,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_purple_side_alt",
+        "model": "satans_deco_bm_vpack1:block/purple_side_alt",
         "y": 90
       },
       "when": {
@@ -459,7 +493,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_purple_side",
+        "model": "satans_deco_bm_vpack1:block/purple_side",
         "y": 90
       },
       "when": {
@@ -469,7 +503,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_blue_side"
+        "model": "satans_deco_bm_vpack1:block/blue_side"
       },
       "when": {
         "north": "true",
@@ -478,7 +512,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_blue_side_alt"
+        "model": "satans_deco_bm_vpack1:block/blue_side_alt"
       },
       "when": {
         "south": "true",
@@ -487,7 +521,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_blue_side_alt",
+        "model": "satans_deco_bm_vpack1:block/blue_side_alt",
         "y": 90
       },
       "when": {
@@ -497,7 +531,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_blue_side",
+        "model": "satans_deco_bm_vpack1:block/blue_side",
         "y": 90
       },
       "when": {
@@ -507,7 +541,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_brown_side"
+        "model": "satans_deco_bm_vpack1:block/brown_side"
       },
       "when": {
         "north": "true",
@@ -516,7 +550,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_brown_side_alt"
+        "model": "satans_deco_bm_vpack1:block/brown_side_alt"
       },
       "when": {
         "south": "true",
@@ -525,7 +559,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_brown_side_alt",
+        "model": "satans_deco_bm_vpack1:block/brown_side_alt",
         "y": 90
       },
       "when": {
@@ -535,7 +569,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_brown_side",
+        "model": "satans_deco_bm_vpack1:block/brown_side",
         "y": 90
       },
       "when": {
@@ -545,7 +579,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_green_side"
+        "model": "satans_deco_bm_vpack1:block/green_side"
       },
       "when": {
         "north": "true",
@@ -554,7 +588,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_green_side_alt"
+        "model": "satans_deco_bm_vpack1:block/green_side_alt"
       },
       "when": {
         "south": "true",
@@ -563,7 +597,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_green_side_alt",
+        "model": "satans_deco_bm_vpack1:block/green_side_alt",
         "y": 90
       },
       "when": {
@@ -573,7 +607,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_green_side",
+        "model": "satans_deco_bm_vpack1:block/green_side",
         "y": 90
       },
       "when": {
@@ -583,7 +617,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_red_side"
+        "model": "satans_deco_bm_vpack1:block/red_side"
       },
       "when": {
         "north": "true",
@@ -592,7 +626,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_red_side_alt"
+        "model": "satans_deco_bm_vpack1:block/red_side_alt"
       },
       "when": {
         "south": "true",
@@ -601,7 +635,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_red_side_alt",
+        "model": "satans_deco_bm_vpack1:block/red_side_alt",
         "y": 90
       },
       "when": {
@@ -611,7 +645,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_red_side",
+        "model": "satans_deco_bm_vpack1:block/red_side",
         "y": 90
       },
       "when": {
@@ -621,7 +655,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_black_side"
+        "model": "satans_deco_bm_vpack1:block/black_side"
       },
       "when": {
         "north": "true",
@@ -630,7 +664,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_black_side_alt"
+        "model": "satans_deco_bm_vpack1:block/black_side_alt"
       },
       "when": {
         "south": "true",
@@ -639,7 +673,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_black_side_alt",
+        "model": "satans_deco_bm_vpack1:block/black_side_alt",
         "y": 90
       },
       "when": {
@@ -649,7 +683,7 @@
     },
     {
       "apply": {
-        "model": "satans_deco_bm_vpack1:block/cloud_vitrage_pane34_black_side",
+        "model": "satans_deco_bm_vpack1:block/black_side",
         "y": 90
       },
       "when": {

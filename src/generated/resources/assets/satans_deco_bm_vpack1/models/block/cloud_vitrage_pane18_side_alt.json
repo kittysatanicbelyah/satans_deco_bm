@@ -1,10 +1,9 @@
 {
-  "parent": "satans_deco_bm:block/vitrage/vitrage_side_alt",
+  "parent": "satans_deco_bm_vpack1:block/vitrage/vitrage_side_alt",
   "render_type": "minecraft:translucent",
   "textures": {
     "bars": "satans_deco_bm:block/cloud_bars18",
     "edge": "satans_deco_bm:block/cloud_bars",
-    "pane": "minecraft:block/glass",
     "particle": "satans_deco_bm:block/cloud_bars18"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "satans_deco_bm:block/vitrage/vitrage_panel_bars",
+  "parent": "satans_deco_bm_vpack1:block/vitrage/vitrage_panel_bars",
   "render_type": "minecraft:cutout_mipped",
   "textures": {
     "bars": "satans_deco_bm:block/copper_pane12",

@@ -397,76 +397,35 @@ public class BMV1BlockStateProvider extends BlockStateProvider {
             vitragePaneBlockInternal(block.get(), block.getId().toString(),
                     new ResourceLocation(mId1, "block/" + textureBlock.getId().getPath()),
                     new ResourceLocation(mId1, "block/" + textureBlock.getId().getPath()),
-                    new ResourceLocation(mId, blockId),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(0)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(1)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(2)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(3)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(4)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(5)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(6)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(7)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(8)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(9)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(10)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(11)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(12)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(13)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(14)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(15)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(16)).toString().replace("Optional[","").replace("]",""))
+                    new ResourceLocation(mId, blockId)
                     );
         }
         if(option == 1) {
             vitragePanelBlockInternal(block.get(), block.getId().toString(),
                     new ResourceLocation(mId1, "block/" + textureBlock.getId().getPath().replace("l", "")),
                     new ResourceLocation(mId1, "block/" + textureBlock.getId().getPath().replace("l", "")),
-                    new ResourceLocation(mId1, "block/" + textureBlock.getId().getPath().replace("l", "")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(0)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(1)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(2)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(3)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(4)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(5)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(6)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(7)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(8)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(9)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(10)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(11)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(12)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(13)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(14)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(15)).toString().replace("Optional[","").replace("]","")),
-                    new ResourceLocation("minecraft", VitrageDye.getTextureGlass(VitrageDye.getById(16)).toString().replace("Optional[","").replace("]",""))
-            );
+                    new ResourceLocation(mId1, "block/" + textureBlock.getId().getPath().replace("l", ""))
+                   );
         }
     }
 
-    private void vitragePaneBlockInternal(Block block, String baseName, ResourceLocation particle, ResourceLocation bars, ResourceLocation edge,
-                                          ResourceLocation pane0,  ResourceLocation pane1,  ResourceLocation pane2,
-                                          ResourceLocation pane3, ResourceLocation pane4, ResourceLocation pane5,
-                                          ResourceLocation pane6,  ResourceLocation pane7,  ResourceLocation pane8,
-                                          ResourceLocation pane9, ResourceLocation pane10, ResourceLocation pane11,
-                                          ResourceLocation pane12, ResourceLocation pane13, ResourceLocation pane14,
-                                          ResourceLocation pane15, ResourceLocation pane16) {
-        ModelFile post = bmv1BlockModels.decoPanePost(baseName, bars, edge);
-
-        ResourceLocation[] panes = {pane0,pane1,pane2,pane3,pane4,pane5,pane6,pane7,pane8,pane9,pane10,pane11,pane12,pane13,pane14,pane15,pane16};
-        ModelFile[] sides = new ModelFile[panes.length];
-        ModelFile[] sideAlts = new ModelFile[panes.length];
-        for (int x = 0; x < panes.length; x++){
-            String nameplus = "_"+panes[x].toString().replace("minecraft:block/","").replace("_stained_glass","");
-            if(x==0) nameplus = "";
-            sides[x] = bmv1BlockModels.vitragePaneSide(baseName+nameplus, particle, bars, panes[x], edge);
-            sideAlts[x] = bmv1BlockModels.vitragePaneSideAlt(baseName+nameplus, particle, bars, panes[x], edge);
+    private void vitragePaneBlockInternal(Block block, String baseName, ResourceLocation particle, ResourceLocation bars, ResourceLocation edge) {
+        ModelFile post = bmv1BlockModels.decoPanePost(baseName, edge);
+        ModelFile side = bmv1BlockModels.vitragePaneSide(baseName, particle, bars, edge);
+        ModelFile sideAlt = bmv1BlockModels.vitragePaneSideAlt(baseName, particle, bars, edge);
+        ModelFile[] sides = new ModelFile[17];
+        ModelFile[] sideAlts = new ModelFile[17];
+        for (int x = 0; x < 17; x++){
+            String name = VitrageDye.getById(x).toString();
+            sides[x] = new ModelFile.UncheckedModelFile(new ResourceLocation(Satans_deco_bm_vpack1.MODID, "block/"+name+"_side"));
+            sideAlts[x] = new ModelFile.UncheckedModelFile(new ResourceLocation(Satans_deco_bm_vpack1.MODID, "block/"+name+"_side_alt"));;
         }
-        vitragePaneBlock(block, post, sides[0], sideAlts[0], sides[1], sideAlts[1], sides[2], sideAlts[2], sides[3], sideAlts[3],
+        vitragePaneBlock(block, post, side, sideAlt, sides[0], sideAlts[0], sides[1], sideAlts[1], sides[2], sideAlts[2], sides[3], sideAlts[3],
                 sides[4], sideAlts[4], sides[5], sideAlts[5], sides[6], sideAlts[6], sides[7], sideAlts[7], sides[8], sideAlts[8], sides[9], sideAlts[9], sides[10], sideAlts[10],
                 sides[11], sideAlts[11], sides[12], sideAlts[12], sides[13], sideAlts[13], sides[14], sideAlts[14], sides[15], sideAlts[15], sides[16], sideAlts[16]);
     }
 
-    public void vitragePaneBlock(Block block, ModelFile post,
+    public void vitragePaneBlock(Block block, ModelFile post, ModelFile side, ModelFile sideAlt,
                                  ModelFile side0, ModelFile sideAlt0, ModelFile side1, ModelFile sideAlt1,
                                  ModelFile side2, ModelFile sideAlt2, ModelFile side3, ModelFile sideAlt3,
                                  ModelFile side4, ModelFile sideAlt4, ModelFile side5, ModelFile sideAlt5,
@@ -484,7 +443,14 @@ public class BMV1BlockStateProvider extends BlockStateProvider {
                 .part().modelFile(post).addModel().condition(PipeBlock.SOUTH, false).condition(PipeBlock.NORTH, false)
                 .condition(PipeBlock.WEST, false).condition(PipeBlock.EAST, false)
                 .end();
-
+        PipeBlock.PROPERTY_BY_DIRECTION.entrySet().forEach(e -> {
+            Direction dir = e.getKey();
+            if (dir.getAxis().isHorizontal()) {
+                boolean alt = dir == Direction.SOUTH;
+                builder.part().modelFile(alt || dir == Direction.WEST ? sideAlt: side).rotationY(dir.getAxis() == Direction.Axis.X ? 90 : 0).addModel()
+                        .condition(e.getValue(), true);
+            }
+        });
         for ( int x = 0; x < 17; x++) {
        final int x1 = x;
         PipeBlock.PROPERTY_BY_DIRECTION.entrySet().forEach(e -> {
@@ -497,24 +463,16 @@ public class BMV1BlockStateProvider extends BlockStateProvider {
         });}
     }
 
-    private void vitragePanelBlockInternal(Block block, String baseName, ResourceLocation particle, ResourceLocation bars, ResourceLocation edge,
-                                           ResourceLocation pane0,  ResourceLocation pane1,  ResourceLocation pane2,
-                                           ResourceLocation pane3, ResourceLocation pane4, ResourceLocation pane5,
-                                           ResourceLocation pane6,  ResourceLocation pane7,  ResourceLocation pane8,
-                                           ResourceLocation pane9, ResourceLocation pane10, ResourceLocation pane11,
-                                           ResourceLocation pane12, ResourceLocation pane13, ResourceLocation pane14,
-                                           ResourceLocation pane15, ResourceLocation pane16) {
+    private void vitragePanelBlockInternal(Block block, String baseName, ResourceLocation particle, ResourceLocation bars, ResourceLocation edge) {
         ModelFile rot0 = bmv1BlockModels.vitragePanelBars(baseName+"rotation_0", bars, edge);
         ModelFile rot1 = bmv1BlockModels.vitragePanelBars(baseName+"rotation_1", bars, edge);
         ModelFile rot2 = bmv1BlockModels.vitragePanelBars(baseName+"rotation_2", bars, edge);
         ModelFile rot3 = bmv1BlockModels.vitragePanelBars(baseName+"rotation_3", bars, edge);
 
-        ResourceLocation[] panes = {pane0,pane1,pane2,pane3,pane4,pane5,pane6,pane7,pane8,pane9,pane10,pane11,pane12,pane13,pane14,pane15,pane16};
-        ModelFile[] insides = new ModelFile[panes.length];
-        for (int x = 0; x < panes.length; x++){
-            String nameplus = "_"+panes[x].toString().replace("minecraft:block/","").replace("_stained_glass","");
-            if(x==0) nameplus = "";
-            insides[x] = bmv1BlockModels.vitragePanelPane(baseName+nameplus, panes[x]);
+        ModelFile[] insides = new ModelFile[17];
+        for (int x = 0; x < 17; x++){
+            String name = VitrageDye.getById(x).toString();
+            insides[x] = new ModelFile.UncheckedModelFile(new ResourceLocation(Satans_deco_bm_vpack1.MODID, "block/"+name+"_pane"));
         }
         vitragePanelBlock(block, rot0, rot1, rot2, rot3, insides[0], insides[1], insides[2], insides[3], insides[4], insides[5], insides[6],
                 insides[7], insides[8], insides[9], insides[10], insides[11], insides[12], insides[13], insides[14], insides[15], insides[16]);
