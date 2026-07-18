@@ -1,0 +1,8 @@
+{
+  "parent": "satans_deco_bm_vpack1:block/vitrage/vitrage_pane_side_connected",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "pane": "minecraft:block/lime_stained_glass",
+    "particle": "minecraft:block/lime_stained_glass"
+  }
+}
