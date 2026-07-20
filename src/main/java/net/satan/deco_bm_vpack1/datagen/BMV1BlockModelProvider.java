@@ -10,8 +10,6 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import net.satan.deco_bm.block.util.VitrageDye;
-
 import net.satan.deco_bm.datagen.util.BMSupGen;
 import net.satan.deco_bm.register.BMBlocks;
 import net.satan.deco_bm.satans_deco_bm;
@@ -366,7 +364,7 @@ public class BMV1BlockModelProvider extends BlockModelProvider {
         RegistryObject<Block> textureBlock = block;
         String texturePath = block.getId().getPath().replace("_vitrage_pane","_bars");
         if(texturePath.equals("iron_bars")) {
-            textureBlock = RegistryObject.create(new ResourceLocation("minecraft", "iron_bars"), ForgeRegistries.BLOCKS);;
+            textureBlock = RegistryObject.create(new ResourceLocation("minecraft", "iron_bars"), ForgeRegistries.BLOCKS);
             mId1 = "minecraft";}
         else textureBlock = BMBlocks.getByName(texturePath);
 

@@ -380,7 +380,7 @@ public class BMV1BlockStateProvider extends BlockStateProvider {
         RegistryObject<Block> textureBlock = block;
         if (option == 0) {texturePath = block.getId().getPath().replace("_vitrage_pane","_bars");
             if(texturePath.equals("iron_bars")) {
-                textureBlock = RegistryObject.create(new ResourceLocation("minecraft", "iron_bars"), ForgeRegistries.BLOCKS);;
+                textureBlock = RegistryObject.create(new ResourceLocation("minecraft", "iron_bars"), ForgeRegistries.BLOCKS);
                 mId1 = "minecraft";}
             else textureBlock = BMBlocks.getByName(texturePath);
 
@@ -418,7 +418,7 @@ public class BMV1BlockStateProvider extends BlockStateProvider {
         for (int x = 0; x < 17; x++){
             String name = VitrageDye.getById(x).toString();
             sides[x] = new ModelFile.UncheckedModelFile(new ResourceLocation(Satans_deco_bm_vpack1.MODID, "block/"+name+"_side"));
-            sideAlts[x] = new ModelFile.UncheckedModelFile(new ResourceLocation(Satans_deco_bm_vpack1.MODID, "block/"+name+"_side_alt"));;
+            sideAlts[x] = new ModelFile.UncheckedModelFile(new ResourceLocation(Satans_deco_bm_vpack1.MODID, "block/"+name+"_side_alt"));
         }
         vitragePaneBlock(block, post, side, sideAlt, sides[0], sideAlts[0], sides[1], sideAlts[1], sides[2], sideAlts[2], sides[3], sideAlts[3],
                 sides[4], sideAlts[4], sides[5], sideAlts[5], sides[6], sideAlts[6], sides[7], sideAlts[7], sides[8], sideAlts[8], sides[9], sideAlts[9], sides[10], sideAlts[10],
