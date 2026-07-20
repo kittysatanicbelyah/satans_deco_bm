@@ -6,8 +6,8 @@ Ever wanted cooler bars? Your on the correct address, soul!
 
 This mod adds a lot of new variations of Iron Bars for 1.20.1. 
 - 30 new variations;
-- Gold, Emerald, Copper (including oxidation process and waxed) variations of barses;
-- Barses variations for made up materials: Cloud and Dark Metal;
+- Gold, Emerald, Copper (including oxidation process and waxed) variations of bars;
+- Bars variations for made up materials: Cloud and Dark Metal;
 - Panel blocks, which you can rotate with your hand or redstone. 3 for each material.
 
 # About Satan's deco
