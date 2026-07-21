@@ -1,0 +1,17 @@
+{
+"type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "satans_deco_bm:gold_bars",
+    "count": 16
+  }
+}

@@ -1,0 +1,20 @@
+{
+"type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:polished_blackstone"
+    },
+    "B": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "satans_deco_bm:darkmetal_bars",
+    "count": 16
+  }
+}

@@ -1,0 +1,18 @@
+{
+"type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "satans_deco_bm:iron_panel1",
+    "count": 4
+  }
+}

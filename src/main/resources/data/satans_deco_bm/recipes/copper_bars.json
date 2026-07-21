@@ -1,0 +1,17 @@
+{
+"type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:ingots/copper"
+    }
+  },
+  "result": {
+    "item": "satans_deco_bm:copper_bars",
+    "count": 16
+  }
+}

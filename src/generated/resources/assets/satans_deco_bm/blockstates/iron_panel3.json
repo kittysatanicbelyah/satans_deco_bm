@@ -1,0 +1,116 @@
+{
+  "variants": {
+    "axis=x,powered=false,rotation=0,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_0"
+    },
+    "axis=x,powered=false,rotation=0,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_0"
+    },
+    "axis=x,powered=false,rotation=1,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_1"
+    },
+    "axis=x,powered=false,rotation=1,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_1"
+    },
+    "axis=x,powered=false,rotation=2,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_2"
+    },
+    "axis=x,powered=false,rotation=2,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_2"
+    },
+    "axis=x,powered=false,rotation=3,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_3"
+    },
+    "axis=x,powered=false,rotation=3,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_3"
+    },
+    "axis=x,powered=true,rotation=0,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_0"
+    },
+    "axis=x,powered=true,rotation=0,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_0"
+    },
+    "axis=x,powered=true,rotation=1,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_1"
+    },
+    "axis=x,powered=true,rotation=1,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_1"
+    },
+    "axis=x,powered=true,rotation=2,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_2"
+    },
+    "axis=x,powered=true,rotation=2,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_2"
+    },
+    "axis=x,powered=true,rotation=3,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_3"
+    },
+    "axis=x,powered=true,rotation=3,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_3"
+    },
+    "axis=z,powered=false,rotation=0,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_0",
+      "y": 270
+    },
+    "axis=z,powered=false,rotation=0,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_0",
+      "y": 270
+    },
+    "axis=z,powered=false,rotation=1,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_1",
+      "y": 270
+    },
+    "axis=z,powered=false,rotation=1,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_1",
+      "y": 270
+    },
+    "axis=z,powered=false,rotation=2,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_2",
+      "y": 270
+    },
+    "axis=z,powered=false,rotation=2,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_2",
+      "y": 270
+    },
+    "axis=z,powered=false,rotation=3,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_3",
+      "y": 270
+    },
+    "axis=z,powered=false,rotation=3,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_3",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=0,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_0",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=0,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_0",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=1,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_1",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=1,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_1",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=2,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_2",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=2,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_2",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=3,waterlogged=false": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_3",
+      "y": 270
+    },
+    "axis=z,powered=true,rotation=3,waterlogged=true": {
+      "model": "satans_deco_bm:block/iron_panel3_rotation_3",
+      "y": 270
+    }
+  }
+}

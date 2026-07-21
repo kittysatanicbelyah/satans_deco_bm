@@ -1,0 +1,18 @@
+{
+"type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "satans_deco_bm:copper_bars"
+    }
+  },
+  "result": {
+    "item": "satans_deco_bm:copper_panel1",
+    "count": 4
+  }
+}

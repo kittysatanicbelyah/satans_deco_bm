@@ -1,0 +1,56 @@
+{
+  "replace": false,
+  "values": [
+    "satans_deco_bm:iron_panel1",
+    "satans_deco_bm:iron_panel2",
+    "satans_deco_bm:iron_panel3",
+
+    "satans_deco_bm:gold_panel1",
+    "satans_deco_bm:gold_panel2",
+    "satans_deco_bm:gold_panel3",
+
+    "satans_deco_bm:emerald_panel1",
+    "satans_deco_bm:emerald_panel2",
+    "satans_deco_bm:emerald_panel3",
+
+    "satans_deco_bm:darkmetal_panel1",
+    "satans_deco_bm:darkmetal_panel2",
+    "satans_deco_bm:darkmetal_panel3",
+
+    "satans_deco_bm:cloud_panel1",
+    "satans_deco_bm:cloud_panel2",
+    "satans_deco_bm:cloud_panel3",
+
+    "satans_deco_bm:copper_panel1",
+    "satans_deco_bm:copper_panel2",
+    "satans_deco_bm:copper_panel3",
+
+    "satans_deco_bm:exposed_copper_panel1",
+    "satans_deco_bm:exposed_copper_panel2",
+    "satans_deco_bm:exposed_copper_panel3",
+
+    "satans_deco_bm:weathered_copper_panel1",
+    "satans_deco_bm:weathered_copper_panel2",
+    "satans_deco_bm:weathered_copper_panel3",
+
+    "satans_deco_bm:oxidized_copper_panel1",
+    "satans_deco_bm:oxidized_copper_panel2",
+    "satans_deco_bm:oxidized_copper_panel3",
+
+    "satans_deco_bm:waxed_copper_panel1",
+    "satans_deco_bm:waxed_copper_panel2",
+    "satans_deco_bm:waxed_copper_panel3",
+
+    "satans_deco_bm:waxed_exposed_copper_panel1",
+    "satans_deco_bm:waxed_exposed_copper_panel2",
+    "satans_deco_bm:waxed_exposed_copper_panel3",
+
+    "satans_deco_bm:waxed_weathered_copper_panel1",
+    "satans_deco_bm:waxed_weathered_copper_panel2",
+    "satans_deco_bm:waxed_weathered_copper_panel3",
+
+    "satans_deco_bm:waxed_oxidized_copper_panel1",
+    "satans_deco_bm:waxed_oxidized_copper_panel2",
+    "satans_deco_bm:waxed_oxidized_copper_panel3"
+  ]
+}

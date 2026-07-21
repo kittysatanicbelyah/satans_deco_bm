@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:bars/iron",
+      "required": false
+    },
+    {
+      "id": "#c:bars/copper",
+      "required": false
+    },
+    {
+      "id": "#c:bars/gold",
+      "required": false
+    },
+    {
+      "id": "#c:bars/emerald",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:bars/darkmetal",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm:bars/cloud",
+      "required": false
+    },
+    {
+      "id": "#c:bars/exposed_copper",
+      "required": false
+    },
+    {
+      "id": "#c:bars/weathered_copper",
+      "required": false
+    },
+    {
+      "id": "#c:bars/oxidized_copper",
+      "required": false
+    },
+    {
+      "id": "#c:bars/waxed_copper",
+      "required": false
+    },
+    {
+      "id": "#c:bars/waxed_exposedcopper",
+      "required": false
+    },
+    {
+      "id": "#c:bars/waxed_weathered_copper",
+      "required": false
+    },
+    {
+      "id": "#c:bars/waxed_oxidized_copper",
+      "required": false
+    }
+  ]
+}
