@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#satans_deco_bm_vpack1:panels/iron",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/gold",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/emerald",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/darkmetal",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/cloud",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/exposed_copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/weathered_copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/oxidized_copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/waxed_copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/waxed_exposedcopper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/waxed_weathered_copper",
+      "required": false
+    },
+    {
+      "id": "#satans_deco_bm_vpack1:panels/waxed_oxidized_copper",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+package net.satan.deco_bm_vpack1;
+
+import com.mojang.logging.LogUtils;
+
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
+
+import net.satan.deco_bm_vpack1.register.BMV1Blocks;
+import net.satan.deco_bm_vpack1.register.BMV1Items;
+import net.satan.deco_bm_vpack1.register.BMV1Tabs;
+
+import org.slf4j.Logger;
+
+// The value here should match an entry in the META-INF/mods.toml file
+@Mod(Satans_deco_bm_vpack1.MODID)
+public class Satans_deco_bm_vpack1 {
+
+    // Define mod id in a common place for everything to reference
+    public static final String MODID = "satans_deco_bm_vpack1";
+    // Directly reference a slf4j logger
+    private static final Logger LOGGER = LogUtils.getLogger();
+
+    public Satans_deco_bm_vpack1(IEventBus modEventBus, ModContainer modContainer) {
+
+        // Register the commonSetup method for modloading
+        modEventBus.addListener(this::commonSetup);
+
+        BMV1Blocks.register(modEventBus);
+        BMV1Items.register(modEventBus);
+        BMV1Tabs.register(modEventBus);
+
+        // Register ourselves for server and other game events we are interested in
+        NeoForge.EVENT_BUS.register(this);
+    }
+
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        // Some common setup code
+    }
+
+    // You can use SubscribeEvent and let the Event Bus discover methods to call
+    @SubscribeEvent
+    public void onServerStarting(ServerStartingEvent event) {
+        // Do something when the server starts
+    }
+}

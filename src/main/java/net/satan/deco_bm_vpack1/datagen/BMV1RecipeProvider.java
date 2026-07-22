@@ -1,0 +1,684 @@
+package net.satan.deco_bm_vpack1.datagen;
+
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.*;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
+
+import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+
+import net.satan.deco_bm.register.BMBlocks;
+
+import net.satan.deco_bm_vpack1.Satans_deco_bm_vpack1;
+import net.satan.deco_bm_vpack1.register.BMV1Blocks;
+import net.satan.deco_bm_vpack1.register.BMV1Tags;
+
+import java.util.concurrent.CompletableFuture;
+
+public class BMV1RecipeProvider extends RecipeProvider implements IConditionBuilder {
+    public BMV1RecipeProvider(CompletableFuture<HolderLookup.Provider> registries, PackOutput packOutput) {
+        super(packOutput, registries);
+    }
+
+    @Override
+    protected void buildRecipes(RecipeOutput recipe) {
+      //bars
+     
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE1.get(), BMV1Blocks.IRON_VITRAGE_PANE.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE2.get(), BMV1Blocks.IRON_VITRAGE_PANE1.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE3.get(), BMV1Blocks.IRON_VITRAGE_PANE2.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE4.get(), BMV1Blocks.IRON_VITRAGE_PANE3.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE5.get(), BMV1Blocks.IRON_VITRAGE_PANE4.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE6.get(), BMV1Blocks.IRON_VITRAGE_PANE5.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE7.get(), BMV1Blocks.IRON_VITRAGE_PANE6.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE8.get(), BMV1Blocks.IRON_VITRAGE_PANE7.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE9.get(), BMV1Blocks.IRON_VITRAGE_PANE8.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE10.get(), BMV1Blocks.IRON_VITRAGE_PANE9.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE11.get(), BMV1Blocks.IRON_VITRAGE_PANE10.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE12.get(), BMV1Blocks.IRON_VITRAGE_PANE11.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE13.get(), BMV1Blocks.IRON_VITRAGE_PANE12.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE14.get(), BMV1Blocks.IRON_VITRAGE_PANE13.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE15.get(), BMV1Blocks.IRON_VITRAGE_PANE14.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE16.get(), BMV1Blocks.IRON_VITRAGE_PANE15.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE17.get(), BMV1Blocks.IRON_VITRAGE_PANE16.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE18.get(), BMV1Blocks.IRON_VITRAGE_PANE17.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE19.get(), BMV1Blocks.IRON_VITRAGE_PANE18.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE20.get(), BMV1Blocks.IRON_VITRAGE_PANE19.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE21.get(), BMV1Blocks.IRON_VITRAGE_PANE20.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE22.get(), BMV1Blocks.IRON_VITRAGE_PANE21.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE23.get(), BMV1Blocks.IRON_VITRAGE_PANE22.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE24.get(), BMV1Blocks.IRON_VITRAGE_PANE23.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE26.get(), BMV1Blocks.IRON_VITRAGE_PANE24.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE27.get(), BMV1Blocks.IRON_VITRAGE_PANE26.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE28.get(), BMV1Blocks.IRON_VITRAGE_PANE27.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE30.get(), BMV1Blocks.IRON_VITRAGE_PANE28.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE33.get(), BMV1Blocks.IRON_VITRAGE_PANE30.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE34.get(), BMV1Blocks.IRON_VITRAGE_PANE33.get(), 1, BMV1Blocks.IRON_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.IRON_VITRAGES);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE1.get(), BMV1Blocks.GOLD_VITRAGE_PANE.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE2.get(), BMV1Blocks.GOLD_VITRAGE_PANE1.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE3.get(), BMV1Blocks.GOLD_VITRAGE_PANE2.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE4.get(), BMV1Blocks.GOLD_VITRAGE_PANE3.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE5.get(), BMV1Blocks.GOLD_VITRAGE_PANE4.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE6.get(), BMV1Blocks.GOLD_VITRAGE_PANE5.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE7.get(), BMV1Blocks.GOLD_VITRAGE_PANE6.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE8.get(), BMV1Blocks.GOLD_VITRAGE_PANE7.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE9.get(), BMV1Blocks.GOLD_VITRAGE_PANE8.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE10.get(), BMV1Blocks.GOLD_VITRAGE_PANE9.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE11.get(), BMV1Blocks.GOLD_VITRAGE_PANE10.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE12.get(), BMV1Blocks.GOLD_VITRAGE_PANE11.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE13.get(), BMV1Blocks.GOLD_VITRAGE_PANE12.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE14.get(), BMV1Blocks.GOLD_VITRAGE_PANE13.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE15.get(), BMV1Blocks.GOLD_VITRAGE_PANE14.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE16.get(), BMV1Blocks.GOLD_VITRAGE_PANE15.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE17.get(), BMV1Blocks.GOLD_VITRAGE_PANE16.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE18.get(), BMV1Blocks.GOLD_VITRAGE_PANE17.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE19.get(), BMV1Blocks.GOLD_VITRAGE_PANE18.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE20.get(), BMV1Blocks.GOLD_VITRAGE_PANE19.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE21.get(), BMV1Blocks.GOLD_VITRAGE_PANE20.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE22.get(), BMV1Blocks.GOLD_VITRAGE_PANE21.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE23.get(), BMV1Blocks.GOLD_VITRAGE_PANE22.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE24.get(), BMV1Blocks.GOLD_VITRAGE_PANE23.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE26.get(), BMV1Blocks.GOLD_VITRAGE_PANE24.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE27.get(), BMV1Blocks.GOLD_VITRAGE_PANE26.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE28.get(), BMV1Blocks.GOLD_VITRAGE_PANE27.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE30.get(), BMV1Blocks.GOLD_VITRAGE_PANE28.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE33.get(), BMV1Blocks.GOLD_VITRAGE_PANE30.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE34.get(), BMV1Blocks.GOLD_VITRAGE_PANE33.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.GOLD_VITRAGES);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE1.get(), BMV1Blocks.EMERALD_VITRAGE_PANE.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE2.get(), BMV1Blocks.EMERALD_VITRAGE_PANE1.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE3.get(), BMV1Blocks.EMERALD_VITRAGE_PANE2.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE4.get(), BMV1Blocks.EMERALD_VITRAGE_PANE3.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE5.get(), BMV1Blocks.EMERALD_VITRAGE_PANE4.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE6.get(), BMV1Blocks.EMERALD_VITRAGE_PANE5.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE7.get(), BMV1Blocks.EMERALD_VITRAGE_PANE6.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE8.get(), BMV1Blocks.EMERALD_VITRAGE_PANE7.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE9.get(), BMV1Blocks.EMERALD_VITRAGE_PANE8.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE10.get(), BMV1Blocks.EMERALD_VITRAGE_PANE9.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE11.get(), BMV1Blocks.EMERALD_VITRAGE_PANE10.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE12.get(), BMV1Blocks.EMERALD_VITRAGE_PANE11.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE13.get(), BMV1Blocks.EMERALD_VITRAGE_PANE12.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE14.get(), BMV1Blocks.EMERALD_VITRAGE_PANE13.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE15.get(), BMV1Blocks.EMERALD_VITRAGE_PANE14.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE16.get(), BMV1Blocks.EMERALD_VITRAGE_PANE15.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE17.get(), BMV1Blocks.EMERALD_VITRAGE_PANE16.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE18.get(), BMV1Blocks.EMERALD_VITRAGE_PANE17.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE19.get(), BMV1Blocks.EMERALD_VITRAGE_PANE18.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE20.get(), BMV1Blocks.EMERALD_VITRAGE_PANE19.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE21.get(), BMV1Blocks.EMERALD_VITRAGE_PANE20.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE22.get(), BMV1Blocks.EMERALD_VITRAGE_PANE21.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE23.get(), BMV1Blocks.EMERALD_VITRAGE_PANE22.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE24.get(), BMV1Blocks.EMERALD_VITRAGE_PANE23.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE26.get(), BMV1Blocks.EMERALD_VITRAGE_PANE24.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE27.get(), BMV1Blocks.EMERALD_VITRAGE_PANE26.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE28.get(), BMV1Blocks.EMERALD_VITRAGE_PANE27.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE30.get(), BMV1Blocks.EMERALD_VITRAGE_PANE28.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE33.get(), BMV1Blocks.EMERALD_VITRAGE_PANE30.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE34.get(), BMV1Blocks.EMERALD_VITRAGE_PANE33.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.EMERALD_VITRAGES);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE1.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE2.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE1.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE3.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE2.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE4.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE3.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE5.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE4.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE6.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE5.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE7.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE6.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE8.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE7.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE9.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE8.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE10.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE9.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE11.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE10.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE12.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE11.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE13.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE12.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE14.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE13.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE15.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE14.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE16.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE15.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE17.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE16.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE18.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE17.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE19.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE18.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE20.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE19.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE21.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE20.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE22.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE21.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE23.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE22.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE24.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE23.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE26.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE24.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE27.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE26.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE28.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE27.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE30.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE28.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE33.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE30.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE34.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANE33.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.DARKMETAL_VITRAGES);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE1.get(), BMV1Blocks.CLOUD_VITRAGE_PANE.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE2.get(), BMV1Blocks.CLOUD_VITRAGE_PANE1.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE3.get(), BMV1Blocks.CLOUD_VITRAGE_PANE2.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE4.get(), BMV1Blocks.CLOUD_VITRAGE_PANE3.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE5.get(), BMV1Blocks.CLOUD_VITRAGE_PANE4.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE6.get(), BMV1Blocks.CLOUD_VITRAGE_PANE5.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE7.get(), BMV1Blocks.CLOUD_VITRAGE_PANE6.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE8.get(), BMV1Blocks.CLOUD_VITRAGE_PANE7.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE9.get(), BMV1Blocks.CLOUD_VITRAGE_PANE8.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE10.get(), BMV1Blocks.CLOUD_VITRAGE_PANE9.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE11.get(), BMV1Blocks.CLOUD_VITRAGE_PANE10.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE12.get(), BMV1Blocks.CLOUD_VITRAGE_PANE11.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE13.get(), BMV1Blocks.CLOUD_VITRAGE_PANE12.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE14.get(), BMV1Blocks.CLOUD_VITRAGE_PANE13.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE15.get(), BMV1Blocks.CLOUD_VITRAGE_PANE14.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE16.get(), BMV1Blocks.CLOUD_VITRAGE_PANE15.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE17.get(), BMV1Blocks.CLOUD_VITRAGE_PANE16.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE18.get(), BMV1Blocks.CLOUD_VITRAGE_PANE17.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE19.get(), BMV1Blocks.CLOUD_VITRAGE_PANE18.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE20.get(), BMV1Blocks.CLOUD_VITRAGE_PANE19.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE21.get(), BMV1Blocks.CLOUD_VITRAGE_PANE20.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE22.get(), BMV1Blocks.CLOUD_VITRAGE_PANE21.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE23.get(), BMV1Blocks.CLOUD_VITRAGE_PANE22.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE24.get(), BMV1Blocks.CLOUD_VITRAGE_PANE23.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE26.get(), BMV1Blocks.CLOUD_VITRAGE_PANE24.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE27.get(), BMV1Blocks.CLOUD_VITRAGE_PANE26.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE28.get(), BMV1Blocks.CLOUD_VITRAGE_PANE27.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE30.get(), BMV1Blocks.CLOUD_VITRAGE_PANE28.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE33.get(), BMV1Blocks.CLOUD_VITRAGE_PANE30.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE34.get(), BMV1Blocks.CLOUD_VITRAGE_PANE33.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.CLOUD_VITRAGES);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE1.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE2.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE1.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE3.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE2.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE4.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE3.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE5.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE4.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE6.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE5.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE7.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE6.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE8.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE7.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE9.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE8.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE10.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE9.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE11.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE10.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE12.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE11.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE13.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE12.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE14.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE13.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE15.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE14.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE16.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE15.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE17.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE16.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE18.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE17.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE19.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE18.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE20.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE19.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE21.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE20.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE22.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE21.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE23.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE22.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE24.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE23.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE26.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE24.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE27.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE26.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE28.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE27.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE30.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE28.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE33.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE30.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE34.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANE33.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_COPPER_VITRAGES);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE1.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE2.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE1.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE3.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE2.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE4.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE3.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE5.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE4.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE6.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE5.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE7.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE6.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE8.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE7.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE9.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE8.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE10.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE9.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE11.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE10.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE12.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE11.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE13.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE12.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE14.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE13.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE15.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE14.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE16.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE15.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE17.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE16.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE18.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE17.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE19.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE18.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE20.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE19.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE21.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE20.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE22.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE21.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE23.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE22.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE24.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE23.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE26.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE24.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE27.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE26.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE28.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE27.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE30.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE28.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE33.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE30.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE34.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE33.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_VITRAGES);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE1.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE2.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE1.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE3.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE2.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE4.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE3.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE5.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE4.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE6.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE5.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE7.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE6.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE8.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE7.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE9.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE8.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE10.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE9.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE11.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE10.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE12.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE11.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE13.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE12.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE14.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE13.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE15.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE14.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE16.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE15.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE17.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE16.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE18.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE17.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE19.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE18.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE20.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE19.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE21.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE20.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE22.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE21.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE23.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE22.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE24.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE23.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE26.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE24.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE27.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE26.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE28.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE27.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE30.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE28.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE33.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE30.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE34.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE33.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_VITRAGES);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE1.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE2.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE1.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE3.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE2.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE4.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE3.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE5.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE4.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE6.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE5.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE7.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE6.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE8.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE7.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE9.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE8.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE10.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE9.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE11.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE10.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE12.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE11.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE13.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE12.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE14.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE13.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE15.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE14.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE16.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE15.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE17.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE16.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE18.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE17.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE19.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE18.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE20.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE19.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE21.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE20.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE22.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE21.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE23.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE22.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE24.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE23.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE26.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE24.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE27.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE26.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE28.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE27.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE30.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE28.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE33.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE30.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE34.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE33.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_VITRAGES);
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE.get(), Blocks.IRON_BARS, Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE1.get(), BMBlocks.IRON_BARS1.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE2.get(), BMBlocks.IRON_BARS2.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE3.get(), BMBlocks.IRON_BARS3.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE4.get(), BMBlocks.IRON_BARS4.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE5.get(), BMBlocks.IRON_BARS5.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE6.get(), BMBlocks.IRON_BARS6.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE7.get(), BMBlocks.IRON_BARS7.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE8.get(), BMBlocks.IRON_BARS8.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE9.get(), BMBlocks.IRON_BARS9.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE10.get(), BMBlocks.IRON_BARS10.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE11.get(), BMBlocks.IRON_BARS11.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE12.get(), BMBlocks.IRON_BARS12.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE13.get(), BMBlocks.IRON_BARS13.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE14.get(), BMBlocks.IRON_BARS14.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE15.get(), BMBlocks.IRON_BARS15.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE16.get(), BMBlocks.IRON_BARS16.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE17.get(), BMBlocks.IRON_BARS17.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE18.get(), BMBlocks.IRON_BARS18.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE19.get(), BMBlocks.IRON_BARS19.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE20.get(), BMBlocks.IRON_BARS20.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE21.get(), BMBlocks.IRON_BARS21.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE22.get(), BMBlocks.IRON_BARS22.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE23.get(), BMBlocks.IRON_BARS23.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE24.get(), BMBlocks.IRON_BARS24.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE26.get(), BMBlocks.IRON_BARS26.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE27.get(), BMBlocks.IRON_BARS27.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE28.get(), BMBlocks.IRON_BARS28.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE30.get(), BMBlocks.IRON_BARS30.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE33.get(), BMBlocks.IRON_BARS33.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANE34.get(), BMBlocks.IRON_BARS34.get(), Blocks.IRON_BARS);
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE.get(), BMBlocks.GOLD_BARS.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE1.get(), BMBlocks.GOLD_BARS1.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE2.get(), BMBlocks.GOLD_BARS2.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE3.get(), BMBlocks.GOLD_BARS3.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE4.get(), BMBlocks.GOLD_BARS4.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE5.get(), BMBlocks.GOLD_BARS5.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE6.get(), BMBlocks.GOLD_BARS6.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE7.get(), BMBlocks.GOLD_BARS7.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE8.get(), BMBlocks.GOLD_BARS8.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE9.get(), BMBlocks.GOLD_BARS9.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE10.get(), BMBlocks.GOLD_BARS10.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE11.get(), BMBlocks.GOLD_BARS11.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE12.get(), BMBlocks.GOLD_BARS12.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE13.get(), BMBlocks.GOLD_BARS13.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE14.get(), BMBlocks.GOLD_BARS14.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE15.get(), BMBlocks.GOLD_BARS15.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE16.get(), BMBlocks.GOLD_BARS16.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE17.get(), BMBlocks.GOLD_BARS17.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE18.get(), BMBlocks.GOLD_BARS18.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE19.get(), BMBlocks.GOLD_BARS19.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE20.get(), BMBlocks.GOLD_BARS20.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE21.get(), BMBlocks.GOLD_BARS21.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE22.get(), BMBlocks.GOLD_BARS22.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE23.get(), BMBlocks.GOLD_BARS23.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE24.get(), BMBlocks.GOLD_BARS24.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE26.get(), BMBlocks.GOLD_BARS26.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE27.get(), BMBlocks.GOLD_BARS27.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE28.get(), BMBlocks.GOLD_BARS28.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE30.get(), BMBlocks.GOLD_BARS30.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE33.get(), BMBlocks.GOLD_BARS33.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANE34.get(), BMBlocks.GOLD_BARS34.get(), BMBlocks.GOLD_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE.get(), BMBlocks.EMERALD_BARS.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE1.get(), BMBlocks.EMERALD_BARS1.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE2.get(), BMBlocks.EMERALD_BARS2.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE3.get(), BMBlocks.EMERALD_BARS3.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE4.get(), BMBlocks.EMERALD_BARS4.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE5.get(), BMBlocks.EMERALD_BARS5.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE6.get(), BMBlocks.EMERALD_BARS6.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE7.get(), BMBlocks.EMERALD_BARS7.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE8.get(), BMBlocks.EMERALD_BARS8.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE9.get(), BMBlocks.EMERALD_BARS9.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE10.get(), BMBlocks.EMERALD_BARS10.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE11.get(), BMBlocks.EMERALD_BARS11.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE12.get(), BMBlocks.EMERALD_BARS12.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE13.get(), BMBlocks.EMERALD_BARS13.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE14.get(), BMBlocks.EMERALD_BARS14.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE15.get(), BMBlocks.EMERALD_BARS15.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE16.get(), BMBlocks.EMERALD_BARS16.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE17.get(), BMBlocks.EMERALD_BARS17.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE18.get(), BMBlocks.EMERALD_BARS18.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE19.get(), BMBlocks.EMERALD_BARS19.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE20.get(), BMBlocks.EMERALD_BARS20.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE21.get(), BMBlocks.EMERALD_BARS21.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE22.get(), BMBlocks.EMERALD_BARS22.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE23.get(), BMBlocks.EMERALD_BARS23.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE24.get(), BMBlocks.EMERALD_BARS24.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE26.get(), BMBlocks.EMERALD_BARS26.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE27.get(), BMBlocks.EMERALD_BARS27.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE28.get(), BMBlocks.EMERALD_BARS28.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE30.get(), BMBlocks.EMERALD_BARS30.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE33.get(), BMBlocks.EMERALD_BARS33.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANE34.get(), BMBlocks.EMERALD_BARS34.get(), BMBlocks.EMERALD_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE.get(), BMBlocks.DARKMETAL_BARS.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE1.get(), BMBlocks.DARKMETAL_BARS1.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE2.get(), BMBlocks.DARKMETAL_BARS2.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE3.get(), BMBlocks.DARKMETAL_BARS3.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE4.get(), BMBlocks.DARKMETAL_BARS4.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE5.get(), BMBlocks.DARKMETAL_BARS5.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE6.get(), BMBlocks.DARKMETAL_BARS6.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE7.get(), BMBlocks.DARKMETAL_BARS7.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE8.get(), BMBlocks.DARKMETAL_BARS8.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE9.get(), BMBlocks.DARKMETAL_BARS9.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE10.get(), BMBlocks.DARKMETAL_BARS10.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE11.get(), BMBlocks.DARKMETAL_BARS11.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE12.get(), BMBlocks.DARKMETAL_BARS12.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE13.get(), BMBlocks.DARKMETAL_BARS13.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE14.get(), BMBlocks.DARKMETAL_BARS14.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE15.get(), BMBlocks.DARKMETAL_BARS15.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE16.get(), BMBlocks.DARKMETAL_BARS16.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE17.get(), BMBlocks.DARKMETAL_BARS17.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE18.get(), BMBlocks.DARKMETAL_BARS18.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE19.get(), BMBlocks.DARKMETAL_BARS19.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE20.get(), BMBlocks.DARKMETAL_BARS20.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE21.get(), BMBlocks.DARKMETAL_BARS21.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE22.get(), BMBlocks.DARKMETAL_BARS22.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE23.get(), BMBlocks.DARKMETAL_BARS23.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE24.get(), BMBlocks.DARKMETAL_BARS24.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE26.get(), BMBlocks.DARKMETAL_BARS26.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE27.get(), BMBlocks.DARKMETAL_BARS27.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE28.get(), BMBlocks.DARKMETAL_BARS28.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE30.get(), BMBlocks.DARKMETAL_BARS30.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE33.get(), BMBlocks.DARKMETAL_BARS33.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANE34.get(), BMBlocks.DARKMETAL_BARS34.get(), BMBlocks.DARKMETAL_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE.get(), BMBlocks.CLOUD_BARS.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE1.get(), BMBlocks.CLOUD_BARS1.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE2.get(), BMBlocks.CLOUD_BARS2.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE3.get(), BMBlocks.CLOUD_BARS3.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE4.get(), BMBlocks.CLOUD_BARS4.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE5.get(), BMBlocks.CLOUD_BARS5.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE6.get(), BMBlocks.CLOUD_BARS6.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE7.get(), BMBlocks.CLOUD_BARS7.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE8.get(), BMBlocks.CLOUD_BARS8.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE9.get(), BMBlocks.CLOUD_BARS9.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE10.get(), BMBlocks.CLOUD_BARS10.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE11.get(), BMBlocks.CLOUD_BARS11.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE12.get(), BMBlocks.CLOUD_BARS12.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE13.get(), BMBlocks.CLOUD_BARS13.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE14.get(), BMBlocks.CLOUD_BARS14.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE15.get(), BMBlocks.CLOUD_BARS15.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE16.get(), BMBlocks.CLOUD_BARS16.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE17.get(), BMBlocks.CLOUD_BARS17.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE18.get(), BMBlocks.CLOUD_BARS18.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE19.get(), BMBlocks.CLOUD_BARS19.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE20.get(), BMBlocks.CLOUD_BARS20.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE21.get(), BMBlocks.CLOUD_BARS21.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE22.get(), BMBlocks.CLOUD_BARS22.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE23.get(), BMBlocks.CLOUD_BARS23.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE24.get(), BMBlocks.CLOUD_BARS24.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE26.get(), BMBlocks.CLOUD_BARS26.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE27.get(), BMBlocks.CLOUD_BARS27.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE28.get(), BMBlocks.CLOUD_BARS28.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE30.get(), BMBlocks.CLOUD_BARS30.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE33.get(), BMBlocks.CLOUD_BARS33.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANE34.get(), BMBlocks.CLOUD_BARS34.get(), BMBlocks.CLOUD_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE.get(), BMBlocks.WAXED_COPPER_BARS.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE1.get(), BMBlocks.WAXED_COPPER_BARS1.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE2.get(), BMBlocks.WAXED_COPPER_BARS2.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE3.get(), BMBlocks.WAXED_COPPER_BARS3.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE4.get(), BMBlocks.WAXED_COPPER_BARS4.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE5.get(), BMBlocks.WAXED_COPPER_BARS5.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE6.get(), BMBlocks.WAXED_COPPER_BARS6.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE7.get(), BMBlocks.WAXED_COPPER_BARS7.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE8.get(), BMBlocks.WAXED_COPPER_BARS8.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE9.get(), BMBlocks.WAXED_COPPER_BARS9.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE10.get(), BMBlocks.WAXED_COPPER_BARS10.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE11.get(), BMBlocks.WAXED_COPPER_BARS11.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE12.get(), BMBlocks.WAXED_COPPER_BARS12.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE13.get(), BMBlocks.WAXED_COPPER_BARS13.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE14.get(), BMBlocks.WAXED_COPPER_BARS14.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE15.get(), BMBlocks.WAXED_COPPER_BARS15.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE16.get(), BMBlocks.WAXED_COPPER_BARS16.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE17.get(), BMBlocks.WAXED_COPPER_BARS17.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE18.get(), BMBlocks.WAXED_COPPER_BARS18.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE19.get(), BMBlocks.WAXED_COPPER_BARS19.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE20.get(), BMBlocks.WAXED_COPPER_BARS20.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE21.get(), BMBlocks.WAXED_COPPER_BARS21.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE22.get(), BMBlocks.WAXED_COPPER_BARS22.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE23.get(), BMBlocks.WAXED_COPPER_BARS23.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE24.get(), BMBlocks.WAXED_COPPER_BARS24.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE26.get(), BMBlocks.WAXED_COPPER_BARS26.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE27.get(), BMBlocks.WAXED_COPPER_BARS27.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE28.get(), BMBlocks.WAXED_COPPER_BARS28.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE30.get(), BMBlocks.WAXED_COPPER_BARS30.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE33.get(), BMBlocks.WAXED_COPPER_BARS33.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANE34.get(), BMBlocks.WAXED_COPPER_BARS34.get(), BMBlocks.WAXED_COPPER_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE1.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS1.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE2.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS2.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE3.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS3.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE4.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS4.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE5.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS5.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE6.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS6.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE7.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS7.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE8.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS8.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE9.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS9.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE10.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS10.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE11.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS11.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE12.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS12.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE13.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS13.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE14.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS14.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE15.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS15.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE16.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS16.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE17.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS17.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE18.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS18.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE19.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS19.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE20.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS20.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE21.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS21.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE22.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS22.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE23.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS23.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE24.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS24.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE26.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS26.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE27.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS27.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE28.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS28.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE30.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS30.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE33.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS33.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANE34.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS34.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE1.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS1.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE2.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS2.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE3.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS3.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE4.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS4.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE5.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS5.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE6.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS6.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE7.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS7.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE8.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS8.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE9.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS9.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE10.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS10.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE11.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS11.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE12.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS12.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE13.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS13.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE14.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS14.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE15.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS15.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE16.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS16.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE17.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS17.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE18.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS18.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE19.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS19.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE20.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS20.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE21.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS21.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE22.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS22.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE23.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS23.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE24.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS24.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE26.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS26.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE27.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS27.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE28.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS28.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE30.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS30.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE33.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS33.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANE34.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS34.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE1.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS1.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE2.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS2.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE3.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS3.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE4.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS4.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE5.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS5.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE6.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS6.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE7.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS7.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE8.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS8.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE9.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS9.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE10.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS10.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE11.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS11.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE12.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS12.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE13.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS13.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE14.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS14.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE15.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS15.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE16.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS16.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE17.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS17.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE18.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS18.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE19.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS19.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE20.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS20.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE21.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS21.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE22.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS22.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE23.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS23.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE24.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS24.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE26.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS26.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE27.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS27.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE28.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS28.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE30.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS30.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE33.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS33.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANE34.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS34.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANEL1.get(), BMBlocks.IRON_PANEL1.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANEL2.get(), BMBlocks.IRON_PANEL2.get(), Blocks.IRON_BARS);
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANEL3.get(), BMBlocks.IRON_PANEL3.get(), Blocks.IRON_BARS);
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANEL1.get(), BMBlocks.GOLD_PANEL1.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANEL2.get(), BMBlocks.GOLD_PANEL2.get(), BMBlocks.GOLD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANEL3.get(), BMBlocks.GOLD_PANEL3.get(), BMBlocks.GOLD_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANEL1.get(), BMBlocks.EMERALD_PANEL1.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANEL2.get(), BMBlocks.EMERALD_PANEL2.get(), BMBlocks.EMERALD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANEL3.get(), BMBlocks.EMERALD_PANEL3.get(), BMBlocks.EMERALD_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANEL1.get(), BMBlocks.DARKMETAL_PANEL1.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANEL2.get(), BMBlocks.DARKMETAL_PANEL2.get(), BMBlocks.DARKMETAL_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANEL3.get(), BMBlocks.DARKMETAL_PANEL3.get(), BMBlocks.DARKMETAL_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANEL1.get(), BMBlocks.CLOUD_PANEL1.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANEL2.get(), BMBlocks.CLOUD_PANEL2.get(), BMBlocks.CLOUD_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANEL3.get(), BMBlocks.CLOUD_PANEL3.get(), BMBlocks.CLOUD_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL1.get(), BMBlocks.WAXED_COPPER_PANEL1.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL2.get(), BMBlocks.WAXED_COPPER_PANEL2.get(), BMBlocks.WAXED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL3.get(), BMBlocks.WAXED_COPPER_PANEL3.get(), BMBlocks.WAXED_COPPER_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL1.get(), BMBlocks.WAXED_EXPOSED_COPPER_PANEL1.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL2.get(), BMBlocks.WAXED_EXPOSED_COPPER_PANEL2.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL3.get(), BMBlocks.WAXED_EXPOSED_COPPER_PANEL3.get(), BMBlocks.WAXED_EXPOSED_COPPER_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL1.get(), BMBlocks.WAXED_WEATHERED_COPPER_PANEL1.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL2.get(), BMBlocks.WAXED_WEATHERED_COPPER_PANEL2.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL3.get(), BMBlocks.WAXED_WEATHERED_COPPER_PANEL3.get(), BMBlocks.WAXED_WEATHERED_COPPER_BARS.get());
+
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL1.get(), BMBlocks.WAXED_OXIDIZED_COPPER_PANEL1.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL2.get(), BMBlocks.WAXED_OXIDIZED_COPPER_PANEL2.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+        vitrageMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL3.get(), BMBlocks.WAXED_OXIDIZED_COPPER_PANEL3.get(), BMBlocks.WAXED_OXIDIZED_COPPER_BARS.get());
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANEL2.get(), BMV1Blocks.IRON_VITRAGE_PANEL1.get(), 1, BMV1Blocks.IRON_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.IRON_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.IRON_VITRAGE_PANEL3.get(), BMV1Blocks.IRON_VITRAGE_PANEL2.get(), 1, BMV1Blocks.IRON_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.IRON_PANELS);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANEL2.get(), BMV1Blocks.GOLD_VITRAGE_PANEL1.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.GOLD_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.GOLD_VITRAGE_PANEL3.get(), BMV1Blocks.GOLD_VITRAGE_PANEL2.get(), 1, BMV1Blocks.GOLD_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.GOLD_PANELS);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANEL2.get(), BMV1Blocks.EMERALD_VITRAGE_PANEL1.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.EMERALD_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.EMERALD_VITRAGE_PANEL3.get(), BMV1Blocks.EMERALD_VITRAGE_PANEL2.get(), 1, BMV1Blocks.EMERALD_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.EMERALD_PANELS);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANEL2.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANEL1.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.DARKMETAL_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.DARKMETAL_VITRAGE_PANEL3.get(), BMV1Blocks.DARKMETAL_VITRAGE_PANEL2.get(), 1, BMV1Blocks.DARKMETAL_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.DARKMETAL_PANELS);
+        
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANEL2.get(), BMV1Blocks.CLOUD_VITRAGE_PANEL1.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.CLOUD_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.CLOUD_VITRAGE_PANEL3.get(), BMV1Blocks.CLOUD_VITRAGE_PANEL2.get(), 1, BMV1Blocks.CLOUD_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.CLOUD_PANELS);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL2.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL1.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.WAXED_COPPER_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL3.get(), BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL2.get(), 1, BMV1Blocks.WAXED_COPPER_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.WAXED_COPPER_PANELS);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL2.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL1.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL3.get(), BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL2.get(), 1, BMV1Blocks.WAXED_EXPOSED_COPPER_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.WAXED_EXPOSED_COPPER_PANELS);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL2.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL1.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL3.get(), BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL2.get(), 1, BMV1Blocks.WAXED_WEATHERED_COPPER_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.WAXED_WEATHERED_COPPER_PANELS);
+
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL2.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL1.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_PANELS);
+        barsMaking(recipe, RecipeCategory.DECORATIONS, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL3.get(), BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL2.get(), 1, BMV1Blocks.WAXED_OXIDIZED_COPPER_VITRAGE_PANEL1.get(), BMV1Tags.BMV1Items.WAXED_OXIDIZED_COPPER_PANELS);
+    }
+
+    protected static void vitrageMaking (RecipeOutput recipe, RecipeCategory category, ItemLike result,
+                                         ItemLike ingredient, ItemLike unlock) {
+        ShapedRecipeBuilder.shaped(category, result, 2).pattern("ABA")
+                .define('A', ingredient).define('B', Items.GLASS_PANE)
+                .unlockedBy(getHasName(unlock), has(unlock)).save(recipe, Satans_deco_bm_vpack1.MODID +":"+ getItemName(result) + "_craft_from_non_vitrage");
+    }
+
+    protected static void barsMaking (RecipeOutput recipe, RecipeCategory category, ItemLike result,
+                                     ItemLike ingredient, int amount, ItemLike unlock, TagKey<Item> ingredient1) {
+        ShapelessRecipeBuilder.shapeless(category, result, amount).requires(ingredient)
+                .unlockedBy(getHasName(unlock), has(unlock))
+                .save(recipe);
+        stonecutterTag(recipe, category, result, ingredient1, amount, unlock);
+    }
+
+    protected static void stonecutterTag(RecipeOutput recipe, RecipeCategory category, ItemLike result,
+                                         TagKey<Item> ingredient, int amount, ItemLike unlock) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ingredient), category, result, amount)
+                .unlockedBy(getHasName(unlock), has(unlock))
+                .save(recipe,  Satans_deco_bm_vpack1.MODID+":" + getItemName(result) + "_stonecutting_from_"+ ingredient.toString().replaceAll("[^a-z0-9._-]", "").replace("ageyminecraftitem",""));
+    }
+}

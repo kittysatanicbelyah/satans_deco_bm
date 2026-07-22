@@ -1,0 +1,18 @@
+{
+	"format_version": "1.9.0",
+	"ambientocclusion": false,
+	"elements": [
+		{
+			"from": [0, 0, 7],
+			"to": [16, 16, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#bars"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#edge"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#bars"},
+				"west": {"uv": [14, 0, 16, 16], "texture": "#edge"},
+				"up": {"uv": [16, 2, 0, 0], "rotation": 180, "texture": "#edge"},
+				"down": {"uv": [16, 14, 0, 16], "texture": "#edge"}
+			}
+		}
+	]
+}
