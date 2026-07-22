@@ -3,16 +3,15 @@
   "category": "decorations",
   "pattern": [
     "###",
-    "# #",
     "###"
   ],
   "key": {
     "#": {
-      "item": "satans_deco_bm:cloud_bars"
+      "item": "minecraft:emerald"
     }
   },
   "result": {
-    "item": "satans_deco_bm:cloud_panel1",
-    "count": 4
+    "id": "satans_deco_bm:emerald_bars",
+    "count": 16
   }
 }

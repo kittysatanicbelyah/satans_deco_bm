@@ -23,7 +23,7 @@ public class BMDataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(event.includeServer(), new BMRecipeProvider(lookupProvider, packOutput));
-        generator.addProvider(event.includeServer(), BMLootTableProvider.create(packOutput, lookupProvider.join()));
+        generator.addProvider(event.includeServer(), BMLootTableProvider.create(packOutput, lookupProvider));
 
         generator.addProvider(event.includeClient(), new BMBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new BMBlockModelProvider(packOutput, existingFileHelper));

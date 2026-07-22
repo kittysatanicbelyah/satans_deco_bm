@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_bars"
+      "item": "satans_deco_bm:emerald_bars"
     }
   },
   "result": {
-    "item": "satans_deco_bm:iron_panel1",
+    "id": "satans_deco_bm:emerald_panel1",
     "count": 4
   }
 }

@@ -12,8 +12,8 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public class BMLootTableProvider {
-    public static LootTableProvider create(PackOutput packOutput, HolderLookup.Provider lookupProvider) {
+    public static LootTableProvider create(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
      return new LootTableProvider(packOutput, Set.of(), List.of(
-             new LootTableProvider.SubProviderEntry(BMBlockLootTables::new, LootContextParamSets.BLOCK)), (CompletableFuture<HolderLookup.Provider>) lookupProvider);
+             new LootTableProvider.SubProviderEntry(BMBlockLootTables::new, LootContextParamSets.BLOCK)), lookupProvider);
     }
 }

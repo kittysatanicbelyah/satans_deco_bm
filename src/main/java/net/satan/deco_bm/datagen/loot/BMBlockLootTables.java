@@ -5,11 +5,9 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.satan.deco_bm.register.BMBlocks;
 
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class BMBlockLootTables extends BlockLootSubProvider {
     public BMBlockLootTables(HolderLookup.Provider registries) {
@@ -495,10 +493,9 @@ public class BMBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return () -> (java.util.Iterator<Block>) BMBlocks.BLOCKS.getEntries()
-                .stream()
-                .map(DeferredHolder::get)
-                .collect(Collectors.toList());
+        return BMBlocks.BLOCKS.getEntries().stream()
+                .map(holder -> (Block) holder.get())
+                ::iterator;
     }
 
 }

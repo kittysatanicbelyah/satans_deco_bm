@@ -17,7 +17,6 @@ import net.satan.deco_bm.register.BMTags;
 import net.satan.deco_bm.satans_deco_bm;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Consumer;
 
 public class BMRecipeProvider extends RecipeProvider implements IConditionBuilder {
     public BMRecipeProvider(CompletableFuture<HolderLookup.Provider> registries, PackOutput output) {

@@ -3,16 +3,15 @@
   "category": "decorations",
   "pattern": [
     "###",
-    "# #",
     "###"
   ],
   "key": {
     "#": {
-      "item": "satans_deco_bm:copper_bars"
+      "tag": "c:ingots/copper"
     }
   },
   "result": {
-    "item": "satans_deco_bm:copper_panel1",
-    "count": 4
+    "id": "satans_deco_bm:copper_bars",
+    "count": 16
   }
 }

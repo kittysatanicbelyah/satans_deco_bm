@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "satans_deco_bm:darkmetal_bars"
+      "item": "satans_deco_bm:cloud_bars"
     }
   },
   "result": {
-    "item": "satans_deco_bm:darkmetal_panel1",
+    "id": "satans_deco_bm:cloud_panel1",
     "count": 4
   }
 }
